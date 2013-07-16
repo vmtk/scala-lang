@@ -25,29 +25,46 @@
 <div class="span5 newsbox">
   <h2 class="recently">Recently...</h2>
   <div class="recent-news-items">
-  {% for p in site.categories.news limit: 4 %}
+  {% assign counter = '.' %}
+  {% assign foundScala210release = false %}
+  {% assign foundScala211release = false %}
+  {% for p in site.categories.news %}
     {% if forloop.first %}
       {% comment %} DO NOTHING {% endcomment %}
     {% else %}
-      <div class="recent-news-item">
-        {% if p.link-out %}
-          <div class="recent-news-title"><a href="{{ p.link-out }}">{{ p.title }}</a></div>
+      {% if counter.size <= 3 %}        
+        {% if p.title contains "is now available!" and ((p.title contains "Scala 2.10" and foundScala210release) or (p.title contains "Scala 2.11" and foundScala211release)) %}
         {% else %}
-          <div class="recent-news-title"><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></div>
+          {% if p.title contains "is now available!" %}
+            {% if p.title contains "Scala 2.10" %}
+              {% assign foundScala210release = true %}     
+            {% elsif p.title contains "Scala 2.11" %}
+              {% assign foundScala211release = true %}
+            {% endif %}
+          {% endif %}
+
+          {% capture counter %}{{ counter | append:'.' }}{% endcapture %}
+          <div class="recent-news-item">
+            {% if p.link-out %}
+              <div class="recent-news-title"><a href="{{ p.link-out }}">{{ p.title }}</a></div>
+            {% else %}
+              <div class="recent-news-title"><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></div>
+            {% endif %}
+            {% if p.author %}
+              <div class="recent-news-author"><span class="by">By</span> <div class="recent-news-author-name">{{ p.author }}</div></div>
+            {% endif %}
+            <div class="recent-news-date"><img style="margin-top: -3px;" src="{{ site.baseurl }}/resources/img/recent-date-icon.png" /> {{ p.date | date: "%A, %B %d, %Y" }}
+            {% if p.post-type %}
+              <span class="recent-news-category">{{ p.post-type }}</span>
+            {% endif %}</div>
+            {% if p.short %}
+              <div class="recent-news-body">{{ p.short }}</div>
+            {% else %}
+              <div class="recent-news-body">{{ p.content | strip_html | truncatewords: 25 }}</div>
+            {% endif %}
+          </div>
         {% endif %}
-        {% if p.author %}
-          <div class="recent-news-author"><span class="by">By</span> <div class="recent-news-author-name">{{ p.author }}</div></div>
-        {% endif %}
-        <div class="recent-news-date"><img style="margin-top: -3px;" src="{{ site.baseurl }}/resources/img/recent-date-icon.png" /> {{ p.date | date: "%A, %B %d, %Y" }}
-        {% if p.post-type %}
-          <span class="recent-news-category">{{ p.post-type }}</span>
-        {% endif %}</div>
-        {% if p.short %}
-          <div class="recent-news-body">{{ p.short }}</div>
-        {% else %}
-          <div class="recent-news-body">{{ p.content | strip_html | truncatewords: 25 }}</div>
-        {% endif %}
-      </div>
+      {% endif %}
     {% endif %}
   {% endfor %}
   </div>

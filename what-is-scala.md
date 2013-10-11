@@ -1,109 +1,39 @@
 ---
 layout: page
-title: What is Scala?
-by: Martin Odersky
+title: What is vmtk?
 ---
 
-## A Scalable language
 
-Scala is an acronym for "Scalable Language". This means that
-Scala grows with you. You can play with it by typing one-line
-expressions and observing the results.  But you can also rely on it
-for large mission critical systems, as many companies, including
-Twitter, LinkedIn, or Intel do.
+## Architecture
 
-To some, Scala feels like a scripting language. Its syntax is concise
-and low ceremony; its types get out of the way because the compiler
-can infer them.  There's a REPL and IDE worksheets for quick
-feedback. Developers like it so much that Scala won the ScriptBowl
-contest at the 2012 JavaOne conference.
+vmtk is composed of
 
-At the same time, Scala is the preferred workhorse language for many
-mission critical server systems. The generated code is on a par with
-Java's and its precise typing means that many problems are caught at
-compile-time rather than after deployment.
+- C++ classes ([VTK](www.vtk.org) and [ITK](www.itk.org) -based algorithms)
+- [Python](www.python.org) classes (high-level functionality - each class is a script)
+- [PypeS](/Main/Pypes) - Python pipeable scripts, a framework which enables vmtk scripts to interact with each other
 
-At the root, the language's scalability is the result of a careful
-integration of object-oriented and functional language concepts.
+Before using vmtk scripts, make sure you know how to use [PypeS](/Main/Pypes).
 
-## Object-Oriented
+## Features
 
-Scala is a pure-bred object-oriented language. Conceptually, every
-value is an object and every operation is a method-call. The language
-supports advanced component architectures through classes and traits.
+Segmentation of vascular segments (or other anatomical structures) from medical images:
 
-Many traditional design patterns in other languages are already
-natively supported. For instance, singletons are supported through
-object definitions and visitors are supported through pattern
-matching. Using implicit classes, Scala even allows you to add new operations
-to existing classes, no matter whether they come from Scala or Java!
+- Gradient-based 3D level sets segmentation. A new gradient computation modality based on upwind finite differences allows the segmentation of small (down to 1.2 pixels/diameter) vessels.
+- Interactive level sets initialization based on the Fast Marching Method. This includes a brand new method for selecting a vascular segment comprised between two points automatically ignoring side branches, no parameters involved. Segmenting a complex vascular tract comes down to selecting the endpoints of a branch, letting level sets by attracted to gradient peaks with the sole advection term turned on, repeating the operation for all the branches and merging everything in a single model.
 
-## Functional
+Geometric analysis and surface data processing of 3D models of blood vessels (and tubular objects in general)((The key algorithms have been published on medical imaging journals. You can find a complete reference to publications at [David Steinman](http://www.mie.utoronto.ca/labs/bsl/)'s and [Luca Antiga](http://lantiga.github.com)'s homepages)):
 
-Even though it's syntax is fairly conventional, Scala is also a
-full-blown functional language. It has everything you would expect,
-including first-class functions, a library with efficient immutable
-data structures, and a general preference of immutability
-over mutation.
+- Compute centerlines and maximal inscribed sphere radius of branching tubular structures given their polygonal surface representation
+- Split surface models into their constitutive branches based on centerline geometry
+- Compute centerline-based geometric quantities (such as bifurcation angles, planarity, symmetry, branch curvature, tortuosity) and surface-based geometric quantities (such as distance to centerlines, surface curvature, deviation from tangency to maximal inscribed spheres)
+- Robustly map branches to a rectangular parametric space
+- Generate rectangular patches based on the parametric mapping for statistical analysis of geometric and CFD data over populations.
 
-Unlike with many traditional functional languages, Scala allows a
-gradual, easy migration to a more functional style. You can start to
-use it as a "Java without semicolons". Over time, you can progress to
-gradually eliminate mutable state in your applications, phasing in
-safe functional composition patterns instead. As Scala programmers we
-believe that this progression is often a good idea. At the same time,
-Scala is not opinionated; you can use it with any style you prefer.
+Scripts, I/O tools and simple algorithms to easily work with images and meshes:
 
-## Seamless Java Interop
-
-Scala runs on the JVM. Java and Scala classes can be freely mixed, no
-matter whether they reside in different projects or in the same. They can
-even mutually refer to each other, the Scala compiler contains a
-subset of a Java compiler to make sense of such recursive
-dependencies.
-
-Java libraries, frameworks and tools are all available. Build tools
-like ant or maven, IDEs like Eclipse, IntelliJ, or Netbeans,
-frameworks like Spring or Hibernate all work seamlessly with Scala.
-Scala runs on all common JVMs and also on Android.
-
-The Scala community is an important part of the Java
-ecosystem. Popular Scala frameworks, including Akka, Finagle, and the
-Play web framework include dual APIs for Java and Scala.
-
-## Functions are Objects
-
-Scala's approach is to develop a small set of core constructs that can
-be combined in flexible ways. This applies also to its object-oriented
-and functional natures. Features from both sides are unified to a
-degree where Functional and Object-oriented can be seen as two sides
-of the same coin.
-
-Some examples: Functions in Scala are objects. The function type is
-just a regular class. The algebraic data types found in languages such
-as Haskell, F# or ML are modelled in Scala as class
-hierarchies. Pattern matching is possible over arbitrary classes.
-
-## Future-Proof
-
-Scala particularly shines when it comes to scalable server software
-that makes use of concurrent and synchronous processing, parallel
-utilization of multiple cores, and distributed processing in the
-cloud.
-
-Its functional nature makes it easier to write safe and performant
-multi-threaded code. There's typically less reliance on mutable state
-and Scala's futures and actors provide powerful tools for organizing
-concurrent system at a high-level of abstraction.
-
-## Fun
-
-Maybe most important is that programming in Scala tends to be very
-enjoyable.  No boilerplate, rapid iteration, but at the same time the
-safety of a strong static type system. As [Graham Tackley from the
-Guardian says](http://www.infoq.com/articles/guardian_scala): *"We've found that Scala has enabled us to deliver
-things faster with less code. It's reinvigorated the team."*
-
-If you haven't yet, try it out! [Here are some resources to get
-started](./documentation).
+- Read and write a number of image, surface and volume mesh formats. Includes a DICOM series reader with auto-flipping capabilities, [Netgen](http://www.hpfem.jku.at/netgen/) mesh format reader, [libMesh](http://libmesh.sourceforge.net/) xda mesh format writer, [Tetgen](http://wias-berlin.de/software/tetgen/) mesh generator wrapper, Fluent mesh format writer, FIDAP FDNEUT mesh format reader and writer and a Newtetr input file generator
+- Display images and meshes
+- Incapsulate several VTK classes and make them available as pipeable scripts (e.g. Marching Cubes, surface smoothing, clipping, normal computation, connectivity, subdivision, distance between surfaces, ICP registration)
+- Add cylindrical extensions to surface model boundaries as a preprocessing step for CFD simulations.
+- Generate boundary layers of prismatic elements with varying thickness for CFD
 

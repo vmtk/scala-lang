@@ -1,7 +1,6 @@
-title: The Scala Programming Language
-
-scalaversion: "2.10.3"
-devscalaversion: "2.11.0-M5"
-scala_maindownload_unix: "/files/archive/scala-2.10.3.tgz"
-scala_maindownload_windows: "/files/archive/scala-2.10.3.msi"
+title: vmtk - the Vascular Modelling Toolkit
+vmtkversion: "x.xx.x"
+devvmtkversion: "x.xx.x-xx"
+vmtk_maindownload_unix: ""
+vmtk_maindownload_windows: ""
 baseurl: ""

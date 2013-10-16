@@ -1,127 +1,100 @@
 ---
-layout: page
+layout: page-full-width
 title: Getting Started
 ---
 
-The best way to learn Scala depends on what you know already and the way you prefer to learn things. There is a variety of resources available including [books]({{ site.baseurl }}/documentation/books.html), tutorials, training courses, presentations, and of course the Scala compiler for practice. Many people find a good combination is to have one of the Scala books at hand and to start right away trying the examples with the Scala Compiler. On the other hand, you may want to get started with a Scala training course or using the material available online.
+This tutorial demonstrates how to open your dataset in vmtk, navigate into a 3D volume and set up your image for further processing.
 
-As your knowledge of Scala grows, you will find there is more advanced material and a very friendly [Scala community]({{ site.baseurl }}/community/) at hand to help you. They all share a passion for Scala and welcome newcomers warmly. Many have written helpful material for programmers new to Scala, will respond to emails asking for help or are sharing neat new techniques, advanced concepts or tools in one of several Scala forums or personal blogs.
+## Reading and displaying images
 
+The first step is read the images and display them on the screen. vmtkimagereader is capable of reading DICOM directories. Additionally, it will reorient the image volume correctly based on its orientation relative to the patient. ((This feature can be disabled))
 
-## Scala for Programming Beginners
+     vmtkimagereader -f dicom -d dicom_directory_path --pipe vmtkimageviewer
 
-If you are just starting to learn how to code, you will find that a large portion of the material about Scala assumes that you already have some programming experience. There are two valuable resources which we can recommend to programming beginners that will take you directly into the world of Scala:
+where *dicom_directory_path* is the path where your DICOM images (* *.dcm* or whatever extension you have) can be found.
 
-* The online class [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun), available on coursera. Taught by the creator of Scala, Martin Odersky, this online class takes a somewhat academic approach to teach the fundamentals of functional programming. You will learn a lot of Scala by solving the programming assignments.
-* [Kojo](http://www.kogics.net/sf:kojo) is an interactive learning environment that uses Scala programming to explore and play with math, art, music, animations and games.
+Once the viewer pops up, you can:
 
-## Getting Scala Up and Running
++ **Rotate the volume** by left-clicking anywhere on the render window.
++ **Translate the volume** by middle-clicking anywhere on the render window.
++ **Zoom the volume** by right-clicking anywhere on the render window.
++ **Probe the image planes** (coordinates and graylevel) by left-clicking on them.
++ **Move the image planes** by middle-clicking on them.
++ **Change window-level** by right-clicking on image planes.
++ **Quit the viewer** by pressing q while the render window has focus.
 
-There are multiple ways to get Scala code compiling and running on your machine. The most widely used tools are:
+## Image format conversion
 
-* Your favorite text editor and the command-line [Scala compiler]({{ site.baseurl }}/download/)
-* IDEs for Scala: The [Scala IDE](http://scala-ide.org/), [IntelliJ IDEA](http://www.jetbrains.com/idea/) with the Scala plugin, and [NetBeans IDE](http://netbeans.org/) with the Scala plugin
-* Build tools for Scala: [sbt](http://www.scala-sbt.org/), maven with the [Scala plugin](http://davidb.github.com/scala-maven-plugin/index.html) or the [Scala plugin for gradle](http://www.gradle.org/docs/current/userguide/scala_plugin.html)
-* [Typesafe Activator](http://typesafe.com/platform/getstarted) is a one-click way to get started creating applications with Scala, Akka and Play Framework. Activator comes with [dozens of templates](http://typesafe.com/activator/templates) to help you get started quickly. [Create your own template](http://typesafe.com/activator/template/contribute) to help programmers discover and quickly get up to speed with your own project, or [contribute to Activator itself](https://github.com/typesafehub/activator/)!
+Suppose you want to write the image volume in vti format (the VTK XML format for images - it's convenient because it's internally gzip'd):
 
+     vmtkimagereader -f dicom -d dicom_directory_path --pipe vmtkimagewriter -ofile image_volume.vti
 
-The **Scala interpreter** (also called the REPL) is a very valuable tool for experimenting with Scala. It is installed together with the command-line compiler and allows you to interactively write and evaluate Scala expressions.
+where image_volume.vti is the output file name.
 
-The Scala IDE and IntelliJ IDEA both support **[Scala worksheets](https://github.com/scala-ide/scala-worksheet/wiki/Getting-Started)**, interactive Scala documents that are continuously evaluated line-by-line. Worksheets are an excellent way to experiment with Scala while still being able to save your code as in file and reuse it later on.
+Or maybe you want to have 8-bit png images to put in your next paper:
 
-##Your first lines of code
+     vmtkimagereader -f dicom -d dicom_directory_path --pipe vmtkimagewriter -f png -ofile image_file_prefix
 
-### The "Hello, world!" Program
+If the image volume is composed by more than one slice, single slices will be output in separate png files named image_file_prefix0001.png, image_file_prefix0002.png, image_file_prefix0003.png, etc. For 8-bit formats, image levels will be automatically scaled to 0-255. You can adjust that with the *-windowlevel* option of *vmtkimagewriter*. (Use of 8-bit images should be limited to display purposes only such as those used in presentations or publications. No processing should be carried out on them since important information and details can be lost by rescaling levels.) 
 
-As a first example, we use the standard "Hello, world" program to demonstrate the use of the Scala tools without knowing too much about the language.
+## File formats
+---
 
-    object HelloWorld {
-      def main(args: Array[String]) {
-        println("Hello, world!")
-      }
-    }
+Stub
 
-The structure of this program should be familiar to Java programmers: it consists of the method `main` which prints out a friendly greeting to the standard output.
++ Images: vti (VTK XML), mha (Meta Image), nrrd (NRRD)
++ Surfaces: vtp (VTK XML), stl (Stereolithography), tec (Tecplot)
++ Meshes: vtu (VTK XML), xml (Dolfin), xda (libMesh), msh (Fluent), fdneut (FIDAP), lifev (LifeV), tec (Tecplot) 
 
-We assume that both the [Scala software]({{ site.baseurl  }}/download) and the user environment are set up correctly. For example:
+*vmtkimageviewer example*
 
-| Environment | Variable         | Value (example)
-|:------------|:-----------------|:---------------
-| Unix        | `$SCALA_HOME`    | `/usr/local/share/scala`
-|             | `$PATH`          | `$PATH:$SCALA_HOME/bin`
-| Windows     | `%SCALA_HOME%`   | `c:\Progra~1\Scala`
-|             | `%PATH%`         | `%PATH%;%SCALA_HOME%\bin`
+*vmtkimagemipviewer example*
 
+ctrl-s: screenshot
 
-### Run it interactively!
+EndStub
 
-The `scala` command starts an interactive shell where Scala expressions are interpreted interactively.
+---
 
-    > scala
-    This is a Scala shell.
-    Type in expressions to have them evaluated.
-    Type :help for more information.
+## Volume of interest (VOI) extraction
 
-    scala> object HelloWorld {
-        |   def main(args: Array[String]) {
-        |     println("Hello, world!")
-        |   }
-        | }
-    defined module HelloWorld
+Often, medical images contain structures which are not of interest. To extract a volume of interest (VOI) from a dataset, one can pipe an instance of vmtkimagevoiselector between the DICOM reader and the writer in this way:
 
-    scala> HelloWorld.main(null)
-    Hello, world!
+     vmtkimagereader -f dicom -d dicom_directory_path --pipe 
+     vmtkimagevoiselector -ofile image_volume_voi.vti
 
-    scala>:q
-    >
+(this time I chose to use the built_in writer in vmtkimagevoiselector instead of piping to a *vmtkimagewriter*. No real difference.)
 
-The shortcut `:q` stands for the internal shell command `:quit` used to exit the interpreter.
+When the render window pops up, pressing i will activate the interactor. A yellowish cube will then appear which will be the tool used to select the VOI.
 
-### Compile it!
++ **Translate the cube** by middle-clicking on it.
++ **Resize the cube** by left-clicking and dragging the little spheres (handles) on the faces of the cube.
++ **Normal interaction** with the image planes is still active, so you can still move them as explained before.
 
-The `scalac` command compiles one (or more) Scala source file(s) and generates Java bytecode which can be executed on any [standard JVM](http://java.sun.com/docs/books/jvms/). The Scala compiler works similarly to `javac`, the Java compiler of the [Java SDK](http://java.sun.com/javase/).
+When satisfied with the VOI, press q.
 
-    > scalac HelloWorld.scala
+At this point the image volume will be clipped with the region selection cube (widget) and the new volume will be displayed in the render window. You can now: 1) quit by pressing q in which case the result is then piped to the vmtkimagewriter instance, or 2) go on by pressing i once again and defining another VOI. If you decide that you don't want to define another VOI but have already pressed i to activate the region selection tool, press i one more time to remove the selection widget from the render window. Pressing q now will quit without clipping.
 
-By default `scalac` generates the class files into the current working directory. You may specify a different output directory using the `-d` option.
+## Surface extraction using Marching Cubes
 
-    > scalac -d classes HelloWorld.scala
+Consider the example where we have an image volume image_volume_voi.vti.
 
+The quickest and most simple way of creating a surface model from a vessel image is to contour the image using Marching Cubes:
 
-### Execute it!
+     vmtkmarchingcubes -ifile image_volume_voi.vti -l 300.0 -ofile mc_surface.vtp --pipe vmtksurfaceviewer 
 
-The `scala` command executes the generated bytecode with the appropriate options:
+where *-l 300.0* is the *level* in the image at which you want to build the surface. (Using contouring to build CFD models is not always a good idea. The location of the vessel wall depends on the level you choose, and a single level might not represent the interface between blood and wall over the whole image. Read on if you want to know how to overcome these problems.) The surface viewer will show you the resulting surface.
 
-    > scala HelloWorld
+To view the surface together with the image volume:
 
-`scala` allows us to specify command options, such as the `-classpath` (alias `-cp`) option:
+     vmtkimagereader -ifile image_volume_voi.vti --pipe
+     vmtkmarchingcubes -l 300.0 -ofile mc_surface.vtp --pipe
+     vmtkrenderer --pipe vmtkimageviewer --pipe vmtksurfaceviewer
 
-    > scala -cp classes HelloWorld
+If output was required in [Tecplot](http://www.tecplot.com/) format, for example:
 
-The argument of the `scala` command has to be a top-level object. If that object extends trait [`App`]({{page.docpath}}#scala.App), then all statements contained in that object will be executed; otherwise you have to add a method `main` which will act as the           entry point of your program.
+     vmtkimagereader -ifile image_volume_voi.vti --pipe
+     vmtkmarchingcubes -l 300.0 -ofile mc_surface.tec --pipe
+     vmtkrenderer --pipe vmtkimageviewer --pipe vmtksurfaceviewer
 
-Here is how the "Hello, world" example looks like using the `App` trait:
-
-    object HelloWorld extends App {
-      println("Hello, world!")
-    }
-
-### Script it!
-
-We may also run our example as a shell script or batch command (see the examples in the man pages of the `scala` command).
-
-The [bash](http://www.gnu.org/software/bash/) shell script `script.sh` containing the following Scala code (and shell preamble)
-
-    #!/bin/sh
-    exec scala "$0" "$@"
-    !#
-    object HelloWorld extends App {
-      println("Hello, world!")
-    }
-    HelloWorld.main(args)
-
-can be run directly from the command shell:
-
-    > ./script.sh
-
-**Note**: We assume here that the file `script.sh` has execute access and the search path for the `scala` command is specified in the `PATH` environment variable.
+Note: If the PypeS syntax is unclear to you please read the [Basic PypeS tutorial]({{ site.baseurl }}/Tutorials/PypesBasic.html)

@@ -52,33 +52,10 @@ title: Learn vmtk
 
 
 
-<!--
-## Online Learning
 
-There are a few interactive resources for trying out Scala, to get a look and feel of the language:
+## VTK Examples
 
- * [Functional Programming in Scala](https://www.coursera.org/course/progfun): this is a course about functional
- programming given by Martin Odersky himself in autumn 2012. You can access the course material and exercises by
- signing up for the course. (The course will be given again soon..)
- * [Try Scala In Your Browser!](http://www.simplyscala.com/): [Simply Scala](http://www.simplyscala.com/) is a web site where you can interactively run the Scala interpreter in your browser! There you will find a tutorial that gives a rapid overview of the basic language features, the syntax, examples you can run and the ability to try your own code with an interactive interpreter.
+The VTK source distribution includes a sizeable number of examples. The goal of the VTK examples is to illustrate specific VTK concepts in a consistent and simple format. Some have been there since the inception of the toolkit. These examples have been subject to peer review and revision over the years. However, these examples only cover a small part of the capabilities of VTK.
 
-## Books
-
-There are more and more books being published about Scala. [Here]({{ site.baseurl  }}/documentation/books.html), you can find some of the titles. We only list books here which give an introduction to the Scala Language. Books which require knowledge of Scala, in particular books on frameworks like Lift, Play! or Akka are notlisted here.
-
-
-## Bleeding Edge
-
-If you are interested in finding out about the hottest, most pressing issues of tomorrow in the Scala world, have a look at the
-[Scala Improvement Process (SIP) page](http://docs.scala-lang.org/sips/).
-
-## Older Documentation
-
-The documentation below may be a bit outdated, but provides insights into the (historical) design principles of
-the language :
-
- * [Brief Scala Tutorial](http://www.scala-lang.org/docu/files/ScalaTutorial.pdf): a 20 page introduction to scala and some of the basic concepts and a good place to start. You will find more code examples [here](http://www.scala-lang.org/node/219).
- * [Scala By Example](http://www.scala-lang.org/docu/files/ScalaByExample.pdf): takes you through the Scala features with many examples. It does assume that you are already familiar with the basic Scala syntax and a basic understanding of functional programming. It is an excellent way to expand your knowledge and skill.
- * [Scala Overview](http://www.scala-lang.org/docu/files/ScalaOverview.pdf): this is a paper summarizing the features of the Scala Language in a formal and concise way. An excellent reference for language researchers or advanced programmers.
- * [Java to Scala with the Help of Experts](http://www.scala-lang.org/node/960): a collection of some of the almost endless supply of tips available for Java programmers new to Scala. There are also mini-blog series designed to take you through many of the important features of the Scala language in a friendly way.
--->
+* [VTK Examples in Python] (http://www.vtk.org/Wiki/VTK/Examples/Python)
+* [VTK Examples in C++] (http://www.vtk.org/Wiki/VTK/Examples/Cxx)

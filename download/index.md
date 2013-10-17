@@ -1,18 +1,44 @@
 ---
-layout: maindownloadpage
-title: Download
-release_version: 2.10.3
-release_date: "June 6, 2013"
-other_releases: [
-  ["maintenance_version", "Current maintenance release", 2.9.3, "February 28, 2013"],
-  ["development_version", "Current development release", 2.11.0-M5, "September 06, 2013"]
-]
-requirements: "This Scala software distribution can be installed on any Unix-like or Windows system. It requires the Java runtime version 1.6 or later, which can be downloaded <a href='http://www.java.com/'>here</a>."
-resources: [
-  ["-main-unixsys", "scala-2.10.3.tgz",         "/files/archive/scala-2.10.3.tgz",         "Max OS X, Unix, Cygwin",   "20 MB"],
-  ["-main-windows", "scala-2.10.3.msi",         "/files/archive/scala-2.10.3.msi",         "Windows (msi installer)",  "60 MB"]
-]
+layout: page
 ---
 
-<!-- This page should be auto-generated - it is the main download page of the latest stable release -->
+###vmtk Latest release (1.0.1)
 
+##Binary Packages
+
+Binary packages are available for Debian, Ubuntu, Mac OSX 10.6 (Snow Leopard) and 10.7-10.8 (Lion and Mountain Lion) and Windows 7 32bit and 64bit.
+
+
+<p class="center">
+  Download vmtk 1.0.1 for your system
+  (<a href="http://www.sourceforge.net/projects/vmtk/files/vmtk/1.0/">All downloads</a>).
+</p>
+
+
+<div class="download-wrapper"> 
+  <a id="download-button"> 
+    <span class="slider">Download</span> 
+    <span class="icon"> 
+    </span> 
+    <span class="version">
+      vmtk 1.0.1
+    </span> 
+  </a> 
+</div>
+
+For further details, follow the instructions on the [installation]({{ site.baseurl }}/documentation/installation.html/#installing_binary_packages) page.
+
+
+##Development version
+
+You can grab the latest development version from the [official vmtk git repository on Github] (https://github.com/vmtk/vmtk). To clone this repository, make sure [git](http://git-scm.com) is installed on yout system and issue the following:
+
+     git clone https://github.com/vmtk/vmtk.git
+     
+Follow the instructions on the [installation]({{ site.baseurl }}/documentation/installation.html/#installing_from_source) page to compile the source code.
+
+##Additional information TOFIX
+
+New vmtk users might want to read the <a href="{{ site.baseurl }}/documentation/getting-started.html">Getting Started</a> guide.
+To see a detailed list of changes for each version of vmtk please refer to the <a href="{{ site.baseurl }}/download/changelog.html">changelog</a>.
+The vmtk distribution is released under a <a href="{{ site.baseurl }}/license.html">BSD-like license</a>.

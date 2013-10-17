@@ -7,10 +7,17 @@
 
 function getOS() {
   var osname = "Unknown OS";
-  if (navigator.appVersion.indexOf("Win") != -1) osname = "Windows";
-  if (navigator.appVersion.indexOf("Mac") != -1) osname = "Mac OS";
+  if (navigator.appVersion.indexOf("Windows NT 5.1") != -1)osname = "winXP-32bit";
+  if (navigator.appVersion.indexOf("Windows NT 6.1") != -1){
+  	osname = "Win7-32bit";
+  	if (navigator.appVersion.indexOf("WOW64") != -1) osname = "Win7-64bit";
+  	}
+  if (navigator.appVersion.indexOf("Mac") != -1) {
+    if (navigator.appVersion.indexOf("10_6") != -1) osname = "SnowLeopard-64bit";
+    if (navigator.appVersion.indexOf("10_7") != -1) osname = "Lion-64bit";
+  	if (navigator.appVersion.indexOf("10_8") != -1) osname = "Lion-64bit";	
+  }
   if (navigator.appVersion.indexOf("Linux") != -1) osname = "Linux";
-  if (navigator.appVersion.indexOf("X11") != -1) osname = "UNIX";
   return osname;
 }
 
@@ -184,6 +191,7 @@ function styleCode() {
  * Download page
  **********************/
 
+/*
 $(document).ready(function() {
   var os = getOS();
   if (os == "Unknown OS") os = "UNIX";
@@ -206,7 +214,8 @@ $(document).ready(function() {
     $("#getting-started-popup").toggleClass("open");
   });*/
 
-  var anchor = document.getElementById("#link-main-unixsys");
+  /*
+var anchor = document.getElementById("#link-main-unixsys");
   if (os == "Windows") {
     anchor = document.getElementById("#link-main-windows");
   }
@@ -215,11 +224,13 @@ $(document).ready(function() {
 
   $("#download-button").attr("href", link).addClass(osLabel);
 });
+*/
 
 /***********************
  * Main Page Download Button
  **********************/
 
+/*
 $(document).ready(function() {
   var os = getOS();
   if (os == "Unknown OS") os = "UNIX";
@@ -235,8 +246,34 @@ $(document).ready(function() {
   }
 
 });
+*/
 
-
+/***********************
+ * Main Page Download Button
+ **********************/
+ $(document).ready(function() {
+  var os = getOS();
+  console.log(os);
+  if (os.indexOf("Win") != -1 || os.indexOf("win") != -1) {
+    $('#download-button').addClass("windows");
+    var link = "http://sourceforge.net/projects/vmtk/files/vmtk/1.0/vmtk-1.0.1-"+os+".exe"
+    $('#download-button').prop("href", link);
+    $('#download-button').prop("target","_blank");
+  }
+  if (os.indexOf("Lion") != -1 || os.indexOf("Snow") != -1  ) {
+    $('#download-button').addClass("macos");
+    var link = "http://sourceforge.net/projects/vmtk/files/vmtk/1.0/vmtk-1.0.1-"+os+".dmg"
+    $('#download-button').prop("href", link);
+    $('#download-button').prop("target","_blank");
+  }
+  if (os == "Linux") {
+    $('#download-button').addClass("unix");
+    var link = "http://sourceforge.net/projects/vmtk/files/vmtk/1.0/vmtk-1.0.1.tar.gz"
+    $('#download-button').prop("href", link);
+    $('#download-button').prop("target","_blank");
+  }
+ }
+ );
 
 /******************************
  * Events and trainings feeds *

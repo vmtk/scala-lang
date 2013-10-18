@@ -134,14 +134,29 @@ layout: default
 </div>
 
 <!-- hidden code-snippet content -->
-<div id="hidden-java-interop">{% include bullet-java-interop.html %}</div>
-<div id="hidden-type-inference">{% include bullet-type-inference.html %}</div>
-<div id="hidden-concurrency-distribution">{% include bullet-concurrency-distribution.html %}</div>
-<div id="hidden-traits">{% include bullet-traits.html %}</div>
-<div id="hidden-pattern-matching">{% include bullet-pattern-matching.html %}</div>
-<div id="hidden-higher-order-functions">{% include bullet-higher-order-functions.html %}</div>
+<div id="hidden-java-interop">{% include bullet-level-set-segmentation.html %}</div>
+<div id="hidden-type-inference">{% include bullet-centerlines.html %}</div>
+<div id="hidden-concurrency-distribution">{% include bullet-geometric-analysis.html %}</div>
+<div id="hidden-traits">{% include bullet-mesh.html %}</div>
+<div id="hidden-pattern-matching">{% include bullet-post-processing.html %}</div>
+<div id="hidden-higher-order-functions">{% include bullet-pypes.html %}</div>
 
 
+<div class="events">
+  <div class="container">
+    <div class="row">
+      <div class="span12 upcoming-events">
+        <h2><span>Upcoming Events</span></h2>
+      </div>
+
+	      <div class="span12" id="eventspane">
+      </div>
+    </div>
+  </div>
+
+   <div class="add-event"><a href="{{ site.baseurl }}/events">See more events</a> or <a href="https://github.com/scala/scala-lang/tree/master/events">add one to our feed</a></div>
+
+</div>
 
 
 <div class="news">
@@ -151,7 +166,7 @@ layout: default
       </div>
     </div>
     <div class="row">
-      {% include news-feed.html %}
+      {% include news.html %}
     </div>
   </div>
 </div>

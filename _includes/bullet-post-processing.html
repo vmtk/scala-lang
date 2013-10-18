@@ -1,0 +1,31 @@
+<div class="java-interop-wrapper" style="width: 500px">
+
+<figure class="code type-inference1" style="margin-top: 20px;">
+  <figcaption>vmtk post-processing code</figcaption>
+  <pre><code>// Longitudinal and circumferential metrics
+vmtkbranchmetrics -ifile aorta_clipped.vtp -centerlinesfile aorta_cl.vtp -abscissasarray Abscissas -normalsarray ParallelTransportNormals -groupidsarray GroupIds -centerlineidsarray CenterlineIds -tractidsarray TractIds -blankingarray Blanking -radiusarray MaximumInscribedSphereRadius -ofile aorta_clipped_metrics.vtp
+//Metrics mapping to branches
+vmtkbranchmapping -ifile aorta_clipped_metrics.vtp -centerlinesfile aorta_cl.vtp -referencesystemsfile aorta_cl_rs.vtp -normalsarray ParallelTransportNormals -abscissasarray Abscissas -groupidsarray GroupIds -centerlineidsarray CenterlineIds -tractidsarray TractIds -referencesystemsnormalarray Normal -radiusarray MaximumInscribedSphereRadius -blankingarray Blanking -angularmetricarray AngularMetric -abscissametricarray AbscissaMetric -ofile aorta_clipped_mapping.vtp
+//Patching of surface mesh and attributes
+vmtkbranchpatching -ifile aorta_clipped_mapping.vtp -groupidsarray GroupIds -longitudinalmappingarray StretchedMapping -circularmappingarray AngularMetric -longitudinalpatchsize 0.5 -circularpatches 12 -ofile aorta_clipped_patching.vtp</code></pre>
+</figure>
+
+<figure class="code type-inference2" style="margin-top: 10px;">
+     <figcaption>vmtk post-processing example</figcaption>
+    <img alt="Figure 1" src="/resources/img/Tutorials/MapPatchFigure6.png" />
+</figure>
+</div>
+
+<div class="snippet-explanation" style="width: 370px;">
+<h3>Mapping and patching </h3>
+<p>A common application is mapping and patching of fluid dynamics variables, 
+such as wall shear stress (WSS) or oscillatory shear index (OSI), obtained 
+on the surface mesh typically by means of a CFD simulation.
+By construction of a harmonic function over each vascular segment, 
+vmtkbranchmapping maps and stretches the longitudinal metric to correctly 
+account for the presence of insertion regions at bifurcations; the additional 
+StretchedMapping array is added to the surface.
+</p>
+
+<p>Take a look into the <a href="/Tutorials/MappingAndPatching.html">Mapping and patching</a> tutorial to learn how to map the surface of a population of vessels onto the same parametric space and enable statistical analyses of surface-based quantities</p>
+</div>

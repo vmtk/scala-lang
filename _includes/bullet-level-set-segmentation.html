@@ -1,0 +1,32 @@
+<div class="java-interop-wrapper" style="width: 500px">
+
+<figure class="code java-interop1" style="margin-top: 20px;">
+  <figcaption>vmtk level set segmentation code</figcaption>
+  <pre><code>// Image segmentation
+vmtklevelsetsegmentation -ifile image_volume_voi.vti -ofile level_sets.vti
+//You can specify different parameters, for example:
+-levelsetsfile in order to start from an existing levelset segmentation
+-featureimagetype to change featureimage, for example the upwind modality
+-featurederivativesigma to use a Gaussian derivative convolution</code></pre>
+</figure>
+
+<figure class="code java-interop2" style="margin-top: 10px;">
+     <figcaption>vmtk levelset segmentation example</figcaption>
+    <img alt="" src="/resources/img/Main/avf_ls2.png" width="500px" />
+</figure>
+</div>
+
+<div class="snippet-explanation" style="width: 370px;">
+<h3>Gradient-based 3D level sets segmentation</h3>
+<p>A new gradient computation modality based on upwind finite differences 
+allows the segmentation of small (down to 1.2 pixels/diameter) vessels.
+Interactive level sets initialization based on the <code>Fast Marching Method</code>. 
+This includes a brand new method for selecting a vascular segment comprised 
+between two points automatically ignoring side branches, no parameters involved. 
+Segmenting a complex vascular tract comes down to selecting the endpoints of a 
+branch, letting <code>level sets</code> by attracted to gradient peaks with the sole 
+advection term turned on, repeating the operation for all the branches and merging 
+everything in a single model.</p>
+
+<p>Take a look into the <a href="/Tutorials/ImageBasedModeling.html">Level Set Segmentation</a> tutorial to learn how to reconstruct the 3D surface of a vascular segment from CT or MR images using level sets.</p>
+</div>

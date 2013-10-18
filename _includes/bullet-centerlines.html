@@ -1,0 +1,32 @@
+<div class="java-interop-wrapper" style="width: 500px">
+
+<figure class="code type-inference1" style="margin-top: 20px;">
+  <figcaption>vmtk centerlines code</figcaption>
+  <pre><code>// Computing centerlines
+vmtkcenterlines -ifile foo.vtp -ofile foo_centerlines.vtp
+//Look the resulting centerlines
+vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines --pipe vmtkrenderer --pipe vmtksurfaceviewer -opacity 0.25 --pipe vmtksurfaceviewer -i @vmtkcenterlines.o -array MaximumInscribedSphereRadius
+//Inspect the voronoi diagram
+vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines --pipe vmtkrenderer --pipe vmtksurfaceviewer -opacity 0.25 --pipe vmtksurfaceviewer -i @vmtkcenterlines.voronoidiagram -array MaximumInscribedSphereRadius --pipe vmtksurfaceviewer -i @vmtkcenterlines.o</code></pre>
+</figure>
+
+<figure class="code type-inference2" style="margin-top: 10px;">
+     <figcaption>vmtk centerlines example</figcaption>
+    <img alt="Figure 1" src="/resources/img/centerlines_home.png" />
+</figure>
+</div>
+
+<div class="snippet-explanation" style="width: 370px;">
+<h3>Computing centerlines</h3>
+<p><code>Centerlines</code> are powerful descriptors of the shape of vessels and 
+are determined as weighted shortest paths traced between two extremal points. 
+In order to ensure that the final lines are in fact central, the paths cannot 
+lie anywhere in space, but are bound to run on the <code>Voronoi diagram</code> of the vessel model,
+considered as the place where the centers of maximal inscribed spheres are defined.
+Centerlines are determined as the paths defined on Voronoi diagram sheets that minimize
+the integral of the radius of <code>maximal inscribed spheres</code> along the path, which is equivalent
+to finding the shortest paths in the radius metric.
+</p>
+
+<p>Take a look into the <a href="/Tutorials/Centerlines.html">Computing Centerlines</a> tutorial to learn how to compute centerlines of a vascular segment.</p>
+</div>

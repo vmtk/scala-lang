@@ -21,7 +21,8 @@ The main forum for questions and discussions about the vascular modeling toolkit
  
 ## Pypes repository
 
-TODO
+TOFIX
+Contribute to the [vmtk pypes repository]({{ site.baseurl }}/community/repository.html), share your pypes and ....
 
 ## Links
 

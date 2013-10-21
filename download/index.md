@@ -32,7 +32,7 @@ For further details, follow the instructions on the [installation]({{ site.baseu
 
 ##Development version
 
-You can grab the latest development version from the [official vmtk git repository on Github] (https://github.com/vmtk/vmtk). To clone this repository, make sure [git](http://git-scm.com) is installed on yout system and issue the following:
+You can grab the latest development version from the [official vmtk git repository on Github] (https://github.com/vmtk/vmtk). To clone this repository, make sure [git](http://git-scm.com) is installed on your system and issue the following:
 
      git clone https://github.com/vmtk/vmtk.git
      

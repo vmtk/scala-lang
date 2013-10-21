@@ -134,15 +134,6 @@ layout: default
 <div id="hidden-post-processing">{% include bullet-post-processing.html %}</div>
 <div id="hidden-pypes">{% include bullet-pypes.html %}</div>
 
-
-<script type="text/javascript">
-  //vmtk google groups embed
-  document.getElementById('forum_embed').src =
-     'https://groups.google.com/forum/embed/?place=forum/vmtk-users'
-     + '&showsearch=true&showpopout=true&showtabs=false'
-     + '&parenturl=' + encodeURIComponent(window.location.href);
-</script>
-
 <div class="vmtk-google-group">
   <div class="container">
     <div class="row">
@@ -195,3 +186,11 @@ layout: default
 </div>
 
 {% include footer.html %}
+
+<script type="text/javascript">
+  //vmtk google groups embed
+  $('#forum_embed').src =
+     'https://groups.google.com/forum/embed/?place=forum/vmtk-users'
+     + '&showsearch=true&showpopout=true&showtabs=false'
+     + '&parenturl=' + encodeURIComponent(window.location.href);
+</script>

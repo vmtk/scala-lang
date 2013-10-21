@@ -28,5 +28,5 @@ See vmtk [open issues](https://github.com/vmtk/vmtk/issues/) or [create new issu
 ### Help with the documentation
 
 An easy but very important way to contribute to vmtk is to
-participate in the [mailing list]({{ site.baseurl }}/community/#mailing-list) and to contribute to the [pipe repository]({{ site.baseurl }}/community/repository).
+participate in the [mailing list]({{ site.baseurl }}/community/#mailing-list) and to contribute to the [pipe repository]({{ site.baseurl }}/community/repository.html).
 

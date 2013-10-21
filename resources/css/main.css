@@ -438,20 +438,11 @@ a.brand {
   border-bottom: none;
 }
 
-.spiral-logo {
+.bunjee-logo {
   position: relative;
   float: left;
   height: 54px;
   width: 40px;
-}
-
-.scala-text {
-  position: relative;
-  line-height: 48px;
-  font-family: "museo-slab", serif;
-  font-weight: 900;
-  color: #fff;
-  font-size: 48px;
 }
 
 .splash-text{
@@ -480,7 +471,7 @@ a.brand {
   width: 560px;
 }
 
-.events {
+.vmtk-google-group {
   position: relative;
   text-align: center;
   width: 100%;
@@ -494,11 +485,11 @@ a.brand {
   min-height: 60px;
 }
 
-.upcoming-events {
+.vmtk-google-group-title {
   text-align: center;
 }
 
-.upcoming-events > h2 {
+.vmtk-google-group-title > h2 {
   font-family: "museo-slab", serif;
   font-size: 20px;
   color: #839496;
@@ -510,373 +501,13 @@ a.brand {
   background: url(/resources/img/gray-line.png) center repeat-x;
 }
 
-.upcoming-events > h2 > span {
+.vmtk-google-group-title > h2 > span {
   border-width: 0 34px;
   height: 32px;
   display: inline-block;
   line-height: 35px;
   background-color: #174753;
   padding: 0 10px;
-}
-
-.event-item-wrap {
-  cursor: pointer;
-  position: relative;
-  float: left;
-  text-align: left;
-  min-height: 80px;
-  margin-right: 8px;
-  width: 160px;
-  padding: 10px;
-}
-
-.event-item-wrap:hover {
-  background: rgba(255, 255, 255, 0.05);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  -ms-transition: background .3s ease-in-out;
-  -o-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
-}
-
-.event-item-wrap:last-child {
-  margin-right: 0px;
-}
-
-.event-item {
-  position: absolute;
-  bottom: 0px;
-}
-
-.event-title {
-  overflow: hidden;
-  margin-bottom: 4px;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 0.95em;
-}
-
-.event-title a:link,
-.event-title a:visited {
-  /*color: #A2B5BA;*/
-  color: #fff;
-  border: none;
-}
-
-.event-float-right {
-  overflow: hidden;
-  position: relative;
-  float: left;
-  height: 54px;
-  width: 128px;
-}
-
-.event-float-right,
-.event-location,
-.event-date {
-  word-wrap: break-word;
-}
-
-.event-location {
-  font-family: 'proxima-nova', sans-serif;
-  text-transform: uppercase;
-  line-height: 0.95em;
-  /*color: #839496;*/
-  color: rgba(255, 255, 255, 0.65);
-  font-weight: 600;
-  /*color: rgba(114, 208, 235, 0.8);*/ /*#72D0EB;*/
-  /*font-weight: bold;*/
-  /*color: rgba(101, 123, 131, 0.7);*/
-}
-
-.events-page .event-title > a,
-.events-page .event-date,
-.events-page .event-location {
-  color: #174753;
-}
-
-.event-date {
-  font-family: "museo-slab", serif;
-  color: #839496;
-  font-size: 13px;
-  line-height: 1.1em;
-}
-
-.event-logo {
-  position: relative;
-  float: left;
-  bottom: 0px;
-  margin-right: 4px;
-  height: 54px;
-}
-
-.event-logo > a > img {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  width: 34px;
-  height: 34px;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
-  opacity: 0.3;
-}
-
-.event-item-wrap:hover img {
-  -webkit-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -ms-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-  opacity: 1;
-   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
-  -webkit-filter: grayscale(0%);
-}
-
-.training {
-  position: relative;
-  width: 100%;
-  min-width:1024px;
-  min-height: 400px;
-  padding-top: 26px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 60px;
-  background-color: #72D0EB; /*#E2E9EF;*/ /*dark bluish #174753*/
-  min-height: 60px;
-  text-align: center;
-}
-
-.upcoming-training {
-  text-align: center;
-}
-
-.upcoming-training > h2 {
-  font-family: "museo-slab", serif;
-  font-size: 20px;
-  /*color: #657B83;*/
-  color: #fff;
-  /*text-shadow: 1px 1px 0px #50B8E1;*/
-  font-weight: normal;
-  font-style: italic;
-  /*text-transform: uppercase;*/
-  /*margin-bottom: 12px;*/
-  margin-top: 0px;
-  background: url(/resources/img/white-line.png) center repeat-x;
-}
-
-.upcoming-training > h2 > span {
-  border-width: 0 34px;
-  height: 32px;
-  display: inline-block;
-  line-height: 35px;
-  background-color: #72D0EB;
-  padding: 0 10px;
-}
-
-.training-item-wrap {
-  padding: 10px;
-  position: relative;
-  float: left;
-  /*background: rgba(255, 255, 255, 0.15);*/
-  /*background: rgba(23, 71, 83, 0.1);*/
-  min-height: 90px;
-  margin-right: 8px;
-  width: 160px;
-  text-align: left;
-/*  -moz-border-radius-bottomleft: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -o-border-bottom-left-radius: 5px;
-  -ms-border-bottom-left-radius: 5px;
-  -khtml-border-bottom-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -o-border-bottom-right-radius: 5px;
-  -ms-border-bottom-right-radius: 5px;
-  -khtml-border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top: solid 3px #fff;*/
-}
-
-.training-item-wrap:hover {
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.15);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  -ms-transition: background .3s ease-in-out;
-  -o-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
-}
-
-.training-item {
-  position: absolute;
-  bottom: 0px;
-}
-
-.training-item-wrap:last-child {
-  margin-right: 0px;
-}
-
-.training-date {
-  position: relative;
-  float: left;
-  bottom: 0px;
-  height: 70px;
-  margin-right: 8px;
-}
-
-.date {
-  text-align: center;
-  font-family: 'proxima-nova', sans-serif;
-  text-transform: uppercase;
-  width: 34px;
-  height: 34px;
-  background-color: #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.month {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 1.1em;
-  width: 34px;
-  background-color: #DC322F;
-  -moz-border-radius-topleft: 5px;
-  -webkit-border-top-left-radius: 5px;
-  -o-border-top-left-radius: 5px;
-  -ms-border-top-left-radius: 5px;
-  -khtml-border-top-left-radius: 5px;
-  border-top-left-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -webkit-border-top-right-radius: 5px;
-  -o-border-top-right-radius: 5px;
-  -ms-border-top-right-radius: 5px;
-  -khtml-border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.day {
-  font-family: "museo-slab", serif;
-  line-height: 1.2em;
-  color:#174753;
-  font-size: 18px;
-}
-
-.year {
-  /*font-family: 'proxima-nova', sans-serif;*/
-  color:#174753;
-  font-weight: bold;
-  text-align: center;
-  width: 34px;
-}
-
-.training-title {
-  overflow: hidden;
-  margin-bottom: 4px;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 0.95em;
-}
-
-.training-title a:link,
-.training-title a:visited {
-  color: #174753;
-  border: none;
-}
-
-.training-float-right {
-  overflow: hidden;
-  position: relative;
-  float: left;
-  /*min-height: 60px;*/
-  height: 70px;
-  width: 128px;
-}
-
-.training-float-right,
-.training-trainers-name,
-.training-location,
-.training-organizer {
-  word-wrap: break-word;
-}
-
-.training-location {
-  white-space: nowrap;
-  font-family: 'proxima-nova', sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  /*color: #002B36;*/
-  /*font-weight: bold;*/
-  /*color: rgba(101, 123, 131, 0.7);*/
-}
-
-.training-trainers-name {
-  font-family: "museo-slab", serif;
-  /*color: #839496;*/
-  /*color: #F2F5F8;*/
-  color: rgba(255, 255, 255, 1);
-  font-size: 13px;
-  line-height: 1.1em;
-}
-
-.training-organizer {
-  position: relative;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.trainings-page .training-item-wrap {
-  margin-top: 30px;
-}
-
-.trainings-page .training-trainers-name,
-.trainings-page .training-location,
-.trainings-page .training-organizer {
-  color: #839496;
-}
-
-.center {
-  text-align: center;
-}
-
-#training-btn,
-#event-btn {
-  margin-top: 32px;
-  padding: 0 18px;
-  background: #859900; /*brighter color: 97BE49*/
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  text-decoration: none !important;
-  font: 700 14px/28px 'proxima-nova', sans-serif;
-  display: inline-block;
-  color: #fff;
-  cursor: pointer;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  text-shadow: none;
-}
-
-#training-btn:hover,
-#event-btn:hover {
-  background:#DC322F;
-  -moz-transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out;
-  box-shadow:none;
-  -webkit-box-shadow:none;
-  -moz-box-shadow:none;
-  text-shadow:none;
-  color:#FFF;
 }
 
 .news {
@@ -900,7 +531,7 @@ h2.whats-new {
   font-style: italic;
 }
 
-.twitter {
+.bunjee {
   width: 100%;
   min-width:1024px;
   min-height: 400px;
@@ -913,7 +544,7 @@ h2.whats-new {
   text-align: center;
 }
 
-h2.twitterhdr {
+h2.bunjeehdr {
   font-family: "museo-slab", serif;
   font-size: 20px;
   color: #fff;
@@ -925,41 +556,13 @@ h2.twitterhdr {
   background: url(/resources/img/white-line.png) center repeat-x;
 }
 
-h2.twitterhdr > span {
+h2.bunjeehdr > span {
   border-width: 0 34px;
   height: 32px;
   display: inline-block;
   line-height: 35px;
   background-color: #72D0EB;
   padding: 0 10px;
-}
-
-#twitter-btn {
-  padding: 0 18px;
-  background: #859900; /*brighter color: 97BE49*/
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  text-decoration: none !important;
-  font: 700 14px/28px 'proxima-nova', sans-serif;
-  display: inline-block;
-  color: #fff;
-  cursor: pointer;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  text-shadow: none;
-  border-bottom: none;
-}
-
-#twitter-btn:hover {
-  background:#DC322F;
-  -moz-transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out;
-  box-shadow:none;
-  -webkit-box-shadow:none;
-  -moz-box-shadow:none;
-  text-shadow:none;
-  color:#FFF;
 }
 
 .code-snippet-box {
@@ -1006,8 +609,8 @@ h2.twitterhdr > span {
   display: none;
 }
 
-.epfl-picture-box {
-  background: url(/resources/img/voronoi-main.png) no-repeat center;
+.picture-box {
+  background: url(/resources/img/picture-box.png) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1283,7 +886,7 @@ h2.twitterhdr > span {
 .post-news,
 .see-more-tweets,
 .add-training,
-.add-event {
+.vmtk-google-group-go-to {
   font-family: "museo-slab", serif;
   font-size: 12px;
   color: #3d626b;
@@ -1300,7 +903,7 @@ h2.twitterhdr > span {
   color: rgba(23, 71, 83, 0.3);
 }
 
-.add-event {
+.vmtk-google-group-go-to {
   position: absolute;
   bottom: 22px;
   left: 0;
@@ -1309,8 +912,8 @@ h2.twitterhdr > span {
   /*color: #839496;*/
 }
 
-.add-event a:link,
-.add-event a:visited {
+.vmtk-google-group-go-to a:link,
+.vmtk-google-group-go-to a:visited {
   /*color: #839496;*/
   color: rgba(255, 255, 255, 0.4);
   border: none;
@@ -1326,7 +929,7 @@ h2.twitterhdr > span {
 }
 
 .add-training a:hover,
-.add-event a:hover {
+.vmtk-google-group-go-to a:hover {
   color: #DC322F;
   text-decoration: none;
 }
@@ -1548,40 +1151,6 @@ h2.twitterhdr > span {
   -moz-border-radius: 40px;
   border-radius: 40px;
 }
-
-.scala-lang-twitter {
-  color: #fff;
-  font-size: 32px;
-  /*font-family: 'proxima-nova', sans-serif;*/
-  /*font-family: 'Source Sans Pro', sans-serif;*/
-  font-weight: bold;
-  /*text-transform: uppercase;*/
-  margin-bottom: 12px;
-  text-shadow: 0 2px 0 #000;
-}
-
-.scala-lang-twitter a:link,
-.scala-lang-twitter a:visited {
-  color: #fff;
-  border: none;
-}
-
-.scala-lang-twitter a:hover {
-  color: #D03F00;
-  text-decoration: none;
-}
-
-/*.news,
-.trainings-events {
-  color: #fff;
-  font-size: 32px;
-  font-family: "museo-slab", serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-  text-shadow: 0 2px 0 #000;
-  line-height: 1.1em;
-}*/
 
 .footer {
   position: relative;
@@ -1936,7 +1505,7 @@ a.central-btn.api {
   color:#FFF;
 }
 
-.scala-version {
+.vmtk-version {
   line-height: 0.9em;
   font-size: 36px;
   font-weight: 100;
@@ -1956,7 +1525,7 @@ a.central-btn.api {
   padding: 0 16px;
 }
 
-.scala-version:hover {
+.vmtk-version:hover {
  background: transparent;
  color: #174753;
  cursor: text;
@@ -2004,7 +1573,7 @@ a.for-platform {
   top: 145px;
 }
 
-.big-scala-spiral {
+.big-bunjee {
   position: absolute;
   left: 378px;
   top: 30px;

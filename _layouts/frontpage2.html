@@ -37,10 +37,8 @@ layout: default
   <div class="opaque-circle"></div>
   <a class="central-btn download" id="main-download-button" href="{{ site.baseurl }}/download/">Download</a>
   <a class="central-btn api" href="{{ site.baseurl }}/documentation/">Documentation&nbsp;&nbsp;&nbsp;&nbsp;</a>
-  
-  <!--<div class="big-scala-spiral"><img src="{{ site.baseurl }}/resources/img/smooth-spiral.png" alt="Spiral" /></div>-->
-  
-  <div class="central-btn scala-version"><span class="superbold">vmtk & Bunjee</span><br/></div>
+    <div class="big-bunjee"><a href="#bunjee" style="border-bottom:0px"><img src="{{ site.baseurl }}/resources/img/smooth-spiral.png" alt="Bunjee" /></a></div>
+    <div class="central-btn vmtk-version"><span class="superbold">vmtk & Bunjee</span><br/></div>
 </div>
 
 <div class="darkbluebar">
@@ -137,23 +135,27 @@ layout: default
 <div id="hidden-pypes">{% include bullet-pypes.html %}</div>
 
 
-<div class="events">
+<script type="text/javascript">
+  //vmtk google groups embed
+  document.getElementById('forum_embed').src =
+     'https://groups.google.com/forum/embed/?place=forum/vmtk-users'
+     + '&showsearch=true&showpopout=true&showtabs=false'
+     + '&parenturl=' + encodeURIComponent(window.location.href);
+</script>
+
+<div class="vmtk-google-group">
   <div class="container">
     <div class="row">
-      <div class="span12 upcoming-events">
+      <div class="span12 vmtk-google-group-title">
         <h2><span>vmtk discussion forum</span></h2>
       </div>
-
-	     <!-- <div class="span12" id="eventspane">-->
 	      <div class="span12">
 	      <iframe id="forum_embed" src="https://groups.google.com/forum/embed/?place=forum/vmtk-users#!forum/vmtk-users" scrolling="no" frameborder="0" width="100%" height="470px" style="background-color:lightgray"></iframe>
-	      	      
-	      
       </div>
     </div>
   </div>
 
-   <div class="add-event"><a href="https://groups.google.com/forum/#!forum/vmtk-users">Go to vmtk google groups</a></div>
+   <div class="vmtk-google-group-go-to"><a href="https://groups.google.com/forum/#!forum/vmtk-users">Go to vmtk google groups</a></div>
 
 </div>
 
@@ -170,27 +172,24 @@ layout: default
   </div>
 </div>
 
-<div class="twitter">
+<div id="bunjee" class="bunjee">
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h2 class="twitterhdr"><span>DIV PER BUNJEE</span></h2>
+        <h2 class="bunjeehdr"><span>Bunjee</span></h2>
       </div>
     </div>
     <div class="row">
       <div class="span12">
-        <div id="tweets" class="tweets"></div>
+        <div id="bunjee" class="bunjee"></div>
         <br/>&nbsp;
-        <div class="see-more-tweets">See more tweets, or</div>
-        <a id="twitter-btn" href="https://twitter.com/scala_lang">Follow Scala on Twitter</a>
-        <!--<br/><a style="border-bottom: 0px;" href="https://twitter.com/scala_lang"><img style="padding-top: 8px;" src="{{ site.baseurl }}/resources/img/twitter-logo-white-lg.png" alt="white Twitter logo"/></a>-->
-        <br/><a style="border-bottom: 0px;" href="https://twitter.com/scala_lang"></a>
+        <a class="learn-more-btn" href="#bunjee">Try vmtk on Bunjee</a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="epfl-picture-box">
+<div class="picture-box">
   <div class="container">
   </div>
 </div>

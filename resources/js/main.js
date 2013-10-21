@@ -37,15 +37,7 @@ $(document).ready(function(){
   $("#source-code").mouseout(function(){ $(this).find(".toptip").hide(); });
   $("#scala-lang-twitter").mouseover(function(){ $(this).find(".toptip").show(); });
   $("#scala-lang-twitter").mouseout(function(){ $(this).find(".toptip").hide(); });
-  
-  
-  //vmtk google groups embed
-  document.getElementById('forum_embed').src =
-     'https://groups.google.com/forum/embed/?place=forum/vmtk-users'
-     + '&showsearch=true&showpopout=true&showtabs=false'
-     + '&parenturl=' + encodeURIComponent(window.location.href);
-
-  
+    
   // get current year and put it in span
   var currYear = new Date().getFullYear()
   $(".current-year").text(currYear);

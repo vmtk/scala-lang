@@ -21,7 +21,6 @@ function getOS() {
   return osname;
 }
 
-
 /***************************
  * Document initialization
  **************************/
@@ -38,7 +37,15 @@ $(document).ready(function(){
   $("#source-code").mouseout(function(){ $(this).find(".toptip").hide(); });
   $("#scala-lang-twitter").mouseover(function(){ $(this).find(".toptip").show(); });
   $("#scala-lang-twitter").mouseout(function(){ $(this).find(".toptip").hide(); });
+  
+  
+  //vmtk google groups embed
+  document.getElementById('forum_embed').src =
+     'https://groups.google.com/forum/embed/?place=forum/vmtk-users'
+     + '&showsearch=true&showpopout=true&showtabs=false'
+     + '&parenturl=' + encodeURIComponent(window.location.href);
 
+  
   // get current year and put it in span
   var currYear = new Date().getFullYear()
   $(".current-year").text(currYear);
@@ -92,14 +99,14 @@ $(document).ready(function(){
 
   var row1 = $("#code-snippet-row1");
   var row2 = $("#code-snippet-row2");
+    
+  $("#segmentation").click(expandSnippetAction("#hidden-segmentation", row1));
+  $("#centerlines").click(expandSnippetAction("#hidden-centerlines", row1));
+  $("#geometric-analysis").click(expandSnippetAction("#hidden-geometric-analysis", row1));
 
-  $("#java-interop").click(expandSnippetAction("#hidden-java-interop", row1));
-  $("#type-inference").click(expandSnippetAction("#hidden-type-inference", row1));
-  $("#concurrency-distribution").click(expandSnippetAction("#hidden-concurrency-distribution", row1));
-
-  $("#traits").click(expandSnippetAction("#hidden-traits", row2));
-  $("#pattern-matching").click(expandSnippetAction("#hidden-pattern-matching", row2));
-  $("#higher-order-functions").click(expandSnippetAction("#hidden-higher-order-functions", row2));
+  $("#mesh").click(expandSnippetAction("#hidden-mesh", row2));
+  $("#post-processing").click(expandSnippetAction("#hidden-post-processing", row2));
+  $("#pypes").click(expandSnippetAction("#hidden-pypes", row2));
 
   // arrow color hack for hover-overs
   function arrowMouseover (snippetID, container) {
@@ -119,13 +126,13 @@ $(document).ready(function(){
     arrow.removeClass("hover");
   }
 
-  $("#java-interop").hover(arrowMouseover("#hidden-java-interop", row1), arrowMouseout);
-  $("#type-inference").hover(arrowMouseover("#hidden-type-inference", row1), arrowMouseout);
-  $("#concurrency-distribution").hover(arrowMouseover("#hidden-concurrency-distribution", row1), arrowMouseout);
+  $("#segmentation").hover(arrowMouseover("#hidden-segmentation", row1), arrowMouseout);
+  $("#centerlines").hover(arrowMouseover("#hidden-centerlines", row1), arrowMouseout);
+  $("#geometric-analysis").hover(arrowMouseover("#hidden-geometric-analysis", row1), arrowMouseout);
 
-  $("#traits").hover(arrowMouseover("#hidden-traits", row2), arrowMouseout);
-  $("#pattern-matching").hover(arrowMouseover("#hidden-pattern-matching", row2), arrowMouseout);
-  $("#higher-order-functions").hover(arrowMouseover("#hidden-higher-order-functions", row2), arrowMouseout);
+  $("#mesh").hover(arrowMouseover("#hidden-mesh", row2), arrowMouseout);
+  $("#post-processing").hover(arrowMouseover("#hidden-post-processing", row2), arrowMouseout);
+  $("#pypes").hover(arrowMouseover("#hidden-pypes", row2), arrowMouseout);
 
   // truncate main visible news item if it exceeds height of sidebar
   var sideboxHgt = $(".recent-news-items").height();
@@ -134,41 +141,6 @@ $(document).ready(function(){
     $(".newsbox.left").height(sideboxHgt);
     $(".shadow").css('display','block');
   }
-
-  // tweets
-  $(function(){
-    $("#tweets").tweetMachine('', {
-      backendScript: 'http://www.scala-lang.org/webscripts/ajax/getFromTwitter.php?callback=?',
-      endpoint: 'statuses/user_timeline',
-      user_name: 'scala_lang',
-      include_retweets: true,
-      exclude_replies: false,
-      limit: 4,
-      autoRefresh: false,
-      tweetFormat: '\
-        <div class="tweet-container">\
-          <div class="tweet">\
-            <p class="text content"></p>\
-          </div>\
-          <div class="caret-container">\
-            <div class="caret-divider">\
-              <div class="caret-outer"></div>\
-              <div class="caret-inner"></div>\
-            </div>\
-          </div>\
-          <div class="raw bottom-anchored">\
-            <div class="avatar-wrapper">\
-              <img class="avatar" width="50" height="50" src="" />\
-            </div>\
-            <span class="tweet-username">\
-              <a href="" class="username" rel="external"></a>\
-            </span>\
-          </div>\
-        </div>\
-      '
-    });
-  });
-
 });
 
 <!-- prettyprint js to prepend generated pre/code tags -->
@@ -214,3 +186,18 @@ function styleCode() {
   }
  }
  );
+ 
+/***********************
+* Google Analytics
+**********************/
+ 
+ var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-29589511-1']);
+    _gaq.push(['_setDomainName', 'vmtk.org']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();

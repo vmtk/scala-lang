@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Download
 ---
 
 ###vmtk Latest release (1.0.1)

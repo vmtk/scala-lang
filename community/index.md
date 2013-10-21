@@ -4,7 +4,7 @@ title: Community
 
 ---
 
-<!-- You will enjoy being part of the Scala community. Developers in countries all over the world are using Scala for a large variety of applications across a broad range industies. They are enthusiastic, share a passion for Scala are extremely welcoming to new comers. You will find friendly, knowlegeable people ready to help you from the moment you start learning Scala to the time you become an expert programmer yourself. Some share their experience in blogs, others through the Scala e-mail lists, by participating in Open Development projects, at user group meetings or at Scala conferences. Naturally, the best way to get to know the community is to listen and start talking to them. -->
+TOFIX
 
 Developers in countries all over the world are using Scala for a large variety of applications across a broad range of industries. Popular ways to connect with the Scala community are via mailing lists or IRC channels, listed below.
 
@@ -13,41 +13,26 @@ Though there are plenty of opportunities to connect face-to-face with others in 
 
 ## Mailing Lists
 
-Scala has the following primary mailing lists. For those lists that existed before they were migrated to Google Groups, see the links for complete archives on Gmane.
+The main forum for questions and discussions about the vascular modeling toolkit is hosted on google groups:
 
- * **[Scala-User](http://groups.google.com/group/scala-user)**: the main forum for questions and discussions about the Scala programming ([Archive at Gmane](http://dir.gmane.org/gmane.comp.lang.scala.user)). In particular, newbie questions and programming experiences and questions should go to this list.
- * **[Scala-Language](http://groups.google.com/group/scala-language)**: the main forum for discussions and news about the Scala language ([Archive at Gmane](http://dir.gmane.org/gmane.comp.lang.scala)).
- * **[Scala-Announce](http://groups.google.com/group/scala-announce)**: announcements of new Scala releases, packages and
- applications ([Archive at Gmane](http://dir.gmane.org/gmane.comp.lang.scala.announce)).
- * **[Scala-Debate](http://groups.google.com/group/scala-debate)**: a more relaxed list for questions and discussions
- ([Archive at Gmane](http://dir.gmane.org/gmane.comp.lang.scala.debate)). In particular, the following should go to this list:
-    * questions and suggestions around the future of Scala.
-    * trails of discussions that started in scala but become too specialized to be of interest to most readers.
-    * topics where you suspect that only a few people would be interested.
- * **[Scala-Tools](http://groups.google.com/group/scala-tools)**: the main forum for discussions about the Scala tools
- contributed by the community ([Archive at Gmane](http://dir.gmane.org/gmane.comp.lang.scala.tools)).
- * **[Scala-Internals](http://groups.google.com/group/scala-internals)**: discussions about the core internal design and implementation of the Scala system. This list is mainly used by developers who commit code to the Scala code base, but it is open to the general public in the interest of transparency. Please only post new threads if you commit to the Scala code base, and you need to discuss the internals of the Scala system. Bug reports, feature requests, and general discussions should go to the other lists instead
- ([Archive at Gmane](http://dir.gmane.org/gmane.comp.lang.scala.internals)).
- * **[Scala-XML](http://groups.google.com/group/scala-xml)**: interest group devoted to the Scala XML infrastructure
- ([Archive at Gmane](http://dir.gmane.org/gmane.comp.lang.scala.xml)).
- * **[Scala-SIPs](http://groups.google.com/group/scala-sips)**: interest group devoted to the Scala Improvement Process (SIP) proposals.
+![]({{ site.baseurl }}/resources/img/google_groups.png)
+[vmtk-mailing-list](https://groups.google.com/forum/#!forum/vmtk-users)
+ 
+ 
+## Pypes repository
 
-## IRC
+Contribute to 
 
-Chat Scala anytime on the [Scala IRC channel](http://webchat.freenode.net/?randomnick=1&channels=scala&prompt=1): `irc://irc.freenode.net/scala`
+## Links
 
-## User Groups
-
-Find your local Scala user group on <http://www.scala-tribes.org/>.
-
-## StackOverflow
-
-Scala is an active topic on StackOverflow [Scala on StackOverflow](http://stackoverflow.com/questions/tagged/scala), a programmer Q&A site.
-
-## Other Community-Powered Resources
-
-* [Community Wiki](https://wiki.scala-lang.org/display/SW/Welcome+to+the+Scala+Wiki%21)
-* [Scala School](http://twitter.github.com/scala_school/)
-* [Effective Scala](http://twitter.github.com/effectivescala/)
-* [Scala Puzzlers](http://scalapuzzlers.com/)
-* [Interactive Tour](http://scalatutorials.com/tour)
+* [VTK](http://www.vtk.org) - VTK, The Visualization Toolkit.
+* [ITK](http://www.itk.org) - ITK, Segmentation & Registration Toolkit.
+* [3DSlicer](http://www.slicer.org) - 3D Slicer, visualization and medical image computing.
+* [CMake](http://www.cmake.org) - CMake, Cross-platform make.
+* [Python](http://www.python.org) - Python programming language.
+* [Paraview](http://www.paraview.org) - Paraview, Open-Source Scientific Visualization.
+* [Gnuid CFD Solver](http://github.com/lorbot/Gnuid) - Gnuid, open-source parallel adaptive mesh refinement solver.
+* [FEniCS](http://www.fenicsproject.org) - FEniCS, automated solution of differential equations.
+* [pyFormex](http://savannah.nongnu.org/projects/pyformex/) - pyFormex, large geometrical models of 3D structures.
+* [oomph-libr](http://oomph-lib.maths.man.ac.uk/doc/html/index.html) - oomph-library, finite-element library for the simulation of multi-physics problems.
+* [X Toolkit](http://goxtk.com) -  X Toolkit, develop X11 software with graphical widgets.

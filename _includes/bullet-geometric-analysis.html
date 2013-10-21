@@ -1,6 +1,6 @@
-<div class="java-interop-wrapper" style="width: 500px">
+<div class="hidden-bullet-wrapper" style="width: 500px">
 
-<figure class="code concurrency-distribution1" style="margin-top: 20px;">
+<figure class="code bullet-description1" style="margin-top: 20px;">
   <figcaption>vmtk geometry code</figcaption>
   <pre><code>// Generate a vtp file containing the data on the bifurcation vectors
 vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines -seedselector openprofiles --pipe vmtkbranchextractor --pipe vmtkbifurcationreferencesystems --pipe vmtkbifurcationvectors -ofile foo_bv.vtp
@@ -12,7 +12,7 @@ vmtksurfacesmoothing -ifile foo.vtp -passband 0.1 -iterations 30 -ofile foo_sm.v
 vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines -seedselector openprofiles --pipe vmtkflowextensions -adaptivelength 1 -extensionratio 20 -normalestimationratio 1 -interactive 0 --pipe vmtksurfacewriter -ofile foo_ex.vtp </code></pre>
 </figure>
 
-<figure class="code concurrency-distribution2" style="margin-top: 10px;">
+<figure class="code bullet-description2" style="margin-top: 10px;">
      <figcaption>vmtk geometry example</figcaption>
     <img alt="Figure 1" src="/resources/img/geometry_home.png" />
 </figure>

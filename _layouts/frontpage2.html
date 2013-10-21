@@ -3,8 +3,6 @@ layout: default
 ---
 
 {% include headertop.html %}
-    <!-- RSS feed -->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/feed/index.xml" />
 {% include headerbottom.html %}
 
 <div class="splash">
@@ -12,9 +10,8 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="span12">
-        <div class="scala-logo">
-          <img src="{{ site.baseurl }}/resources/img/vmtk-logo.png" alt="vmtk Logo" />
-          
+        <div id="vmtkmaintitle" class="vmtk-logo">
+          <a href="/index.html">vmtk</a>
         </div>
         {% include navbar.html %}
       </div>
@@ -27,7 +24,6 @@ layout: default
             The Vascular Modeling Toolkit is a collection of libraries and tools for 
             3D reconstruction, geometric analysis, mesh generation and surface data analysis 
             for image-based modeling of blood vessels.
-
           </p>
           <a class="learn-more-btn" href="{{ site.baseurl }}/what-is-vmtk.html">Learn More</a>
         </div>
@@ -59,7 +55,6 @@ layout: default
 </div>
 
  <div class="bullet-point-box">
-
   <div class="bullet-row-1-wrap">
     <div class="container">
       <div class="row">
@@ -69,15 +64,15 @@ layout: default
         </div>
       </div>
       <div class="row">
-        <div class="span4 bullet-point" id="java-interop">
+        <div class="span4 bullet-point" id="segmentation">
           <h3>Segmentation</h3>
           <p>Segmentation of vascular segments (or other anatomical structures) from medical images</p>
         </div>
-        <div class="span4 bullet-point" id="type-inference">
+        <div class="span4 bullet-point" id="centerlines">
           <h3>Centerlines</h3>
           <p>Compute centerlines and maximal inscribed sphere radius of branching tubular structures given their polygonal surface representation</p>
         </div>
-        <div class="span4 bullet-point" id="concurrency-distribution">
+        <div class="span4 bullet-point" id="geometric-analysis">
           <h3>Geometric analysis</h3>
           <p>Geometric analysis and surface data processing of 3D models of blood vessels</p>
         </div>
@@ -96,15 +91,15 @@ layout: default
   <div class="bullet-row-2-wrap">
     <div class="container">
       <div class="row">
-        <div class="span4 bullet-point" id="traits">
+        <div class="span4 bullet-point" id="mesh">
           <h3>Mesh generation</h3>
           <p>Surface Remeshing, volume Meshing and generation of boundary layers of prismatic elements with varying thickness for CFD.</p>
         </div>
-        <div class="span4 bullet-point" id="pattern-matching">
+        <div class="span4 bullet-point" id="post-processing">
           <h3>Post processing</h3>
           <p>Mapping and patching of fluid dynamics variables, particle tracing and more...</p>
         </div>
-        <div class="span4 bullet-point" id="higher-order-functions">
+        <div class="span4 bullet-point" id="pypes">
           <h3>Pyping system</h3>
           <p>PypeS is the glue among vmtk scripts. It allows new scripts to be written easily and have a common interface, but, most of all, it allows single vmtk scripts to interact with each other, making vmtk modular and flexible.</p>
         </div>
@@ -134,27 +129,31 @@ layout: default
 </div>
 
 <!-- hidden code-snippet content -->
-<div id="hidden-java-interop">{% include bullet-level-set-segmentation.html %}</div>
-<div id="hidden-type-inference">{% include bullet-centerlines.html %}</div>
-<div id="hidden-concurrency-distribution">{% include bullet-geometric-analysis.html %}</div>
-<div id="hidden-traits">{% include bullet-mesh.html %}</div>
-<div id="hidden-pattern-matching">{% include bullet-post-processing.html %}</div>
-<div id="hidden-higher-order-functions">{% include bullet-pypes.html %}</div>
+<div id="hidden-segmentation">{% include bullet-level-set-segmentation.html %}</div>
+<div id="hidden-centerlines">{% include bullet-centerlines.html %}</div>
+<div id="hidden-geometric-analysis">{% include bullet-geometric-analysis.html %}</div>
+<div id="hidden-mesh">{% include bullet-mesh.html %}</div>
+<div id="hidden-post-processing">{% include bullet-post-processing.html %}</div>
+<div id="hidden-pypes">{% include bullet-pypes.html %}</div>
 
 
 <div class="events">
   <div class="container">
     <div class="row">
       <div class="span12 upcoming-events">
-        <h2><span>Upcoming Events</span></h2>
+        <h2><span>vmtk discussion forum</span></h2>
       </div>
 
-	      <div class="span12" id="eventspane">
+	     <!-- <div class="span12" id="eventspane">-->
+	      <div class="span12">
+	      <iframe id="forum_embed" src="https://groups.google.com/forum/embed/?place=forum/vmtk-users#!forum/vmtk-users" scrolling="no" frameborder="0" width="100%" height="470px" style="background-color:lightgray"></iframe>
+	      	      
+	      
       </div>
     </div>
   </div>
 
-   <div class="add-event"><a href="{{ site.baseurl }}/events">See more events</a> or <a href="https://github.com/scala/scala-lang/tree/master/events">add one to our feed</a></div>
+   <div class="add-event"><a href="https://groups.google.com/forum/#!forum/vmtk-users">Go to vmtk google groups</a></div>
 
 </div>
 
@@ -184,7 +183,8 @@ layout: default
         <br/>&nbsp;
         <div class="see-more-tweets">See more tweets, or</div>
         <a id="twitter-btn" href="https://twitter.com/scala_lang">Follow Scala on Twitter</a>
-        <br/><a style="border-bottom: 0px;" href="https://twitter.com/scala_lang"><img style="padding-top: 8px;" src="{{ site.baseurl }}/resources/img/twitter-logo-white-lg.png" alt="white Twitter logo"/></a>
+        <!--<br/><a style="border-bottom: 0px;" href="https://twitter.com/scala_lang"><img style="padding-top: 8px;" src="{{ site.baseurl }}/resources/img/twitter-logo-white-lg.png" alt="white Twitter logo"/></a>-->
+        <br/><a style="border-bottom: 0px;" href="https://twitter.com/scala_lang"></a>
       </div>
     </div>
   </div>

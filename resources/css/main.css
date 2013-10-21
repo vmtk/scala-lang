@@ -2,6 +2,16 @@
    Custom styles, overrides bootstrap
    ========================================================================== */
 
+/* ==========================================================================
+   vmtk logo
+   ========================================================================== */
+
+#vmtkmaintitle { 
+  font-family:Verdana,sans-serif; font-weight:bold; font-size:180%; 
+}
+#vmtkmaintitle a {text-decoration:none; color:white; }
+#vmtkmaintitle a:hover {text-decoration:underline; color:white; }
+
 * {
   margin: 0;
 }
@@ -416,7 +426,7 @@ a.brand {
   color:#FFF;
 }
 
-.scala-logo {
+.vmtk-logo {
   position: relative;
   float: left;
   z-index: 2;
@@ -424,7 +434,7 @@ a.brand {
   /*width: 200px;*/
 }
 
-.scala-logo > a {
+.vmtk-logo > a {
   border-bottom: none;
 }
 
@@ -987,18 +997,17 @@ h2.twitterhdr > span {
   padding-bottom: 20px;
 }
 
-
-#hidden-java-interop,
-#hidden-type-inference,
-#hidden-concurrency-distribution,
-#hidden-traits,
-#hidden-pattern-matching,
-#hidden-higher-order-functions {
+#hidden-segmentation,
+#hidden-centerlines,
+#hidden-geometric-analysis,
+#hidden-mesh,
+#hidden-post-processing,
+#hidden-pypes {
   display: none;
 }
 
 .epfl-picture-box {
-  background: url(/resources/img/epfl-bc.jpg) no-repeat center;
+  background: url(/resources/img/voronoi-main.png) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1112,12 +1121,12 @@ h2.twitterhdr > span {
   color: #839496;
 }
 
-#java-interop:hover,
-#type-inference:hover,
-#concurrency-distribution:hover,
-#traits:hover,
-#pattern-matching:hover,
-#higher-order-functions:hover {
+#segmentation:hover,
+#centerlines:hover,
+#geometric-analysis:hover,
+#mesh:hover,
+#post-processing:hover,
+#pypes:hover {
   cursor: pointer;
 }
 
@@ -1659,7 +1668,7 @@ h2.twitterhdr > span {
     border: none;
 }
 
-.scala-logo-footer {
+.vmtk-logo-footer {
   position: relative;
   float: right;
   margin-top: 70px;
@@ -2452,7 +2461,7 @@ div#toc ul > li + ul > li { margin-top: 12px; }
   margin-bottom: 10px;
 }
 
-.traits, .concurrency, .java-interop-wrapper, .type-inference {
+.hidden-bullet-wrapper, .bullet-description, .concurrency, .java-interop-wrapper, .type-inference {
   float: left;
 }
 

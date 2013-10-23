@@ -15,7 +15,8 @@ function getOS() {
   if (navigator.appVersion.indexOf("Mac") != -1) {
     if (navigator.appVersion.indexOf("10_6") != -1) osname = "SnowLeopard-64bit";
     if (navigator.appVersion.indexOf("10_7") != -1) osname = "Lion-64bit";
-  	if (navigator.appVersion.indexOf("10_8") != -1) osname = "Lion-64bit";	
+  	if (navigator.appVersion.indexOf("10_8") != -1) osname = "Lion-64bit";
+  	if (navigator.appVersion.indexOf("10_9") != -1) osname = "Lion-64bit";	
   }
   if (navigator.appVersion.indexOf("Linux") != -1) osname = "Linux";
   return osname;

@@ -4,14 +4,10 @@ title: Community
 
 ---
 
-TOFIX
-
-Developers in countries all over the world are using Scala for a large variety of applications across a broad range of industries. Popular ways to connect with the Scala community are via mailing lists or IRC channels, listed below.
-
-Though there are plenty of opportunities to connect face-to-face with others in the community-- for example, via local [Scala Meetups](http://scala.meetup.com/), or local [Scala user groups](http://www.scala-tribes.org).
-
-
 ## Mailing Lists
+
+Mailing list is the best way to get in contact with the vmtk community. 
+It serve as primary support channel where users can help each other to learn how to use vmtk.
 
 The main forum for questions and discussions about the vascular modeling toolkit is hosted on google groups:
 
@@ -21,8 +17,9 @@ The main forum for questions and discussions about the vascular modeling toolkit
  
 ## Pypes repository
 
-TOFIX
-Contribute to the [vmtk pypes repository]({{ site.baseurl }}/community/repository.html), share your pypes and ....
+Contribute to the [vmtk pypes repository]({{ site.baseurl }}/community/repository.html), share your own pypes with the vmtk community. 
+![]({{ site.baseurl }}/resources/img/example_pype.png)
+
 
 ## Links
 

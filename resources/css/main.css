@@ -281,19 +281,6 @@ a.brand {
 #download-button:hover .slider {
   margin-right: 0;
 }
-/* Ideally, we would have only this:
-#download-button:hover .icon {
-  background-position-y: -26px;
-}
-#download-button.windows .icon {
-  background-position-x: -26px;
-}
-#download-button.unix .icon {
-  background-position-x: -52px;
-}
- * but Firefox does not support background-position-{x,y}
- * so we have the following cartesian product instead:
- */
 #download-button.macos .icon {
   background-position: 0 0;
 }
@@ -445,6 +432,10 @@ a.brand {
   width: 40px;
 }
 
+.bunjee > p > h3 {
+	color: #fff;
+}
+
 .splash-text{
   margin-top: 40px;
 }
@@ -539,7 +530,7 @@ h2.whats-new {
   padding-bottom: 40px;
   padding-left: 0px;
   padding-right: 0px;
-  background-color: #72D0EB; /*#E2E9EF;*/ /*yellowish: #FDF6E3*/
+  background-color: #5F9EA0; /*#E2E9EF;*/ /*yellowish: #FDF6E3*/
   min-height: 180px;
   text-align: center;
 }
@@ -548,7 +539,6 @@ h2.bunjeehdr {
   font-family: "museo-slab", serif;
   font-size: 20px;
   color: #fff;
-  /*color: #657B83;*/
   font-weight: normal;
   font-style: italic;
   text-align: center;
@@ -561,7 +551,7 @@ h2.bunjeehdr > span {
   height: 32px;
   display: inline-block;
   line-height: 35px;
-  background-color: #72D0EB;
+  background-color: #5F9EA0;
   padding: 0 10px;
 }
 
@@ -842,18 +832,6 @@ h2.bunjeehdr > span {
   line-height: 1.4em;
   color: #586E75;
 }
-
-/*.news-body > p > a:link,
-.news-body > p > a:visited,
-.recent-news-body > p > a:link,
-.recent-news-body > p > a:visited {
-  color: #00b0e3;
-}*/
-
-/*.news-body > p > a:hover,
-.recent-news-body > p > a:hover {
-  color: #174753;
-}*/
 
 .archive-btn {
   padding: 0 18px;
@@ -1155,9 +1133,17 @@ h2.bunjeehdr > span {
 .footer {
   position: relative;
   z-index: 10;
-  background: #002B36;
+  /*background: #002B36;*/
+  background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.48, #D3D3D3),
+	color-stop(0.74, #ADADAD)
+  );
+  
   /*text-align: center;*/
-  color: #fff;
+  color: #000;
   padding-top: 20px;
   margin-top: -50px;
 }
@@ -1165,7 +1151,7 @@ h2.bunjeehdr > span {
 .copyright {
   margin-top: 60px;
   margin-bottom: 60px;
-  color: #fff;
+  color: #000;
   font-size: 12px;
   line-height: 1.2em;
   /*font-family: "museo-slab", serif;*/
@@ -1187,14 +1173,14 @@ h2.bunjeehdr > span {
 }
 
 .footer a {
-  color: #fff;
+  color: #000;
   font-size: 12px;
   text-decoration: none;
   border: none;
 }
 
 .footer a:hover {
-  color: #DC352E;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1209,7 +1195,7 @@ h2.bunjeehdr > span {
 
 .footer ul li a {
     /*color: rgba(255, 255, 255, 0.7);*/
-    color: #839496;
+    color: #000;
     font-size: 14px;
     text-decoration: none;
     border: none;
@@ -1575,8 +1561,8 @@ a.for-platform {
 
 .big-bunjee {
   position: absolute;
-  left: 378px;
-  top: 30px;
+  left: 380px;
+  top: 170px;
   z-index: 100;
 }
 

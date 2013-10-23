@@ -28,7 +28,7 @@ scripts=`ls $1/vmtk?*`
 scripts=`basename $scripts`
 
 echo --- >> VmtkScripts/vmtkscripts.md
-echo layout: default >> VmtkScripts/vmtkscripts.md
+echo layout: page-full-width >> VmtkScripts/vmtkscripts.md
 echo --- >> VmtkScripts/vmtkscripts.md
 echo >> VmtkScripts/vmtkscripts.md
 echo \# vmtkScripts reference >> VmtkScripts/vmtkscripts.md

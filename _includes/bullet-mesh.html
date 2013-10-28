@@ -1,8 +1,7 @@
 <div class="hidden-bullet-wrapper" style="width: 500px">
 
 <figure class="code bullet-description1" style="margin-top: 20px;">
-  <figcaption>vmtk mesh generation code</figcaption>
-  <pre><code>// genrating a uniform element mesh
+  <pre><code>// generating a uniform element mesh
 vmtkmeshgenerator -ifile foo.vtp -ofile foo.vtu -edgelength 0.5
 //Generating a radius-adaptive element mesh
 vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines -endpoints 1 -seedselector openprofiles --pipe vmtkdistancetocenterlines -useradius 1 --pipe vmtkmeshgenerator -elementsizemode edgelengtharray -edgelengtharray DistanceToCenterlines -edgelengthfactor 0.3 -ofile foo.vtu 
@@ -11,7 +10,6 @@ vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines -endpoints 1 -seedselect
 </figure>
 
 <figure class="code bullet-description2" style="margin-top: 10px;">
-     <figcaption>vmtk mesh generation example</figcaption>
     <img alt="Figure 1" src="/resources/img/mesh_home.png" />
 </figure>
 </div>

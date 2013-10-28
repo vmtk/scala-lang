@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page-full-width
 ---
 <h1>vmtkbranchpatching</h1>
 <h3>Input arguments</h3>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page-full-width
 ---
 <h1>vmtkbifurcationvectors</h1>
 <h2>Description</h2>

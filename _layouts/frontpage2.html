@@ -26,43 +26,17 @@ layout: default
             and surface data analysis for image-based modeling of blood vessels.
           </p>
           <a class="learn-more-btn" href="{{ site.baseurl }}/what-is-vmtk.html">Learn More</a>
+          <a href="#bunjee"><div class="bunjee-logo"></div></a>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="container central">
-  <div class="translucent-circle"></div>
-  <div class="opaque-circle"></div>
-  <a class="central-btn download" id="main-download-button" href="{{ site.baseurl }}/download/">Download</a>
-  <a class="central-btn api" href="{{ site.baseurl }}/documentation/">vmtk docs&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <!--<div class="big-bunjee"><a href="#bunjee" style="border-bottom:0px"><img src="{{ site.baseurl }}/resources/img/smooth-spiral.png" alt="Bunjee" /></a></div>-->
-    <div class="big-bunjee"><a href="#bunjee" style="border-bottom:0px; font-size: 60px;font-family: fantasy;color: #fff;">Bunjee</a></div>
-
-    <div class="central-btn vmtk-version"><span class="superbold">vmtk</span><br/>Bunjee</div>
-</div>
-
-<div class="darkbluebar">
-  <div class="container" style="position: relative;">
-    <div class="left-side">
-      <p class="getting-started"><a href="{{ site.baseurl }}/documentation/getting-started.html"><b>Getting Started</b></a></p>
-    </div>
-    <div class="right-side">
-    <p class="getting-started"><a href="{{ site.baseurl }}/documentation/installation.html"><b>How to install</b></a></p>
-    </div>
+    </div> 
   </div>
 </div>
 
  <div class="bullet-point-box">
   <div class="bullet-row-1-wrap">
     <div class="container">
-      <div class="row">
-        <div class="span12 bullet-point">
-          <h2><span>vmtk in a Nutshell</span></h2>
-          <p class="click">&nbsp;click the boxes below to see vmtk in action!&nbsp;</p>
-        </div>
-      </div>
+         
       <div class="row">
         <div class="span4 bullet-point" id="segmentation">
           <h3>Segmentation</h3>
@@ -77,6 +51,7 @@ layout: default
           <p>Geometric analysis and surface data processing of 3D models of blood vessels</p>
         </div>
       </div>
+        
       <div class="code-snippet-arrow"></div>
     </div>
   </div>
@@ -105,6 +80,7 @@ layout: default
         </div>
       </div>
       <div class="code-snippet-arrow"></div>
+      
     </div>
   </div>
 
@@ -125,7 +101,73 @@ layout: default
       </div>
     </div>
   </div>
-
+  
+  <div id="bunjee" class="where-to-learn-more">
+    <div class="container">
+      <div class="row">
+        <div class="span12 bullet-point">
+        <h2><span>Bunjee</span></h2>
+        <p class="click">&nbsp;Cloud-based scientific computing platform&nbsp;</p>
+        
+        
+        <div class="row">
+	      <div id="bunjee-text-left" class="span6">
+		    <p><a href="http://bunjee.github.io" target="_blank">Bunjee</a> is the new 
+		       <a href="http://www.orobix.com" target="_blank">Orobix</a>'s cloud-based 
+		       scientific computing platform. <br/>
+		       On <a href="http://bunjee.github.io" target="_blank">Bunjee</a> you can 
+		       run scientific applications such as vmtk or cfd solvers directly from your 
+		       browser.<br/>
+		       Nothing to download and nothing to install.<br/>
+		       Link it with your dropbox account and sync your data.<br/>
+		       A cloud-based, pay-as-you-go service with an intuitive interface.</p>
+	    
+		    <h2 class="bunjeehdr"><span>vmtk on Bunjee</span></h2>
+		    <p>Use all the vmtk functionalities directly in your browser.</br>
+		       Easy to use interface.</br>
+		       Sync your vmtk data with your dropbox account.</br>
+		       Share your pypes with the community.</br>
+		    </p>
+		  </div>
+		  
+	      <div id="bunjee-image-right" class="span6">
+	        
+	      	<div id="carousel-bunjee" class="carousel slide">
+			  <!-- Indicators --> 
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-bunjee" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-bunjee" data-slide-to="1"></li>
+			    <li data-target="#carousel-bunjee" data-slide-to="2"></li>
+			  </ol>
+	
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+		          <img src="/resources/img/vmtk-bunjee-1.png" alt="Figure 1">
+		        </div>
+			    <div class="item">
+			      <img src="/resources/img/vmtk-bunjee-2.png" alt="Figure 2">
+			    </div>
+			    <div class="item">
+			      <img src="/resources/img/vmtk-bunjee-3.png" alt="Figure 3">
+			    </div>
+		      </div>
+		    
+		    <!-- Carousel nav -->
+		    <a class="carousel-control left" href="#carousel-bunjee" data-slide="prev">&lsaquo;</a>
+		    <a class="carousel-control right" href="#carousel-bunjee" data-slide="next">&rsaquo;</a>
+			
+		 </div>
+	  </div>
+    </div> 
+	<div class="row">     	 
+      <br/>&nbsp;
+      <a class="learn-more-btn" href="http://vmtk.herokuapp.com" target="_blank">Try vmtk on Bunjee</a>
+    </div>  
+    </div>
+    </div>
+   </div>
+ </div>
 </div>
 
 <!-- hidden code-snippet content -->
@@ -135,22 +177,6 @@ layout: default
 <div id="hidden-mesh">{% include bullet-mesh.html %}</div>
 <div id="hidden-post-processing">{% include bullet-post-processing.html %}</div>
 <div id="hidden-pypes">{% include bullet-pypes.html %}</div>
-
-<div class="vmtk-google-group">
-  <div class="container">
-    <div class="row">
-      <div class="span12 vmtk-google-group-title">
-        <h2><span>vmtk discussion forum</span></h2>
-      </div>
-	      <div class="span12">
-	      <iframe id="forum_embed" src="https://groups.google.com/forum/embed/?place=forum/vmtk-users#!forum/vmtk-users" scrolling="no" frameborder="0" width="100%" height="470px" style="background-color:lightgray"></iframe>
-      </div>
-    </div>
-  </div>
-
-   <div class="vmtk-google-group-go-to"><a href="https://groups.google.com/forum/#!forum/vmtk-users">Go to vmtk google groups</a></div>
-
-</div>
 
 
 <div class="news">
@@ -165,39 +191,6 @@ layout: default
   </div>
 </div>
 
-<div id="bunjee" class="bunjee">
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <h2 class="bunjeehdr"><span>Bunjee</span></h2>
-      </div>
-    </div>
-    <div class="row">
-      <div id="bunjee-text-left" class="span6">
-	    <p>Bunjee is the new Orobix's cloud-based scientific computing platform. </p>
-	    <p>On Bunjee you can run scientific applications such as vmtk or cfd solvers directly from your browser.</p>
-	    <p>Nothing to download and nothing to install.</p>
-	    <p>A cloud-based, pay-as-you-go service with an intuitive interface.</p>
-	    
-	    <h2 class="bunjeehdr"><span>vmtk on Bunjee</span></h2>
-	    <p>Try now vmtk on Bunjee and ...</p>
-	  </div>
-      <div id="bunjee-image-right" class="span6">
-	    <p><a href="/resources/img/bunjee-vmtk-1.png" data-lightbox="vmtk-bunjee">
-	    	<img src="/resources/img/bunjee-vmtk-1.png" alt="Figure 1" />
-	    </a><p/>
-	    <p><a href="/resources/img/bunjee-vmtk-2.png" data-lightbox="vmtk-bunjee">
-	    	<img src="/resources/img/bunjee-vmtk-2.png" alt="Figure 2" />
-	    </a><p/>
-	  </div>
-    </div> 
-	<div class="row">     	 
-      <br/>&nbsp;
-      <a class="learn-more-btn" href="http://vmtk.herokuapp.com" target="_blank">Try vmtk on Bunjee</a>
-    </div>  
-    </div>
-  </div>
-</div>
 
 <div class="picture-box">
   <div class="container">
@@ -205,11 +198,3 @@ layout: default
 </div>
 
 {% include footer.html %}
-
-<script type="text/javascript">
-  //vmtk google groups embed
-  $('#forum_embed').src =
-     'https://groups.google.com/forum/embed/?place=forum/vmtk-users'
-     + '&showsearch=true&showpopout=true&showtabs=false'
-     + '&parenturl=' + encodeURIComponent(window.location.href);
-</script>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page-full-width
 ---
 
 # vmtkScripts reference

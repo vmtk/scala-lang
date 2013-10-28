@@ -38,8 +38,8 @@ You can grab the latest development version from the [official vmtk git reposito
      
 Follow the instructions on the [installation]({{ site.baseurl }}/documentation/installation.html/#installing_from_source) page to compile the source code.
 
-##Additional information TOFIX
+##Additional information
 
-New vmtk users might want to read the <a href="{{ site.baseurl }}/documentation/getting-started.html">Getting Started</a> guide.
-To see a detailed list of changes for each version of vmtk please refer to the <a href="{{ site.baseurl }}/download/changelog.html">changelog</a>.
+New vmtk users might want to read the <a href="{{ site.baseurl }}/documentation/getting-started.html">Getting Started</a> guide.<br/>
+To see a detailed list of changes for each version of vmtk please refer to the <a href="https://github.com/vmtk/vmtk/commits/master" target="_blank">changelog</a>.<br/>
 The vmtk distribution is released under a <a href="{{ site.baseurl }}/license.html">BSD-like license</a>.

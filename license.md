@@ -57,6 +57,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * Stellar and Starbase are licensed under the BSD license.
 
 
-See [Copyright](https://github.com/vmtk/vmtk/blob/master/Copyright.txt) for details.
+See <a href="https://github.com/vmtk/vmtk/blob/master/Copyright.txt" target="_blank">Copyright</a> for details.
 
 

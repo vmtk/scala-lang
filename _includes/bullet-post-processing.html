@@ -1,7 +1,6 @@
 <div class="hidden-bullet-wrapper" style="width: 500px">
 
 <figure class="code bullet-description1" style="margin-top: 20px;">
-  <figcaption>vmtk post-processing code</figcaption>
   <pre><code>// Longitudinal and circumferential metrics
 vmtkbranchmetrics -ifile aorta_clipped.vtp -centerlinesfile aorta_cl.vtp -abscissasarray Abscissas -normalsarray ParallelTransportNormals -groupidsarray GroupIds -centerlineidsarray CenterlineIds -tractidsarray TractIds -blankingarray Blanking -radiusarray MaximumInscribedSphereRadius -ofile aorta_clipped_metrics.vtp
 //Metrics mapping to branches
@@ -11,8 +10,7 @@ vmtkbranchpatching -ifile aorta_clipped_mapping.vtp -groupidsarray GroupIds -lon
 </figure>
 
 <figure class="code bullet-description2" style="margin-top: 10px;">
-     <figcaption>vmtk post-processing example</figcaption>
-    <img alt="Figure 1" src="/resources/img/Tutorials/MapPatchFigure6.png" />
+   <img alt="Figure 1" src="/resources/img/Tutorials/MapPatchFigure6.png" />
 </figure>
 </div>
 

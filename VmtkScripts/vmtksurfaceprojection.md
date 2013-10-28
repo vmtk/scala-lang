@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page-full-width
 ---
 <h1>vmtksurfaceprojection</h1>
 <h2>Description</h2>

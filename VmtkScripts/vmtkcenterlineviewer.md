@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page-full-width
 ---
 <h1>vmtkcenterlineviewer</h1>
 <h3>Input arguments</h3>

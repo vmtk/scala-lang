@@ -13,13 +13,16 @@ The main forum for questions and discussions about the vascular modeling toolkit
 
 ![]({{ site.baseurl }}/resources/img/google_groups.png)
 [vmtk-mailing-list](https://groups.google.com/forum/#!forum/vmtk-users)
+
+
+
  
- 
+<!---
 ## Pypes repository
 
 Contribute to the [vmtk pypes repository]({{ site.baseurl }}/community/repository.html), share your own pypes with the vmtk community. 
 ![]({{ site.baseurl }}/resources/img/example_pype.png)
-
+-->
 
 ## Links
 

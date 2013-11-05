@@ -46,10 +46,10 @@ Where `-edgelength` is the absolute nominal length of a surface triangle edge.
 
 |                                   |                        |
 |:---------------------------------:|:----------------------:|
-|![Figure 4]({{ site.baseurl }}/resources/img/Tutorials/image4.png "Figure 4") |![Figure 5]({{ site.baseurl }}/resources/img/Tutorials/image5.png "Figure 5")
-| *Figure 4: Distance to centerlines (mm)* | *Figure 5: Radius Adaptive element mesh - Edgelength Factor 0.3*  
-|![Figure 6]({{ site.baseurl }}/resources/img/Tutorials/image6.png "Figure 6") |
-| *Figure 6: Internal wireframe* |  
+|![Figure 4]({{ site.baseurl }}/resources/img/Tutorials/image4.png "Figure 4") |![Figure 5]({{ site.baseurl }}/resources/img/Tutorials/image5.png "Figure 5") |
+| *Figure 4: Distance to centerlines (mm)* | *Figure 5: Radius Adaptive element mesh - Edgelength Factor 0.3* |  
+|![Figure 6]({{ site.baseurl }}/resources/img/Tutorials/image6.png "Figure 6") | |
+| *Figure 6: Internal wireframe* | |
 
 ### Adding a boundary layer
 

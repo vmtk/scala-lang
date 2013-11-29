@@ -33,11 +33,14 @@ display a mesh
 </tr>
 <tr><td>grayscale</td><td>Grayscale</td><td>bool</td><td>1</td><td></td><td>0</td><td>toggle color or grayscale</td>
 </tr>
+<tr><td>color</td><td>Color</td><td>float</td><td>3</td><td></td><td>[-1.0, -1.0, -1.0]</td><td>RGB color of the object in the scene</td>
+</tr>
 <tr><td>flat</td><td>FlatInterpolation</td><td>bool</td><td>1</td><td></td><td>0</td><td>toggle flat or shaded surface display</td>
 </tr>
 <tr><td>ofile</td><td>MeshOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Mesh writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -49,3 +52,4 @@ display a mesh
 <tr><td>o</td><td>Mesh</td><td>vtkUnstructuredGrid</td><td>1</td><td></td><td></td><td>the output mesh</td>
 </tr>
 </table>
+

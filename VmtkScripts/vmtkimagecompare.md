@@ -27,7 +27,8 @@ compares an image against a reference
 </tr>
 <tr><td>tolerance</td><td>Tolerance</td><td>float</td><td>1</td><td></td><td>1e-08</td><td>tolerance for numerical comparisons</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -41,3 +42,4 @@ compares an image against a reference
 <tr><td>log</td><td>ResultLog</td><td>str</td><td>1</td><td></td><td></td><td>Result Log</td>
 </tr>
 </table>
+

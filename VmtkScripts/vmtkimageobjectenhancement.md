@@ -25,6 +25,8 @@ compute a feature image for use in segmentation
 </tr>
 <tr><td>sigmasteps</td><td>NumberOfSigmaSteps</td><td>int</td><td>1</td><td>(0,)</td><td>1</td><td></td>
 </tr>
+<tr><td>scaled</td><td>ScaledObjectness</td><td>bool</td><td>1</td><td></td><td>0</td><td></td>
+</tr>
 <tr><td>alpha</td><td>Alpha</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.5</td><td></td>
 </tr>
 <tr><td>beta</td><td>Beta</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.5</td><td></td>
@@ -37,7 +39,8 @@ compute a feature image for use in segmentation
 </tr>
 <tr><td>oscalesfile</td><td>ScalesImageOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default ScalesImage writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -51,3 +54,4 @@ compute a feature image for use in segmentation
 <tr><td>oscales</td><td>ScalesImage</td><td>vtkImageData</td><td>1</td><td></td><td></td><td>the scales image</td>
 </tr>
 </table>
+

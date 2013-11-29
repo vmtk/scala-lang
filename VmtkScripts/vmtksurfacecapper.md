@@ -19,7 +19,7 @@ add caps to the holes of a surface, assigning an id to each cap for easy specifi
 </tr>
 <tr><td>ifile</td><td>SurfaceInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface reader</td>
 </tr>
-<tr><td>method</td><td>Method</td><td>str</td><td>1</td><td>["simple","centerpoint","smooth","annular"]</td><td>simple</td><td>capping method</td>
+<tr><td>method</td><td>Method</td><td>str</td><td>1</td><td>["simple","centerpoint","smooth","annular","concaveannular"]</td><td>simple</td><td>capping method</td>
 </tr>
 <tr><td>triangle</td><td>TriangleOutput</td><td>bool</td><td>1</td><td></td><td>1</td><td>toggle triangulation of the output</td>
 </tr>
@@ -37,7 +37,8 @@ add caps to the holes of a surface, assigning an id to each cap for easy specifi
 </tr>
 <tr><td>ofile</td><td>SurfaceOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -51,3 +52,4 @@ add caps to the holes of a surface, assigning an id to each cap for easy specifi
 <tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td>CellEntityIds</td><td>name of the array where the id of the caps are stored</td>
 </tr>
 </table>
+

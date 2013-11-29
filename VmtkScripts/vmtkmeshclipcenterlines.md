@@ -41,7 +41,8 @@ interactively clip a mesh using the distance to centerlines
 </tr>
 <tr><td>clippedmeshfile</td><td>ClippedMeshOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default ClippedMesh writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -55,3 +56,4 @@ interactively clip a mesh using the distance to centerlines
 <tr><td>clippedmesh</td><td>ClippedMesh</td><td>vtkUnstructuredGrid</td><td>1</td><td></td><td></td><td>the clipped mesh</td>
 </tr>
 </table>
+

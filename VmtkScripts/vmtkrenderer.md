@@ -23,11 +23,14 @@ renderer used to make several viewers use the same rendering window
 </tr>
 <tr><td>polygonsmoothing</td><td>PolygonSmoothing</td><td>bool</td><td>1</td><td></td><td>0</td><td>toggle rendering smooth polygons</td>
 </tr>
+<tr><td>annotations</td><td>Annotations</td><td>bool</td><td>1</td><td></td><td>1</td><td>toggle rendering of annotations superimposed to the renderer</td>
+</tr>
 <tr><td>background</td><td>Background</td><td>float</td><td>3</td><td></td><td>[0.1, 0.1, 0.2]</td><td>background color of the rendering window</td>
 </tr>
 <tr><td>magnification</td><td>ScreenshotMagnification</td><td>int</td><td>1</td><td></td><td>4</td><td>magnification to apply to the rendering window when taking a screenshot</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -39,3 +42,4 @@ renderer used to make several viewers use the same rendering window
 <tr><td>o</td><td>vmtkRenderer</td><td>vmtkRenderer</td><td>1</td><td></td><td></td><td>the renderer</td>
 </tr>
 </table>
+

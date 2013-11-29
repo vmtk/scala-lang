@@ -25,7 +25,8 @@ compute centerline attributes like abscissa and parallel transport normals; this
 </tr>
 <tr><td>ofile</td><td>CenterlinesOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Centerlines writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -41,3 +42,4 @@ compute centerline attributes like abscissa and parallel transport normals; this
 <tr><td>normalsarray</td><td>NormalsArrayName</td><td>str</td><td>1</td><td></td><td>ParallelTransportNormals</td><td>name of the array where parallel transport normals to the centerlines are stored</td>
 </tr>
 </table>
+

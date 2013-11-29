@@ -3,7 +3,7 @@ layout: page-full-width
 ---
 <h1>vmtksurfaceconnectivity</h1>
 <h2>Description</h2>
-extract the largest connected region or the scalar-connected region from a surface
+extract the largest connected region, the closest point-connected region or the scalar-connected region from a surface
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
@@ -19,6 +19,14 @@ extract the largest connected region or the scalar-connected region from a surfa
 </tr>
 <tr><td>ifile</td><td>SurfaceInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface reader</td>
 </tr>
+<tr><td>method</td><td>Method</td><td>str</td><td>1</td><td>["largest","closest"]</td><td>largest</td><td>connectivity method</td>
+</tr>
+<tr><td>closestpoint</td><td>ClosestPoint</td><td>float</td><td>3</td><td></td><td>None</td><td>coordinates of the closest point</td>
+</tr>
+<tr><td>r</td><td>ReferenceSurface</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the reference surface, whose barycenter will be used as closest point for the connectivity filter</td>
+</tr>
+<tr><td>rfile</td><td>ReferenceSurfaceInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default ReferenceSurface reader</td>
+</tr>
 <tr><td>cleanoutput</td><td>CleanOutput</td><td>bool</td><td>1</td><td></td><td>0</td><td>clean the unused points in the output</td>
 </tr>
 <tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array containing the connectivity scalar</td>
@@ -27,7 +35,8 @@ extract the largest connected region or the scalar-connected region from a surfa
 </tr>
 <tr><td>ofile</td><td>SurfaceOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -39,3 +48,4 @@ extract the largest connected region or the scalar-connected region from a surfa
 <tr><td>o</td><td>Surface</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the output surface</td>
 </tr>
 </table>
+

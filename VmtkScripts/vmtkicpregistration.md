@@ -39,7 +39,8 @@ register a surface to a reference surface using the ICP algorithm
 </tr>
 <tr><td>ofile</td><td>SurfaceOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -55,3 +56,4 @@ register a surface to a reference surface using the ICP algorithm
 <tr><td>omatrix4x4</td><td>Matrix4x4</td><td>vtkMatrix4x4</td><td>1</td><td></td><td></td><td>the output transform matrix</td>
 </tr>
 </table>
+

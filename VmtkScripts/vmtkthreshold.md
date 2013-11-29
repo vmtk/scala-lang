@@ -33,7 +33,8 @@ Extract part of surface or mesh with cell entitiy ids between given thresholds.
 </tr>
 <tr><td>omeshfile</td><td>MeshOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Mesh writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -49,3 +50,4 @@ Extract part of surface or mesh with cell entitiy ids between given thresholds.
 <tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td>CellEntityIds</td><td>CellEntityIds</td><td>name of the array where entity ids have been stored</td>
 </tr>
 </table>
+

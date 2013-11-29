@@ -29,7 +29,8 @@ interactively trace lines on 3D images; press n and p to move to the next and pr
 </tr>
 <tr><td>linefile</td><td>LineOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Line writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -41,3 +42,4 @@ interactively trace lines on 3D images; press n and p to move to the next and pr
 <tr><td>line</td><td>Line</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the output line</td>
 </tr>
 </table>
+

@@ -3,7 +3,7 @@ layout: page-full-width
 title: Parent vessel reconstruction 
 ---
 
-<sub>by Marina Piccinelli, Math&CS Department, Emory University, Atlanta, US</sub>
+<sub>by Marina Piccinelli, Math CS Department, Emory University, Atlanta, US</sub>
 
 ## Topic
 

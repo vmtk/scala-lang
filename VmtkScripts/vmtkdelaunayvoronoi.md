@@ -23,6 +23,8 @@ layout: page-full-width
 </tr>
 <tr><td>capdisplacement</td><td>CapDisplacement</td><td>float</td><td>1</td><td></td><td>0.0</td><td>displacement of the center points of caps at open profiles along their normals (avoids the creation of degenerate tetrahedra)</td>
 </tr>
+<tr><td>delaunaytolerance</td><td>DelaunayTolerance</td><td>float</td><td>1</td><td></td><td>0.001</td><td>tolerance for evaluating coincident points during Delaunay tessellation, evaluated as a fraction of the bounding box</td>
+</tr>
 <tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td>MaximumInscribedSphereRadius</td><td>name of the array where radius values of maximal inscribed spheres have to be stored</td>
 </tr>
 <tr><td>delaunaytessellation</td><td>DelaunayTessellation</td><td>vtkUnstructuredGrid</td><td>1</td><td></td><td></td><td>optional input Delaunay tessellation</td>
@@ -41,7 +43,12 @@ layout: page-full-width
 </tr>
 <tr><td>voronoidiagramfile</td><td>VoronoiDiagramOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default VoronoiDiagram writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+<tr><td>omeshfile</td><td>MeshOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Mesh writer</td>
+</tr>
+<tr><td>osurfacefile</td><td>SurfaceOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface writer</td>
+</tr>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -56,6 +63,11 @@ layout: page-full-width
 </tr>
 <tr><td>voronoidiagram</td><td>VoronoiDiagram</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td></td>
 </tr>
+<tr><td>omesh</td><td>Mesh</td><td>vtkUnstructuredGrid</td><td>1</td><td></td><td></td><td>conveniently named DelaunayTessellation output</td>
+</tr>
+<tr><td>osurface</td><td>Surface</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>conveniently named VoronoiDiagram output</td>
+</tr>
 <tr><td>poleids</td><td>PoleIds</td><td>vtkIdList</td><td>1</td><td></td><td></td><td></td>
 </tr>
 </table>
+

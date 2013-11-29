@@ -17,13 +17,6 @@ The main forum for questions and discussions about the vascular modeling toolkit
 
 
  
-<!---
-## Pypes repository
-
-Contribute to the [vmtk pypes repository]({{ site.baseurl }}/community/repository.html), share your own pypes with the vmtk community. 
-![]({{ site.baseurl }}/resources/img/example_pype.png)
--->
-
 ## Links
 
 * [VTK](http://www.vtk.org) - VTK, The Visualization Toolkit.

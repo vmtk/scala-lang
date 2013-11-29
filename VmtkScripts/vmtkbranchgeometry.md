@@ -41,7 +41,8 @@ compute geometric parameters for each branch of a tree. The script takes in inpu
 </tr>
 <tr><td>ofile</td><td>GeometryDataOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default GeometryData writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -61,3 +62,4 @@ compute geometric parameters for each branch of a tree. The script takes in inpu
 <tr><td>tortuosityarray</td><td>TortuosityArrayName</td><td>str</td><td>1</td><td></td><td>Tortuosity</td><td>name of the array where the average tortuosity of each branch, defined as the length of a line divided by the distance of its endpoints minus one (L/D - 1), is stored</td>
 </tr>
 </table>
+

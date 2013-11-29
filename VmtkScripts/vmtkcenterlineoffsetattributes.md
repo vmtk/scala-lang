@@ -47,7 +47,8 @@ offset centerline attributes relative to a bifurcation reference system, in such
 </tr>
 <tr><td>ofile</td><td>CenterlinesOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Centerlines writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -69,3 +70,4 @@ offset centerline attributes relative to a bifurcation reference system, in such
 <tr><td>normalsarray</td><td>NormalsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline normals are stored</td>
 </tr>
 </table>
+

@@ -31,7 +31,8 @@ read a mesh and stores it in a vtkUnstructuredGrid object
 </tr>
 <tr><td>ofile</td><td>MeshOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Mesh writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -45,3 +46,4 @@ read a mesh and stores it in a vtkUnstructuredGrid object
 <tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td>CellEntityIds</td><td>name of the array where entity ids have been stored - ngneut and tetgen</td>
 </tr>
 </table>
+

@@ -43,7 +43,8 @@ compute the local geometry of centerlines in terms of curvature and torsion
 </tr>
 <tr><td>ofile</td><td>CenterlinesOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Centerlines writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -63,3 +64,4 @@ compute the local geometry of centerlines in terms of curvature and torsion
 <tr><td>tortuosityarray</td><td>TortuosityArrayName</td><td>str</td><td>1</td><td></td><td>Tortuosity</td><td>name of the array where tortuosity values are stored</td>
 </tr>
 </table>
+

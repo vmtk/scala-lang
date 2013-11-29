@@ -31,7 +31,7 @@ convert the elements of a mesh from linear to quadratic
 </tr>
 <tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td>None</td><td>name of the array where entity ids relative to cells are stored</td>
 </tr>
-<tr><td>jacobianrelaxation</td><td>JacobianRelaxation</td><td>bool</td><td>1</td><td></td><td>0.0</td><td>if on, relax projected nodes until Jacobians are all positive</td>
+<tr><td>jacobianrelaxation</td><td>JacobianRelaxation</td><td>bool</td><td>1</td><td></td><td>0</td><td>if on, relax projected nodes until Jacobians are all positive</td>
 </tr>
 <tr><td>projectedid</td><td>ProjectedCellEntityId</td><td>int</td><td>1</td><td></td><td>1</td><td>id of the entity that is to be projected onto the reference surface</td>
 </tr>
@@ -43,7 +43,8 @@ convert the elements of a mesh from linear to quadratic
 </tr>
 <tr><td>ofile</td><td>MeshOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Mesh writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -55,3 +56,4 @@ convert the elements of a mesh from linear to quadratic
 <tr><td>o</td><td>Mesh</td><td>vtkUnstructuredGrid</td><td>1</td><td></td><td></td><td>the output mesh</td>
 </tr>
 </table>
+

@@ -29,13 +29,16 @@ write a mesh to disk
 </tr>
 <tr><td>o</td><td>Mesh</td><td>vtkUnstructuredGrid</td><td>1</td><td></td><td></td><td>the output mesh</td>
 </tr>
+<tr><td>mode</td><td>Mode</td><td>str</td><td>1</td><td>["ascii","binary"]</td><td>binary</td><td>write files in ASCII or binary mode (vtk and vtu only)</td>
+</tr>
 <tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where entity ids are stored</td>
 </tr>
 <tr><td>entityidsoffset</td><td>CellEntityIdsOffset</td><td>int</td><td>1</td><td></td><td>-1</td><td>add this number to entity ids in output (dolfin only)</td>
 </tr>
 <tr><td>writeregionmarkers</td><td>WriteRegionMarkers</td><td>bool</td><td>1</td><td></td><td>0</td><td>write entity ids for volume regions to file (dolfin only)</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -45,3 +48,4 @@ write a mesh to disk
 <tr><td>handle</td><td>Self</td><td>self</td><td>1</td><td></td><td></td><td>handle to self</td>
 </tr>
 </table>
+

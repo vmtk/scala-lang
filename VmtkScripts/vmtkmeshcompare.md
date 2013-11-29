@@ -31,7 +31,8 @@ compares a  mesh against a reference
 </tr>
 <tr><td>ofile</td><td>ResultDataOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default ResultData writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -47,3 +48,4 @@ compares a  mesh against a reference
 <tr><td>log</td><td>ResultLog</td><td>str</td><td>1</td><td></td><td></td><td>Result Log</td>
 </tr>
 </table>
+

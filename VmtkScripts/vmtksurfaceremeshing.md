@@ -33,6 +33,8 @@ remesh a surface using quality triangles
 </tr>
 <tr><td>edgelengthfactor</td><td>TargetEdgeLengthFactor</td><td>float</td><td>1</td><td>(0.0,)</td><td>1.0</td><td></td>
 </tr>
+<tr><td>trianglesplitfactor</td><td>TriangleSplitFactor</td><td>float</td><td>1</td><td>(0.0,)</td><td>5.0</td><td></td>
+</tr>
 <tr><td>maxarea</td><td>MaxArea</td><td>float</td><td>1</td><td>(0.0,)</td><td>1e+16</td><td></td>
 </tr>
 <tr><td>minarea</td><td>MinArea</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.0</td><td></td>
@@ -61,7 +63,8 @@ remesh a surface using quality triangles
 </tr>
 <tr><td>ofile</td><td>SurfaceOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -73,3 +76,4 @@ remesh a surface using quality triangles
 <tr><td>o</td><td>Surface</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the output surface</td>
 </tr>
 </table>
+

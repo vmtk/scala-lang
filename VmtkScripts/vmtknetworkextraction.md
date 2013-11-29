@@ -31,7 +31,8 @@ extract a network of approximated centerlines from a surface, the surface must h
 </tr>
 <tr><td>ographfile</td><td>GraphLayoutOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default GraphLayout writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -45,3 +46,4 @@ extract a network of approximated centerlines from a surface, the surface must h
 <tr><td>ograph</td><td>GraphLayout</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the output graph layout</td>
 </tr>
 </table>
+

@@ -41,7 +41,8 @@ compute bifurcation profiles, i.e. the bifurcation splitting lines. The script t
 </tr>
 <tr><td>ofile</td><td>BifurcationProfilesOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default BifurcationProfiles writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -59,3 +60,4 @@ compute bifurcation profiles, i.e. the bifurcation splitting lines. The script t
 <tr><td>bifurcationprofileorientation</td><td>BifurcationProfileOrientationArrayName</td><td>str</td><td>1</td><td></td><td>BifurcationProfileOrientation</td><td>name of the array containing 0 if a profile is upstream and 0 downstream its bifurcation</td>
 </tr>
 </table>
+

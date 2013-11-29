@@ -53,7 +53,8 @@ generate input files for the newtetr CFD solver
 </tr>
 <tr><td>welemsection</td><td>WriteWElemSection</td><td>bool</td><td>1</td><td></td><td>1</td><td>append $welem section to .in file for subsequent wall shear stress computation</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -63,3 +64,4 @@ generate input files for the newtetr CFD solver
 <tr><td>handle</td><td>Self</td><td>self</td><td>1</td><td></td><td></td><td>handle to self</td>
 </tr>
 </table>
+

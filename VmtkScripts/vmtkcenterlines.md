@@ -19,7 +19,7 @@ compute centerlines from a branching tubular surface (see papers for details); s
 </tr>
 <tr><td>ifile</td><td>SurfaceInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface reader</td>
 </tr>
-<tr><td>seedselector</td><td>SeedSelectorName</td><td>str</td><td>1</td><td>["pickpoint","openprofiles","carotidprofiles","idlist","pointlist"]</td><td>pickpoint</td><td>seed point selection method (pickpoint: interactive; openprofiles: choose among barycenters of open profiles of the surface; carotidprofiles: open profiles are automatically selected based on their z-axis coordinate (lower to higher: CCA, ECA, ICA)); idlist: list of surface point ids (specified as argument to -sourceids and -targetids); pointlist: list of surface points (specified as argument to -sourcepoints and -targetpoints)</td>
+<tr><td>seedselector</td><td>SeedSelectorName</td><td>str</td><td>1</td><td>["pickpoint","openprofiles","carotidprofiles","profileidlist","idlist","pointlist"]</td><td>pickpoint</td><td>seed point selection method (pickpoint: interactive; openprofiles: choose among barycenters of open profiles of the surface; carotidprofiles: open profiles are automatically selected based on their z-axis coordinate (lower to higher: CCA, ECA, ICA)); profileidlist: list of open profile ids (specified as argument to -sourceids and -targetids); idlist: list of surface point ids (specified as argument to -sourceids and -targetids); pointlist: list of surface points (specified as argument to -sourcepoints and -targetpoints)</td>
 </tr>
 <tr><td>sourceids</td><td>SourceIds</td><td>int</td><td>-1</td><td></td><td>[]</td><td>list of source point ids</td>
 </tr>
@@ -36,6 +36,8 @@ compute centerlines from a branching tubular surface (see papers for details); s
 <tr><td>flipnormals</td><td>FlipNormals</td><td>bool</td><td>1</td><td></td><td>0</td><td>flip normals after outward normal computation; outward oriented normals must be computed for the removal of outer tetrahedra; the algorithm might fail so for weird geometries, so changing this might solve the problem</td>
 </tr>
 <tr><td>capdisplacement</td><td>CapDisplacement</td><td>float</td><td>1</td><td></td><td>0.0</td><td>displacement of the center points of caps at open profiles along their normals (avoids the creation of degenerate tetrahedra)</td>
+</tr>
+<tr><td>delaunaytolerance</td><td>DelaunayTolerance</td><td>float</td><td>1</td><td></td><td>0.001</td><td>tolerance for evaluating coincident points during Delaunay tessellation, evaluated as a fraction of the bounding box</td>
 </tr>
 <tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td>MaximumInscribedSphereRadius</td><td>name of the array where radius values of maximal inscribed spheres have to be stored</td>
 </tr>
@@ -63,7 +65,8 @@ compute centerlines from a branching tubular surface (see papers for details); s
 </tr>
 <tr><td>voronoidiagramfile</td><td>VoronoiDiagramOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default VoronoiDiagram writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -91,3 +94,4 @@ compute centerlines from a branching tubular surface (see papers for details); s
 <tr><td>poleids</td><td>PoleIds</td><td>vtkIdList</td><td>1</td><td></td><td></td><td></td>
 </tr>
 </table>
+

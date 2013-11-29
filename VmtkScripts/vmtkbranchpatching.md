@@ -43,7 +43,8 @@ layout: page-full-width
 </tr>
 <tr><td>patcheddatafile</td><td>PatchedDataOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default PatchedData writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -65,3 +66,4 @@ layout: page-full-width
 <tr><td>patchareaarray</td><td>PatchAreaArrayName</td><td>str</td><td>1</td><td></td><td>PatchArea</td><td></td>
 </tr>
 </table>
+

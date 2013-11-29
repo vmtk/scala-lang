@@ -19,7 +19,7 @@ Extract inner surface from an annular-cylindric volume.
 </tr>
 <tr><td>ifile</td><td>SurfaceInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface reader</td>
 </tr>
-<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td>CellEntityIds</td><td>CellEntityIds</td><td>name of the array where entity ids have been stored</td>
+<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td>CellEntityIds</td><td>name of the array where entity ids have been stored</td>
 </tr>
 <tr><td>lowthreshold</td><td>EndcapsThresholdLow</td><td>int</td><td>1</td><td></td><td>0</td><td>lower threshold for encaps filtering</td>
 </tr>
@@ -31,7 +31,8 @@ Extract inner surface from an annular-cylindric volume.
 </tr>
 <tr><td>ofile</td><td>InnerSurfaceOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default InnerSurface writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -46,6 +47,7 @@ Extract inner surface from an annular-cylindric volume.
 </tr>
 <tr><td>o</td><td>InnerSurface</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the innermost surface</td>
 </tr>
-<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td>CellEntityIds</td><td>CellEntityIds</td><td>name of the array where entity ids have been stored</td>
+<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td>CellEntityIds</td><td>name of the array where entity ids have been stored</td>
 </tr>
 </table>
+

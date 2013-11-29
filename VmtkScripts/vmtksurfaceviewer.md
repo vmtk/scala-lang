@@ -23,7 +23,9 @@ display a surface
 </tr>
 <tr><td>display</td><td>Display</td><td>bool</td><td>1</td><td></td><td>1</td><td>toggle rendering</td>
 </tr>
-<tr><td>opacity</td><td>Opacity</td><td>float</td><td>1</td><td>(0.0,1.0)</td><td>1.0</td><td>obejct opacity in the scene</td>
+<tr><td>representation</td><td>Representation</td><td>str</td><td>1</td><td>["surface","wireframe","edges"]</td><td>surface</td><td>change surface representation</td>
+</tr>
+<tr><td>opacity</td><td>Opacity</td><td>float</td><td>1</td><td>(0.0,1.0)</td><td>1.0</td><td>object opacity in the scene</td>
 </tr>
 <tr><td>array</td><td>ArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where the scalars to be displayed are stored</td>
 </tr>
@@ -45,7 +47,8 @@ display a surface
 </tr>
 <tr><td>ofile</td><td>SurfaceOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -59,3 +62,4 @@ display a surface
 <tr><td>oactor</td><td>Actor</td><td>vtkActor</td><td>1</td><td></td><td></td><td>the output actor</td>
 </tr>
 </table>
+

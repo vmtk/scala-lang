@@ -21,7 +21,8 @@ transform points with a provided matrix
 </tr>
 <tr><td>invert</td><td>InvertMatrix</td><td>bool</td><td>1</td><td></td><td>0</td><td>invert matrix before applying transformation</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -33,3 +34,4 @@ transform points with a provided matrix
 <tr><td>o</td><td>Points</td><td>float</td><td>-1</td><td></td><td>[]</td><td>output point coordinates</td>
 </tr>
 </table>
+

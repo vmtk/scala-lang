@@ -25,6 +25,10 @@ generate a mesh suitable for CFD from a surface
 </tr>
 <tr><td>edgelengthfactor</td><td>TargetEdgeLengthFactor</td><td>float</td><td>1</td><td>(0.0,)</td><td>1.0</td><td></td>
 </tr>
+<tr><td>trianglesplitfactor</td><td>TriangleSplitFactor</td><td>float</td><td>1</td><td>(0.0,)</td><td>5.0</td><td></td>
+</tr>
+<tr><td>endcapsedgelengthfactor</td><td>EndcapsEdgeLengthFactor</td><td>float</td><td>1</td><td>(0.0,)</td><td>1.0</td><td></td>
+</tr>
 <tr><td>maxedgelength</td><td>MaxEdgeLength</td><td>float</td><td>1</td><td>(0.0,)</td><td>1e+16</td><td></td>
 </tr>
 <tr><td>minedgelength</td><td>MinEdgeLength</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.0</td><td></td>
@@ -33,9 +37,11 @@ generate a mesh suitable for CFD from a surface
 </tr>
 <tr><td>elementsizemode</td><td>ElementSizeMode</td><td>str</td><td>1</td><td>["edgelength","edgelengtharray"]</td><td>edgelength</td><td></td>
 </tr>
-<tr><td>cappingmethod</td><td>CappingMethod</td><td>str</td><td>1</td><td>["simple","annular"]</td><td>simple</td><td></td>
+<tr><td>cappingmethod</td><td>CappingMethod</td><td>str</td><td>1</td><td>["simple","annular","concaveannular"]</td><td>simple</td><td></td>
 </tr>
 <tr><td>skipcapping</td><td>SkipCapping</td><td>bool</td><td>1</td><td></td><td>0</td><td></td>
+</tr>
+<tr><td>skipremeshing</td><td>SkipRemeshing</td><td>bool</td><td>1</td><td></td><td>0</td><td></td>
 </tr>
 <tr><td>volumeelementfactor</td><td>VolumeElementScaleFactor</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.8</td><td></td>
 </tr>
@@ -43,9 +49,17 @@ generate a mesh suitable for CFD from a surface
 </tr>
 <tr><td>sublayers</td><td>NumberOfSubLayers</td><td>int</td><td>1</td><td>(0,)</td><td>2</td><td></td>
 </tr>
-<tr><td>thicknessfactor</td><td>BoundaryLayerThicknessFactor</td><td>float</td><td>1</td><td>(0.0,1.0)</td><td>0.25</td><td></td>
+<tr><td>substeps</td><td>NumberOfSubsteps</td><td>int</td><td>1</td><td>(0,)</td><td>500</td><td></td>
+</tr>
+<tr><td>relaxation</td><td>Relaxation</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.01</td><td></td>
+</tr>
+<tr><td>sublayerratio</td><td>SubLayerRatio</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.5</td><td></td>
+</tr>
+<tr><td>thicknessfactor</td><td>BoundaryLayerThicknessFactor</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.25</td><td></td>
 </tr>
 <tr><td>remeshcapsonly</td><td>RemeshCapsOnly</td><td>bool</td><td>1</td><td></td><td>0</td><td></td>
+</tr>
+<tr><td>boundarylayeroncaps</td><td>BoundaryLayerOnCaps</td><td>bool</td><td>1</td><td></td><td>1</td><td></td>
 </tr>
 <tr><td>tetrahedralize</td><td>Tetrahedralize</td><td>bool</td><td>1</td><td></td><td>0</td><td></td>
 </tr>
@@ -53,7 +67,8 @@ generate a mesh suitable for CFD from a surface
 </tr>
 <tr><td>remeshedsurfacefile</td><td>RemeshedSurfaceOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default RemeshedSurface writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -69,3 +84,4 @@ generate a mesh suitable for CFD from a surface
 <tr><td>remeshedsurface</td><td>RemeshedSurface</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the output surface</td>
 </tr>
 </table>
+

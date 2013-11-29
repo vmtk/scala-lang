@@ -3,7 +3,7 @@ layout: page-full-width
 title: Mapping and Patching
 ---
 
-<sub>by Marina Piccinelli, Math&CS Department, Emory University, Atlanta, US</sub>
+<sub>by Marina Piccinelli, Math CS Department, Emory University, Atlanta, US</sub>
 
 This tutorial demonstrates how to map the surface of a population of vessels onto the same parametric space and enable statistical analyses of surface-based quantities.
 

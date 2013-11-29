@@ -29,7 +29,8 @@ compute the reference systems relative to each open boundary of a model; a typic
 </tr>
 <tr><td>ofile</td><td>ReferenceSystemsOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default ReferenceSystems writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -49,3 +50,4 @@ compute the reference systems relative to each open boundary of a model; a typic
 <tr><td>point2array</td><td>Point2ArrayName</td><td>str</td><td>1</td><td></td><td>Point2</td><td>name of the array where the coordinates of a second point of each boundary are stored</td>
 </tr>
 </table>
+

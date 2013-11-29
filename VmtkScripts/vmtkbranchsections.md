@@ -53,7 +53,8 @@ compute geometric properties of branch sections located a fixed number of sphere
 </tr>
 <tr><td>ofile</td><td>BranchSectionsOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default BranchSections writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -79,3 +80,4 @@ compute geometric properties of branch sections located a fixed number of sphere
 <tr><td>branchsectiondistancespheres</td><td>BranchSectionDistanceSpheresArrayName</td><td>str</td><td>1</td><td></td><td>BranchSectionDistanceSpheres</td><td>name of the array containing the number of distance spheres the section is taken at</td>
 </tr>
 </table>
+

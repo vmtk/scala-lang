@@ -3,7 +3,7 @@ layout: page-full-width
 ---
 <h1>vmtksurfaceappend</h1>
 <h2>Description</h2>
-scale a surface by an isotropic factor
+append two surfaces into a single vtkPolyData. The script does not merge coincident points, consider using vmtksurfacetriangle for this.
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
@@ -25,7 +25,8 @@ scale a surface by an isotropic factor
 </tr>
 <tr><td>ofile</td><td>SurfaceOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -37,3 +38,4 @@ scale a surface by an isotropic factor
 <tr><td>o</td><td>Surface</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the output surface</td>
 </tr>
 </table>
+

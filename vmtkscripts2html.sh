@@ -25,7 +25,7 @@ mkdir VmtkScripts
 
 scripts=`ls $1/vmtk?*`
 
-scripts=`basename $scripts`
+#scripts=`basename $scripts`
 
 echo --- >> VmtkScripts/vmtkscripts.md
 echo layout: page-full-width >> VmtkScripts/vmtkscripts.md
@@ -33,15 +33,20 @@ echo --- >> VmtkScripts/vmtkscripts.md
 echo >> VmtkScripts/vmtkscripts.md
 echo \# vmtkScripts reference >> VmtkScripts/vmtkscripts.md
 for script in $scripts; do 
-  echo \- \[$script\]\(/VmtkScripts/$script\) >> VmtkScripts/vmtkscripts.md
+  script=`basename $script`
+  echo \| \[$script\]\(/VmtkScripts/$script\) \| `pyperun --nolog $script --doc` \| >> VmtkScripts/vmtkscripts.md
 done
 
 for script in $scripts; do 
+  script=`basename $script`
   if [ $script == "vmtkscripts" ]
   then
     continue
   fi
-  echo pyperun --nolog $script --markdown
-  pyperun --nolog $script --markdown >> VmtkScripts/${script}.md 
+  echo --- >> VmtkScripts/${script}.md
+  echo layout: page-full-width >> VmtkScripts/${script}.md
+  echo --- >> VmtkScripts/${script}.md
+  echo pyperun --nolog $script --html
+  pyperun --nolog $script --html >> VmtkScripts/${script}.md 
 done
 

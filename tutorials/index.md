@@ -29,7 +29,7 @@ These are a bunch of tutorials on the use of vmtk. The first group is about the 
 
 ### Cerebral aneurysms
 
-- [Parent Vessel Reconstruction]({{ site.baseurl }}/Tutorials/ParentVesselReconstruction.html) - learn how to perform digital aneurysm removal and reconstruct the parent vessel using Matthew Ford's method (Ford et al, BJR 2009). *Contributed by Marina Piccinelli, Math&CS Department, Emory University, Atlanta, US*
+- [Parent Vessel Reconstruction]({{ site.baseurl }}/Tutorials/ParentVesselReconstruction.html) - learn how to perform digital aneurysm removal and reconstruct the parent vessel using Matthew Ford's method (Ford et al, BJR 2009). *Contributed by Marina Piccinelli, Math CS Department, Emory University, Atlanta, US*
 
 ## Contributed tutorials
 

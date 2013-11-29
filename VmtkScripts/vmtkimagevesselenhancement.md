@@ -29,6 +29,8 @@ compute a feature image for use in segmentation
 </tr>
 <tr><td>stepmethod</td><td>SigmaStepMethod</td><td>str</td><td>1</td><td>["equispaced","logarithmic"]</td><td>equispaced</td><td></td>
 </tr>
+<tr><td>scaled</td><td>ScaledVesselness</td><td>bool</td><td>1</td><td></td><td>0</td><td>(frangi)</td>
+</tr>
 <tr><td>alpha1</td><td>Alpha1</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.5</td><td>(sato)</td>
 </tr>
 <tr><td>alpha2</td><td>Alpha2</td><td>float</td><td>1</td><td>(0.0,)</td><td>2.0</td><td>(sato)</td>
@@ -55,7 +57,8 @@ compute a feature image for use in segmentation
 </tr>
 <tr><td>ofile</td><td>ImageOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Image writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -67,3 +70,4 @@ compute a feature image for use in segmentation
 <tr><td>o</td><td>Image</td><td>vtkImageData</td><td>1</td><td></td><td></td><td>the output image</td>
 </tr>
 </table>
+

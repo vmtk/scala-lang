@@ -31,7 +31,8 @@ compute reference systems for each bifurcation of a tree. The script takes in in
 </tr>
 <tr><td>ofile</td><td>ReferenceSystemsOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default ReferenceSystems writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -47,3 +48,4 @@ compute reference systems for each bifurcation of a tree. The script takes in in
 <tr><td>upnormalarray</td><td>ReferenceSystemsUpNormalArrayName</td><td>str</td><td>1</td><td></td><td>UpNormal</td><td>the name of the array where reference system upnormals are stored</td>
 </tr>
 </table>
+

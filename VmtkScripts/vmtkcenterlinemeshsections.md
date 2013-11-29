@@ -51,7 +51,8 @@ extract mesh sections along centerlines. The script takes in input the mesh and 
 </tr>
 <tr><td>sectionpointsfile</td><td>SectionPointsPolyDataOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default SectionPointsPolyData writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -65,3 +66,4 @@ extract mesh sections along centerlines. The script takes in input the mesh and 
 <tr><td>sectionpoints</td><td>SectionPointsPolyData</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the additional output poly data storing information about the location and orientation of sections</td>
 </tr>
 </table>
+

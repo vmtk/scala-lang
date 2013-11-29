@@ -33,7 +33,8 @@ interactively place seeds in a 3D image
 </tr>
 <tr><td>seedsfile</td><td>SeedsOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Seeds writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -47,3 +48,4 @@ interactively place seeds in a 3D image
 <tr><td>seeds</td><td>Seeds</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the placed seeds</td>
 </tr>
 </table>
+

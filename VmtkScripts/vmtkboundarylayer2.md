@@ -61,7 +61,8 @@ create a prismatic boundary layer from a surface mesh and a set of vectors defin
 </tr>
 <tr><td>oinnerfile</td><td>InnerSurfaceMeshOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default InnerSurfaceMesh writer</td>
 </tr>
-</table><h3>Output arguments</h3>
+</table>
+<h3>Output arguments</h3>
 <table class="vmtkscripts">
 <tr>
 <th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
@@ -75,3 +76,4 @@ create a prismatic boundary layer from a surface mesh and a set of vectors defin
 <tr><td>oinner</td><td>InnerSurfaceMesh</td><td>vtkUnstructuredGrid</td><td>1</td><td></td><td></td><td>the output inner surface mesh</td>
 </tr>
 </table>
+

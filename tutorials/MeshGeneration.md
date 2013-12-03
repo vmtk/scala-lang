@@ -71,7 +71,7 @@ use `-sublayers` parameter in order to choose how many sublayer will be created 
 
 	vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines -endpoints 1 -seedselector openprofiles --pipe vmtkdistancetocenterlines -useradius 1 --pipe vmtkmeshgenerator -elementsizemode edgelengtharray -edgelengtharray DistanceToCenterlines -edgelengthfactor 0.3 -boundarylayer 1 -thicknessfactor 0.3 -sublayers 4 -sublayerratio 0.3 -boundarylayeroncaps 0 -ofile foo.vtu
 
-![Figure 9]({{ site.baseurl }}/resources/img/home-mesh.png "Figure 9")
+![Figure 9]({{ site.baseurl }}/resources/img/home_mesh.png "Figure 9")
 
 *Figure 9: vmtkmeshgeneration with boundary layers*
 

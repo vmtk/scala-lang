@@ -34,7 +34,7 @@ echo >> VmtkScripts/vmtkscripts.md
 echo \# vmtkScripts reference >> VmtkScripts/vmtkscripts.md
 for script in $scripts; do 
   script=`basename $script`
-  echo \| \[$script\]\(/VmtkScripts/$script\) \| `pyperun --nolog $script --doc` \| >> VmtkScripts/vmtkscripts.md
+  echo \| \[$script\]\(/VmtkScripts/${script}.html\) \| `pyperun --nolog $script --doc` \| >> VmtkScripts/vmtkscripts.md
 done
 
 for script in $scripts; do 

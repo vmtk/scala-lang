@@ -43,10 +43,10 @@ title: Learn vmtk
       <h3><a href="{{ site.baseurl }}/documentation/presentations.html/">Presentations</a></h3>
       <p>Presentations about vmtk.</p>
     </div>
-    <div class="span4 doc-block">
+    <!--<div class="span4 doc-block">
 	      <h3><a href="{{ site.baseurl }}/documentation/vmtkin3dslicer.html/">vmtk in 3d Slicer</a></h3>
       <p>vmtk as an extension for 3D Slicer.</p>
-    </div>
+    </div>-->
   </div>
 </div>
 

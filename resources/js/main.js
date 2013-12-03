@@ -76,6 +76,10 @@ $(document).ready(function(){
         arrow.addClass("hover");
         codeBox.html(snippet);
         container.slideDown();
+        $('html,body').animate({
+	    scrollTop: $(snippetID+'-bullet').offset().top
+	    }, 1000);
+	    
       } else if (codeSnippetInContainer == snippet) {
         container.slideUp(function() {
           arrow.hide();
@@ -85,10 +89,11 @@ $(document).ready(function(){
         arrow.addClass("hover");
         codeBox.html(snippet);
         codeBox.animate({height: hgt}, 400);
-      }
-      $('html,body').animate({
+        $('html,body').animate({
 	    scrollTop: $(snippetID+'-bullet').offset().top
 	    }, 1000);
+      }
+      
     }
     return go;
   }

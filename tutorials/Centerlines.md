@@ -33,17 +33,33 @@ a render window will pop up, asking you to specify points on the surface that wi
 
      Please position the mouse and press space to add source points, 'u' to undo
 
+![Figure 1]({{ site.baseurl }}/resources/img/Tutorials/centerlines_1.png)
+
+*Figure 1: Placing source seeds*
+
 When you're satisfied press q (Note: you really have to click on mesh points to make the selection (a red sphere should appear). If you can't do it, try to zoom close to the desired point). Now you'll be prompted:
 
      Please position the mouse and press space to add target points, 'u' to undo
+
+![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/centerlines_2.png)
+
+*Figure 2: Placing target seeds*
 
 same as above. After you press q the computer will start crunching numbers (mainly those needed to compute the Delaunay tessellation, which is quite an expensive operation). At the end, you'll have your centerline. Note that on every centerline an array (named by default MaximumInscribedSphereRadius) is defined. You can look at the results this way 
 
      vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines --pipe vmtkrenderer --pipe vmtksurfaceviewer -opacity 0.25 --pipe vmtksurfaceviewer -i @vmtkcenterlines.o -array MaximumInscribedSphereRadius
 
+![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/centerlines_3.png)
+
+*Figure 3: Centerlines visualization.*
+
 If you want to take a look at the Voronoi diagram with centerlines defined on it, do the following
 
      vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines --pipe vmtkrenderer --pipe vmtksurfaceviewer -opacity 0.25 --pipe vmtksurfaceviewer -i @vmtkcenterlines.voronoidiagram -array MaximumInscribedSphereRadius --pipe vmtksurfaceviewer -i @vmtkcenterlines.o
+
+![Figure 4]({{ site.baseurl }}/resources/img/Tutorials/centerlines_4.png)
+
+*Figure 4: Voronoi diagram*
 
 If you inspect the centerlines closely, you'll notice that they don't exactly reach seed and target points, but they just go close to them. The reason is that centerlines lie on the Voronoi diagram, and the Voronoi diagram does not touch the surface (for the ones interested, centerlines stop at the poles associated with seed and target points; look [here](http://www.cs.ucdavis.edu/~amenta/pubs/pubs.html) to find out what poles are). If you want centerlines to end precisely at source and target points, specify the option -endpoints 1: this way the segments from sources and targets to their respective poles are appended to the centerlines.
 

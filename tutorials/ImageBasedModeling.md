@@ -15,7 +15,11 @@ In order to use level sets in vmtk you have to use *vmtklevelsetsegmentation:*
 
 Recall that *-ifile* and *-ofile* are ways to access the built-in readers and writers that every script has. The file format is guessed from the filename extension.
 
-First a render window appears displayng the usual image planes.
+First a render window appears displaying the usual image planes.
+
+![Figure 1]({{ site.baseurl }}/resources/img/Tutorials/levelset_1.png)
+
+*Figure 1: Choosing initialization type*
 
 A message will appear: 
 
@@ -53,6 +57,11 @@ Next, you'll be prompted with:
 
      Please place two seeds (click on the image while pressing Ctrl).
 
+
+![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/levelset_2.png)
+
+*Figure 2: Placing seeds on the image*
+
 Interact with the image planes to find the image plane where you want to place your first seed. When satisfied, press the Ctrl key. While keeping it depressed, left-click the image plane on the point you wish to place the seed at. A red sphere will then appear. Repeat this procedure for the second seed as well. Press q when done.
 
 Provided everything went ok, a translucent surface will appear in the render window between the two seeds. This is your initial deformable model. Press q to proceed.
@@ -67,6 +76,10 @@ The following message will now appear:
 
      Please input parameters (type return to accept current values, 'q' to quit):
      NumberOfIterations(0) [PropagationScaling(1.0) CurvatureScaling(0.0) AdvectionScaling(0.0)]:
+
+![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/levelset_3.png)
+
+*Figure 3: Set parameters to control the deformation of level set.*
 
 These parameters control the deformation of your level set. 
 
@@ -95,6 +108,10 @@ The level sets will then evolve until the maximum iterations are reached. Progre
 If q is entered instead of 300, the script quits, thus piping the resulting level set to the writer. Don't do that unless you made an unrecoverable mistake and you'd like to start over again.
 
 To quit the render window press q as usual.
+
+![Figure 4]({{ site.baseurl }}/resources/img/Tutorials/levelset_4.png)
+
+*Figure 4: Displaying the final model*
 
 You'll then be asked: 
 

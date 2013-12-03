@@ -63,6 +63,19 @@ Adding a boundary layer means increasing the element density close to the wall. 
 | *Figure 7: Radius Adaptive Element mesh - Edge Length Factor 0.3* | *Figure 8: Radius Adaptive Element mesh - Edge Length Factor 0.3 with Boundary Layer*  
 
 
+### Customizing the boundary layer
+*by Simone Manini, Eng, Orobix Srl, Italy*
+
+There is the possibility to fully customize number and dimension of sublayers while generating a boundary layer during mesh generation.
+use `-sublayers` parameter in order to choose how many sublayer will be created and `-sublayerratio` parameter to set the ratio between one layer and its neighbour. For example:
+
+	vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines -endpoints 1 -seedselector openprofiles --pipe vmtkdistancetocenterlines -useradius 1 --pipe vmtkmeshgenerator -elementsizemode edgelengtharray -edgelengtharray DistanceToCenterlines -edgelengthfactor 0.3 -boundarylayer 1 -thicknessfactor 0.3 -sublayers 4 -sublayerratio 0.3 -boundarylayeroncaps 0 -ofile foo.vtu
+
+![Figure 9]({{ site.baseurl }}/resources/img/home-mesh.png "Figure 9")
+
+*Figure 9: vmtkmeshgeneration with boundary layers*
+
+
 ### Converting mesh elements to quadratic
 
      vmtklineartoquadratic -ifile foo.vtu -ofile foo_q.vtu -rfile foo.vtp -entityidsarray CellEntityIds 
@@ -70,8 +83,8 @@ Adding a boundary layer means increasing the element density close to the wall. 
 
 |                                   |                        |
 |:---------------------------------:|:----------------------:|
-|![Figure 9]({{ site.baseurl }}/resources/img/Tutorials/image9.png "Figure 9") |![Figure 10]({{ site.baseurl }}/resources/img/Tutorials/image10.png "Figure 10")
-| *Figure 9: Linear* | *Figure 10: Quadratic*  
+|![Figure 10]({{ site.baseurl }}/resources/img/Tutorials/image9.png "Figure 10") |![Figure 11]({{ site.baseurl }}/resources/img/Tutorials/image10.png "Figure 11")
+| *Figure 10: Linear* | *Figure 11: Quadratic*  
 
 
 ### Scaling the mesh
@@ -84,9 +97,9 @@ Medical images are often in mm. Typically you want your computations and results
 
      vmtkmeshboundaryinspector -ifile foo.vtu -entityidsarray CellEntityIds 
 
-![Figure 11]({{ site.baseurl }}/resources/img/Tutorials/image.png "Figure 11")
+![Figure 12]({{ site.baseurl }}/resources/img/Tutorials/image.png "Figure 12")
 
-*Figure 11: vmtkmeshboundaryinspector*
+*Figure 12: vmtkmeshboundaryinspector*
 
 ### Tetrahedralizing the mesh
 

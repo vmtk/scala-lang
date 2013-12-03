@@ -3,6 +3,8 @@ layout: page-full-width
 title: The Netgen way
 ---
 
+While the recommended way is to use vmtkmeshgenerator, this is another method to generate volume meshes.
+
 ## Capping the surface
 
 Before meshing we may need to generate flat circular endcaps at the open inlet/outlet profiles. This depends on the meshing tool we use. Netgen requires it.
@@ -60,4 +62,4 @@ Medical images are often in mm. Typically you want your computations and results
 
 This step greatly depends on the solver you use. I've got a vmtk script that generates an input file to the solver I use (`newtetr`), which is not available under an open source licence. Contact if you're interested in this solver.
 
-As reported above, Netgen will export the mesh for a number of solver packages out there. Otherwise, contact me for information on how to write an input file generator for a particular solver to include in vmtk. Writing mesh I/O stuff is one of the most boring activities I know, so any help would be greatly appreciated... 
+As reported above, Netgen will export the mesh for a number of solver packages out there. Otherwise, contact us for information on how to write an input file generator for a particular solver to include in vmtk. Writing mesh I/O stuff is one of the most boring activities I know, so any help would be greatly appreciated... 

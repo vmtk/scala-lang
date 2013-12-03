@@ -3,6 +3,6 @@ layout: page
 title: Presentations
 ---
 
-## toFix
+[vmtk workshop at the 2008 ASME Summer Bioengineering Conference]({{ site.baseurl }}/media/vmtkSBC2008.pdf)
 
-pdf files relative to workshop/conferences... etc
+[vmtk course... to fix](#)

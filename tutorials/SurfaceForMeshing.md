@@ -33,6 +33,11 @@ You'll see the original surface in red and the smoothed surface in gray.
 
 A potential side effect of the filter is that it slightly shifts the position of the surface in space. If this occurs, try increasing `iterations` 
 
+![Figure 1]({{ site.baseurl }}/resources/img/Tutorials/surface_1.png)
+
+*Figure 1: Compare original surface with the smoothed one*
+
+
 ## Opening the surface
 
 Under the assumption that you generated the surface using a deformable model, it's likely that your surface is closed at inlets and outlets, with a blobby appearance. We'll now proceed by opening the surface by clipping the blobby endcaps.
@@ -44,6 +49,10 @@ The first option is to use `vmtksurfaceclipper.` If you call
      vmtksurfaceclipper -ifile foo.vtp -ofile foo_cl.vtp 
 
 a rendering window will show up.
+
+![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/surface_2.png)
+
+*Figure 2: Surface clipper interaction*
 
 Press `i` to start the interaction. A cube will appear (like in `vmtkimagevoiselector`). Position the cube in such a way that the portion of the surface you want to clip lies inside the cube (it would be easier with a cyberglove, uh?). Try to position one face of the cube perpendicular to the vessel. You don't need to be extremely precise, just do the best you can. It'll get easier with time. 
 
@@ -84,3 +93,7 @@ Let's see how this is done
 The `adaptivelength` argument of the `vmtkflowextensions` script is a boolean flag which enables computing the length of each flowextension proportional to the mean profile radius. The proportionality factor is set through `extensionratio`. The `normalestimationratio` argument controls how far into the centerline the algorithm looks for computing the orientation of the flow extension.
 
 In the previous line, the flag `-interactive 0` was specified. This means that vmtkflowextensions will not prompt the user about what inlet or outlet to extend, but it will perform the task on all the available open boundaries. The default behavior is `-interactive 1`, which prompts the user about which boundaries to extend through a graphical window. Once the rendering has started and you have determined what extensions to generate, press `q` and you'll be asked to list the ids of the desired boundaries. Remember that you can pipe more than one vmtkflowextensions script one after the other if you need to perform the task repeatedly.
+
+![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/surface_3.png)
+
+*Figure 3: Adding flow extensions*

@@ -86,14 +86,17 @@ $(document).ready(function(){
         codeBox.html(snippet);
         codeBox.animate({height: hgt}, 400);
       }
+      $('html,body').animate({
+	    scrollTop: $(snippetID+'-bullet').offset().top
+	    }, 1000);
     }
     return go;
   }
-
+   
   var row1 = $("#code-snippet-row1");
   var row2 = $("#code-snippet-row2");
     
-  $("#segmentation").click(expandSnippetAction("#hidden-segmentation", row1));
+  $("#segmentation").click(expandSnippetAction("#hidden-segmentation", row1));  
   $("#centerlines").click(expandSnippetAction("#hidden-centerlines", row1));
   $("#geometric-analysis").click(expandSnippetAction("#hidden-geometric-analysis", row1));
 

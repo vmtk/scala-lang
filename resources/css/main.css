@@ -26,9 +26,14 @@ border: 1px solid #dddddd;
           border-radius: 4px;
 }
 
+.vmtkscripts tr {
+	max-width: 190px;
+}
+
 .vmtkscripts th,td {
 	padding: 4px 5px;
 	border-left: 1px solid #dddddd;
+	font-size: 12px;
 }
 
 .vmtkscripts tbody > tr:nth-child(odd) > td,
@@ -131,12 +136,12 @@ a:hover {
 }
 
 .darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#source-code > .toptip,
-.darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#scala-lang-twitter > .toptip {
+.darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#orobix-twitter > .toptip {
   background: rgba(0, 0, 0, 0.3);
 }
 
 .darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#source-code > .toptip:after,
-.darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#scala-lang-twitter > .toptip:after {
+.darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#orobix-twitter > .toptip:after {
   border-top: 6px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -227,11 +232,11 @@ a.brand {
 
 .nav > li > a,
 #source-code > a > img,
-#scala-lang-twitter > a > img {
+#orobix-twitter > a > img {
   margin-right: -10px;
 }
 
-#source-code > a, #scala-lang-twitter > a {
+#source-code > a, #orobix-twitter > a {
   background-color: transparent;
   border: none;
 }

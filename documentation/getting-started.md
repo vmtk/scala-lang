@@ -40,19 +40,35 @@ If the image volume is composed by more than one slice, single slices will be ou
 ## File formats
 ---
 
-Stub
+###Images
 
-+ Images: vti (VTK XML), mha (Meta Image), nrrd (NRRD)
-+ Surfaces: vtp (VTK XML), stl (Stereolithography), tec (Tecplot)
-+ Meshes: vtu (VTK XML), xml (Dolfin), xda (libMesh), msh (Fluent), fdneut (FIDAP), lifev (LifeV), tec (Tecplot) 
++ **dcm (DICOM Image, only Read)**: Digital Imaging and Communications in Medicine (DICOM) is a standard for handling, storing, printing, and transmitting information in medical imaging. It includes a file format definition and a network communications protocol
++ **mha/mhd (Meta Image)**: it specifies a standardized way of expressing the meta- information in the header about the pixel data; .mha: header embedded, .mhd+.raw (or other pixel data formats): header in separate file
++ **nrrd (Nearly Raw Raster Data)**: similar to Meta Image, somewhat richer header
++ **Analyze (Mayo Clinic Analyze 7.5)**: some issues with handling and reconstructing orientations; superseded by NIfTI; .hdr+.img
++ **NIfTI (Neuroimaging Informatics Technology Initiative)**: descendant of the Analyze format (can be converted by just changing the header); interoperable with Analyze but orientation and time are treated properly; .hdr+.img or .nii
++ **vti (VTK XML Image Data)**: the Visualization Toolkit (VTK) format for images; XML syntax with embedded binary data; very flexible; possible to represent multiple scalar/vector/tensor data in the same file; does not support image orientation (although it is possible to include custom data expressing orientation matrices)
 
-*vmtkimageviewer example*
 
-*vmtkimagemipviewer example*
+### Surfaces
 
-ctrl-s: screenshot
++ **vtp (VTK XML)**: the Visualization Toolkit (VTK) format for surfaces; XML syntax with embedded binary data; PolyData (.vtp) — Serial vtkPolyData (unstructured)
++ **stl (Stereolithography)**: STL (STereoLithography) is a file format native to the stereolithography CAD software created by 3D Systems. STL is also known as Standard Tessellation Language. STL files describe only the surface geometry of a three dimensional object without any representation of color, texture or other common CAD model attributes. The STL format specifies both ASCII and binary representations. Binary files are more common, since they are more compact
++ **tec (Tecplot)**: TEC files are used by the TECPLOT program, which is a visualization program for technical data.
 
-EndStub
+###Meshes
+
++ **vtu (VTK XML)**: the Visualization Toolkit (VTK) format for meshes; XML syntax with embedded binary data; UnstructuredGrid (.vtu) — Serial vtkUnstructuredGrid (unstructured)
++ **xda (libMesh, only Write)**: libMesh mesh files consist of two sections, the header and the data. The header contains important size information. It defines the number of elements, number of nodes, etc... that are in the mesh. The data section contains the actual element connectivity, the nodal coordinates, and any boundary condition information
++ **msh (Fluent, only Write)**: Fluent mesh files format
++ **lifev (LifeV)**: LifeV mesh files format
++ **vtk**:  the Visualization Toolkit (VTK) format for meshes; ASCII or binary format
++ **gambit**: Gambit mesh files format
++ **tec (Tecplot)**: TEC files are used by the TECPLOT program, which is a visualization program for technical data.
++ **fdneut (FIDAP)**: Fidap LifeV files format
++ **tetgen**: Tetgen mesh files format
++ **ngneut**:  Netgen neutral file format, which is particularly easy to read with a home-made program
++ **xml (Dolfyn, only Write)**: XML file for the Dolfyn CFD software
 
 ---
 

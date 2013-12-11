@@ -3,6 +3,9 @@ layout: page-full-width
 title: Advanced PypeS Tutorial
 ---
 
+#### Applicable version(s): 
+[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
+
 <sub>by Carlos Remuzzi BEng, Biomedical Engineering, Freelance Developer, London UK</sub>
 
 Once you've gained confidence with the execution of vmtk from the command line you might want to push it a little further and start writing your own Python modules based on PypeS.

@@ -3,6 +3,9 @@ layout: page-full-width
 title: Mesh Generation
 ---
 
+#### Applicable version(s): 
+[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
+
 *by Carlos Remuzzi, BEng Biomedical Engineering, Freelance Developer, London UK*
 
 ### How vmtkMeshGenerator works
@@ -48,8 +51,12 @@ Where `-edgelength` is the absolute nominal length of a surface triangle edge.
 |:---------------------------------:|:----------------------:|
 |![Figure 4]({{ site.baseurl }}/resources/img/Tutorials/image4.png "Figure 4") |![Figure 5]({{ site.baseurl }}/resources/img/Tutorials/image5.png "Figure 5") |
 | *Figure 4: Distance to centerlines (mm)* | *Figure 5: Radius Adaptive element mesh - Edgelength Factor 0.3* |  
-|![Figure 6]({{ site.baseurl }}/resources/img/Tutorials/image6.png "Figure 6") | |
+
+|                                   |                        |
+|:---------------------------------:|:----------------------:|
+|![Figure 6]({{ site.baseurl }}/resources/img/Tutorials/image6.png "Figure 6")| |
 | *Figure 6: Internal wireframe* | |
+
 
 ### Adding a boundary layer
 
@@ -65,6 +72,8 @@ Adding a boundary layer means increasing the element density close to the wall. 
 
 ### Customizing the boundary layer
 *by Simone Manini, Eng, Orobix Srl, Italy*
+
+*Only available for the [Development version]({{ site.baseurl }}//download/#development_version)*
 
 There is the possibility to fully customize number and dimension of sublayers while generating a boundary layer during mesh generation.
 use `-sublayers` parameter in order to choose how many sublayer will be created and `-sublayerratio` parameter to set the ratio between one layer and its neighbour. For example:

@@ -3,6 +3,9 @@ layout: page-full-width
 title: Basic PypeS tutorial
 ---
 
+#### Applicable version(s): 
+[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
+
 This tutorial will get you started with PypeS. This is the first recommended step for using vmtk efficiently.
 
 PypeS is the glue among vmtk scripts. It allows new scripts to be written easily and have a common interface, but, most of all, it allows single vmtk scripts to interact with each other, making vmtk modular and flexible.

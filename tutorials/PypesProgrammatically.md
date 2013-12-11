@@ -3,6 +3,8 @@ layout: page-full-width
 title: Using PypeS programmatically
 ---
 
+#### Applicable version(s): 
+[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
 
 <sub>by Carlos Remuzzi, BEng Biomedical Engineering, Freelance Developer, London UK</sub>
 

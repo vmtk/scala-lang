@@ -24,6 +24,7 @@ These are a bunch of tutorials on the use of vmtk. The first group is about the 
 - [Branch Splitting]({{ site.baseurl }}/Tutorials/BranchSplitting.html) - learn how to split a branching vessel into its constituent branches
 - [Geometric analysis]({{ site.baseurl }}/Tutorials/GeometricAnalysis.html) - learn how to analyze the 3D geometry of a vascular segment
 - [Mapping and patching]({{ site.baseurl }}/Tutorials/MappingAndPatching.html) - learn how to map the surface of a population of vessels onto the same parametric space and enable statistical analyses of surface-based quantities
+- [Particle Tracing]({{ site.baseurl }}/Tutorials/ParticleTracing.html) - learn how to generate pathlines and streaklines in a vector field from a collection of seed points and how to animate them. 
 
 ## Applications
 

@@ -3,6 +3,9 @@ layout: page-full-width
 title: Computing Centerlines
 ---
 
+#### Applicable version(s): 
+[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version) 
+
 This tutorial demonstrates how to compute centerlines from a surface model of a vascular segment. 
 
 ## Theory overview

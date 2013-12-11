@@ -3,6 +3,9 @@ layout: page-full-width
 title: Branch Splitting
 ---
 
+#### Applicable version(s): 
+[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version) 
+
 This tutorial demonstrates how to split a vascular segment into its constituent branches.
 
 Before proceeding, make sure you went through the [centerlines tutorial](/{{ site.baseurl }}/Tutorials/Centerlines.html).

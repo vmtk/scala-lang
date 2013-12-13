@@ -484,7 +484,27 @@ a.brand {
   font-style: normal;
   letter-spacing: -1px;
   color: #fff;
+  margin-bottom: 0px;
   /*width: 600px;*/
+}
+
+.splash-text > p.click {
+  padding: 0px;
+  font-family: "museo-slab", serif;
+  font-size: 12px;
+  color: white;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+.splash-text > p.click a {
+   color: white;
+}
+
+.splash-text > p.click a:hover {
+   color: #d7830b;
+   text-decoration: none;
 }
 
 .splash-pitch {
@@ -662,7 +682,6 @@ h2.bunjeehdr > span {
   padding-top: 30px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-bottom: 20px;
   background-color: #121224;
 }
 
@@ -805,13 +824,13 @@ h2.bunjeehdr > span {
 
 .news-title > a:link,
 .news-title > a:visited {
-  color: #174753;
+  color: #174855;
   border: none;
 }
 
 .news-title > a:hover {
   /*background: #FDF6E3;*/
-  color: #D6820B;
+  color: #d7830b;
   text-decoration: none;
 }
 

@@ -1755,6 +1755,44 @@ div#toc ul > li + ul > li { margin-top: 12px; }
   float: left;
 }
 
+.snippet-explanation-title {
+  width: 420px;
+  padding-left: 24px;
+  font-size: 18px;
+  line-height: 1.3em;
+  margin-top: 10px;
+}
+
+.snippet-explanation-title > h3 {
+  font-family: "museo-slab", serif;
+  font-weight: normal;
+  color: #fff;
+}
+
+.snippet-explanation-title > p {
+  margin-bottom: 18px;
+}
+
+.snippet-explanation-title > p > code {
+  background: rgba(88, 110, 117, 0.2);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: solid 1px rgba(88, 110, 117, 0.2);
+  color: #2B7322;
+  font-size: 14px;
+}
+
+.snippet-explanation-title a:link, .snippet-explanation-title a:visited  {
+  color: #2B7322; 
+}
+
+.snippet-explanation-title a:hover {
+  color: #D6820B; 
+}
+
+
+
 .snippet-explanation {
   position: relative;
   float: left;

@@ -33,7 +33,7 @@ Geometric analysis and surface data processing of 3D models of blood vessels (an
 - Robustly map branches to a rectangular parametric space
 - Generate rectangular patches based on the parametric mapping for statistical analysis of geometric and CFD data over populations.
 
-###Scritps and I/O tools 
+###Scripts and I/O tools 
 
 Scripts, I/O tools and simple algorithms to easily work with images and meshes:
 

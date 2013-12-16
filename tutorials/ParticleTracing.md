@@ -56,12 +56,14 @@ With vmtk you can do the same by using the vmtkmeshcutter script:
 If you need to clip the model before applying a slice:
 
 	vmtkmeshclipper -ifile mesh.vtu --pipe vmtkmeshcutter -ofile source.vtp
+	
+	
+!![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/particle_mesh_clipper.png)
+*Figure 2: Clipping the mesh*
 
-|                                   |                        |
-|:---------------------------------:|:----------------------:|
-|![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/particle_mesh_clipper.png "Figure 2") |![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/particle_mesh_cutter.png "Figure 3")
-| *Figure 2: Clipping the mesh * | *Figure 3: Creating a source slice for the particle tracer*  
 
+![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/particle_mesh_cutter.png)
+*Figure 3: Creating a source slice for the particle tracer*  
 
 ##Generate the traces
 

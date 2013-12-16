@@ -150,6 +150,7 @@ Two points to be made:
 + It is necessary to specify the piping from level sets to Marching Cubes explicitly (with -i @.o) because the name of the output argument from vmtklevelsetsegmentation is LevelSets and not Image as vmtkmarchingcubes expects by default.
 + It is suggested that an image file of level sets are kept. This allows you to add branches later on by simply doing: 
 
+
      vmtklevelsetsegmentation -ifile image_volume_voi.vti -levelsetsfile level_sets.vti -ofile level_sets2.vti 
 
 That's it.

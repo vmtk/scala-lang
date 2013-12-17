@@ -1615,6 +1615,26 @@ figcaption {
   font-size: 15px;
 }
 
+.main-page-column > ul > li > code {
+  background: rgba(88, 110, 117, 0.2);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: solid 1px rgba(88, 110, 117, 0.2);
+  color: #2B7322;
+  font-size: 14px;
+}
+
+.main-page-column > p > code {
+  background: rgba(88, 110, 117, 0.2);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: solid 1px rgba(88, 110, 117, 0.2);
+  color: #2B7322;
+  font-size: 14px;
+}
+
 code {
   background: rgba(88, 110, 117, 0.2);
   -moz-border-radius: 3px;

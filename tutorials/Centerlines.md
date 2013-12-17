@@ -18,9 +18,9 @@ Briefly, centerlines are determined as weighted shortest paths traced between tw
 
 The central figure below shows what the Voronoi diagram (or, more precisely, its internal subset) associated with the shape of a carotid bifurcation looks like. The colors are referred to the radius of maximal inscribed spheres (red: small, blue: large). As you can see, the Voronoi diagram is a non-manifold surface (that is, a surface where different sheets can meet at one edge). One more thing to note is that the Voronoi diagram looks very noisy: small disturbancies on the surface can generate those hair-like structures you see in the diagram (the fact they're red shows that they are associated with small maximal inscribed spheres). While this is usually a problem for shape analysis, those structures do not affect our centerlines at all, so we just keep them the way they are. 
 
-![Figure 1]({{ site.baseurl }}/resources/img/Tutorials/centerline_model.png)
-![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/centerline_voronoi.png)
-![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/centerline.png)
+![Figure 1]({{ site.baseurl }}/resources/img/tutorials/centerline_model.png)
+![Figure 2]({{ site.baseurl }}/resources/img/tutorials/centerline_voronoi.png)
+![Figure 3]({{ site.baseurl }}/resources/img/tutorials/centerline.png)
 
 Centerlines are determined as the paths defined on Voronoi diagram sheets that minimize the integral of the radius of maximal inscribed spheres along the path, which is equivalent to finding the shortest paths in the radius metric. They way this is done is by propagating an wave from a source point (one endpoint of the centerline) using the inverse of the radius as the wave speed and recording the wave arrival time on all the points of the Voronoi diagram, and then backtracing the line from a target point (the other endpoint of the centerline) down along the gradient of arrival times. The propagation is described by the Eikonal equation and in the code it is computed using the Fast Marching Method. Clearly, since centerlines are defined on Voronoi diagrams, each point of a centerline is associated with a corresponding maximal inscribed sphere radius. 
 
@@ -36,7 +36,7 @@ a render window will pop up, asking you to specify points on the surface that wi
 
      Please position the mouse and press space to add source points, 'u' to undo
 
-![Figure 1]({{ site.baseurl }}/resources/img/Tutorials/centerlines_1.png)
+![Figure 1]({{ site.baseurl }}/resources/img/tutorials/centerlines_1.png)
 
 *Figure 1: Placing source seeds*
 
@@ -44,7 +44,7 @@ When you're satisfied press q (Note: you really have to click on mesh points to 
 
      Please position the mouse and press space to add target points, 'u' to undo
 
-![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/centerlines_2.png)
+![Figure 2]({{ site.baseurl }}/resources/img/tutorials/centerlines_2.png)
 
 *Figure 2: Placing target seeds*
 
@@ -52,7 +52,7 @@ same as above. After you press q the computer will start crunching numbers (main
 
      vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines --pipe vmtkrenderer --pipe vmtksurfaceviewer -opacity 0.25 --pipe vmtksurfaceviewer -i @vmtkcenterlines.o -array MaximumInscribedSphereRadius
 
-![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/centerlines_3.png)
+![Figure 3]({{ site.baseurl }}/resources/img/tutorials/centerlines_3.png)
 
 *Figure 3: Centerlines visualization.*
 
@@ -60,7 +60,7 @@ If you want to take a look at the Voronoi diagram with centerlines defined on it
 
      vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines --pipe vmtkrenderer --pipe vmtksurfaceviewer -opacity 0.25 --pipe vmtksurfaceviewer -i @vmtkcenterlines.voronoidiagram -array MaximumInscribedSphereRadius --pipe vmtksurfaceviewer -i @vmtkcenterlines.o
 
-![Figure 4]({{ site.baseurl }}/resources/img/Tutorials/centerlines_4.png)
+![Figure 4]({{ site.baseurl }}/resources/img/tutorials/centerlines_4.png)
 
 *Figure 4: Voronoi diagram*
 

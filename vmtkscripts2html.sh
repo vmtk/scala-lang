@@ -16,25 +16,25 @@ if [ ! -d $1 ]
     exit 1;
 fi
 
-if [ -d VmtkScripts ]
+if [ -d vmtkscripts ]
   then
-    rm -rf VmtkScripts
+    rm -rf vmtkscripts
 fi
 
-mkdir VmtkScripts
+mkdir vmtkscripts
 
 scripts=`ls $1/vmtk?*`
 
 #scripts=`basename $scripts`
 
-echo --- >> VmtkScripts/vmtkscripts.md
-echo layout: page-full-width >> VmtkScripts/vmtkscripts.md
-echo --- >> VmtkScripts/vmtkscripts.md
-echo >> VmtkScripts/vmtkscripts.md
-echo \# vmtkScripts reference >> VmtkScripts/vmtkscripts.md
+echo --- >> vmtkscripts/vmtkscripts.md
+echo layout: page-full-width >> vmtkscripts/vmtkscripts.md
+echo --- >> vmtkscripts/vmtkscripts.md
+echo >> vmtkscripts/vmtkscripts.md
+echo \# vmtkScripts reference >> vmtkscripts/vmtkscripts.md
 for script in $scripts; do 
   script=`basename $script`
-  echo \| \[$script\]\(/VmtkScripts/${script}.html\) \| `pyperun --nolog $script --doc` \| >> VmtkScripts/vmtkscripts.md
+  echo \| \[$script\]\(/vmtkscripts/${script}.html\) \| `pyperun --nolog $script --doc` \| >> vmtkscripts/vmtkscripts.md
 done
 
 for script in $scripts; do 
@@ -43,10 +43,10 @@ for script in $scripts; do
   then
     continue
   fi
-  echo --- >> VmtkScripts/${script}.md
-  echo layout: page-full-width >> VmtkScripts/${script}.md
-  echo --- >> VmtkScripts/${script}.md
+  echo --- >> vmtkscripts/${script}.md
+  echo layout: page-full-width >> vmtkscripts/${script}.md
+  echo --- >> vmtkscripts/${script}.md
   echo pyperun --nolog $script --html
-  pyperun --nolog $script --html >> VmtkScripts/${script}.md 
+  pyperun --nolog $script --html >> vmtkscripts/${script}.md 
 done
 

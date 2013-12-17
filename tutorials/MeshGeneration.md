@@ -22,7 +22,7 @@ Surface remeshing is performed under the assumption that the surface requires im
 
 After the surface has been remeshed the volume is filled with a combination of tetrahedral and prismatic elements. This task relies on algorithms based on Tetgen. The parameter -volumeelementfactor is used to control the size of the tetrahedral mesh and it represents a proportionality constant between the local surface edge length and the element volume. There's is another option involved in Volume meshing, it's the Boundary Layer. By activating it we can heighten the density of the mesh near the wall. We can adda a boundary layer by using the -boundarylayer option . The thickness of this layer can be specified through the -thicknessfactor parameter. 
 
-![Figure 1]({{ site.baseurl }}/resources/img/Tutorials/image1.png)
+![Figure 1]({{ site.baseurl }}/resources/img/tutorials/image1.png)
 
 *Figure 1: A generic uncapped surface. We will refer to it as foo.vtp*
 
@@ -40,7 +40,7 @@ Where `-edgelength` is the absolute nominal length of a surface triangle edge.
 
 |                                   |                        |
 |:---------------------------------:|:----------------------:|
-|![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/meshuniform01.png "Figure 2") |![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/image3.png "Figure 3")
+|![Figure 2]({{ site.baseurl }}/resources/img/tutorials/meshuniform01.png "Figure 2") |![Figure 3]({{ site.baseurl }}/resources/img/tutorials/image3.png "Figure 3")
 | *Figure 2: Uniform element mesh - Edgelength 0.1 mm* | *Figure 3: Internal wireframe*  
 
 ### Generating a radius-adaptive element mesh
@@ -49,12 +49,12 @@ Where `-edgelength` is the absolute nominal length of a surface triangle edge.
 
 |                                   |                        |
 |:---------------------------------:|:----------------------:|
-|![Figure 4]({{ site.baseurl }}/resources/img/Tutorials/image4.png "Figure 4") |![Figure 5]({{ site.baseurl }}/resources/img/Tutorials/image5.png "Figure 5") |
+|![Figure 4]({{ site.baseurl }}/resources/img/tutorials/image4.png "Figure 4") |![Figure 5]({{ site.baseurl }}/resources/img/tutorials/image5.png "Figure 5") |
 | *Figure 4: Distance to centerlines (mm)* | *Figure 5: Radius Adaptive element mesh - Edgelength Factor 0.3* |  
 
 |                                   |                        |
 |:---------------------------------:|:----------------------:|
-|![Figure 6]({{ site.baseurl }}/resources/img/Tutorials/image6.png "Figure 6")| |
+|![Figure 6]({{ site.baseurl }}/resources/img/tutorials/image6.png "Figure 6")| |
 | *Figure 6: Internal wireframe* | |
 
 
@@ -66,7 +66,7 @@ Adding a boundary layer means increasing the element density close to the wall. 
 
 |                                   |                        |
 |:---------------------------------:|:----------------------:|
-|![Figure 7]({{ site.baseurl }}/resources/img/Tutorials/image7.png "Figure 7") |![Figure 8]({{ site.baseurl }}/resources/img/Tutorials/image8.png "Figure 8")
+|![Figure 7]({{ site.baseurl }}/resources/img/tutorials/image7.png "Figure 7") |![Figure 8]({{ site.baseurl }}/resources/img/tutorials/image8.png "Figure 8")
 | *Figure 7: Radius Adaptive Element mesh - Edge Length Factor 0.3* | *Figure 8: Radius Adaptive Element mesh - Edge Length Factor 0.3 with Boundary Layer*  
 
 
@@ -92,7 +92,7 @@ use `-sublayers` parameter in order to choose how many sublayer will be created 
 
 |                                   |                        |
 |:---------------------------------:|:----------------------:|
-|![Figure 10]({{ site.baseurl }}/resources/img/Tutorials/image9.png "Figure 10") |![Figure 11]({{ site.baseurl }}/resources/img/Tutorials/image10.png "Figure 11")
+|![Figure 10]({{ site.baseurl }}/resources/img/tutorials/image9.png "Figure 10") |![Figure 11]({{ site.baseurl }}/resources/img/tutorials/image10.png "Figure 11")
 | *Figure 10: Linear* | *Figure 11: Quadratic*  
 
 
@@ -106,7 +106,7 @@ Medical images are often in mm. Typically you want your computations and results
 
      vmtkmeshboundaryinspector -ifile foo.vtu -entityidsarray CellEntityIds 
 
-![Figure 12]({{ site.baseurl }}/resources/img/Tutorials/image.png "Figure 12")
+![Figure 12]({{ site.baseurl }}/resources/img/tutorials/image.png "Figure 12")
 
 *Figure 12: vmtkmeshboundaryinspector*
 

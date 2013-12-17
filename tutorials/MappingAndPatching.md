@@ -30,7 +30,7 @@ A common application is mapping and patching of fluid dynamics variables, such a
 Let's assume we have the mesh surface depicted in Figure 1: it represents the aorta of a mouse with its main branches (from top to bottom: celiac, mesenteric and right renal arteries) for which the WSS and OSI were computed.<br>
 The surface model was provided by T. Passerini, Math&CS Department, Emory University, Atlanta, US.
 
-![Figure 1]({{ site.baseurl }}/resources/img/Tutorials/MapPatchFigure1.png)
+![Figure 1]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure1.png)
 <br>Figure 1. 3D model of a mouse aorta and its main branches with associated WSS and OSI attributes
 
 We will refer to the mesh surface as aorta.vtp; we also assume, even if it is not mandatory, that dimensions are in mm.
@@ -55,7 +55,7 @@ We subdivide the surface in its constituent branches: in this way the mapping an
 
     vmtkbranchclipper -ifile aorta.vtp -centerlinesfile aorta_cl.vtp -groupidsarray GroupIds -radiusarray MaximumInscribedSphereRadius -blankingarray Blanking -ofile aorta_clipped.vtp 
 
-![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/MapPatchFigure2.png)
+![Figure 2]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure2.png)
 <br>Figure 2. Split centerlines (left) and surface (right): GroupIds array shown.
 
 ###Longitudinal and circumferential metrics
@@ -64,7 +64,7 @@ By means of the `vmtkbranchmetrics` script two additional arrays are created on 
 
     vmtkbranchmetrics -ifile aorta_clipped.vtp -centerlinesfile aorta_cl.vtp -abscissasarray Abscissas -normalsarray ParallelTransportNormals -groupidsarray GroupIds -centerlineidsarray CenterlineIds -tractidsarray TractIds -blankingarray Blanking -radiusarray MaximumInscribedSphereRadius -ofile aorta_clipped_metrics.vtp
 
-![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/MapPatchFigure3.png)
+![Figure 3]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure3.png)
 <br>Figure 3. Longitudinal (left) and circumferential metrics created over the surface model by vmtkbranchmetrics script; iso-contours over the two fields are shown.
 
 ##Metrics mapping to branches
@@ -79,7 +79,7 @@ to verify all the information needed by the script: results from `vmtkbranchmetr
 
     vmtkbranchmapping -ifile aorta_clipped_metrics.vtp -centerlinesfile aorta_cl.vtp -referencesystemsfile aorta_cl_rs.vtp -normalsarray ParallelTransportNormals -abscissasarray Abscissas -groupidsarray GroupIds -centerlineidsarray CenterlineIds -tractidsarray TractIds -referencesystemsnormalarray Normal -radiusarray MaximumInscribedSphereRadius -blankingarray Blanking -angularmetricarray AngularMetric -abscissametricarray AbscissaMetric -ofile aorta_clipped_mapping.vtp
 
-![Figure 4]({{ site.baseurl }}/resources/img/Tutorials/MapPatchFigure4.png)
+![Figure 4]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure4.png)
 <br>Figure 4. Harmonic funtion built over each branch (left); stretched longitudinal metric (middle) and angular metric (right).
 
 ##Patching of surface mesh and attributes
@@ -94,18 +94,18 @@ By means of the options `-longitudinalpatchsize` and `-circularpatches` we impos
 
     vmtkbranchpatching -ifile aorta_clipped_mapping.vtp -groupidsarray GroupIds -longitudinalmappingarray StretchedMapping -circularmappingarray AngularMetric -longitudinalpatchsize 0.5 -circularpatches 12 -ofile aorta_clipped_patching.vtp
 
-![Figure 5]({{ site.baseurl }}/resources/img/Tutorials/MapPatchFigure5.png)
+![Figure 5]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure5.png)
 <br>Figure 5. New mesh tesselation created by `vmtkbranchpatching` by cutting the surface longitudinally and circumferentially.
 
 Figure 6 shows the patching of the data attributes over the surface.<br>
-![Figure 6]({{ site.baseurl }}/resources/img/Tutorials/MapPatchFigure6.png)
+![Figure 6]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure6.png)
 <br>Figure 6. Surface model with patched WSS and OSI attributes; the mesh tesselation is also displayed. 
 
 By adding the following option to the previous patching command the patched data will be flattened and exported as a .vti image or a .png (.jpg, .tiff, etc). Figure 7 shows the patched 3D surface (WSS is visualized) and the flattened WSS (middle) and OSI (right) images. By default in the final .vti (or .png) images the flattened patched dataset of each branch are vertically juxtaposed.
 
     -patcheddatafile aorta_clipped_patching.vti or -patcheddatafile aorta_clipped_patching.png
 
-![Figure 7]({{ site.baseurl }}/resources/img/Tutorials/MapPatchFigure7.png)
+![Figure 7]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure7.png)
 <br>Figure 7. Left: 3D patched dataset (WSS displayed) for the complete model; middle and rigth: flattened images of patched WSS and OSI for the whole vascular network by vertical juxtaposition of each branch portion. 
 
 ###Extraction of one branch
@@ -116,7 +116,7 @@ One possible way to extract the patched 3D surface and the flattened image for o
 
 Figure 8 shows the results.
 
-![Figure 8]({{ site.baseurl }}/resources/img/Tutorials/MapPatchFigure8.png)
+![Figure 8]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure8.png)
 <br>Figure 8. 3D patched surface and flattened images for the branch #5.
 
 By means of the flattened images, comparisons or correlations between different models or different datasets are readily computable. 

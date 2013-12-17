@@ -58,11 +58,11 @@ If you need to clip the model before applying a slice:
 	vmtkmeshclipper -ifile mesh.vtu --pipe vmtkmeshcutter -ofile source.vtp
 	
 	
-!![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/particle_mesh_clipper.png)
+!![Figure 2]({{ site.baseurl }}/resources/img/tutorials/particle_mesh_clipper.png)
 *Figure 2: Clipping the mesh*
 
 
-![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/particle_mesh_cutter.png)
+![Figure 3]({{ site.baseurl }}/resources/img/tutorials/particle_mesh_cutter.png)
 *Figure 3: Creating a source slice for the particle tracer*  
 
 ##Generate the traces
@@ -82,7 +82,7 @@ Or we can build a pipe in order to avoid to write to disk the mesh_timesteps.vtu
 
 	vmtkmeshmergetimesteps -directory ~/Desktop/particle_test -firststep 2225 -laststep 3600 -intervalstep 10 -pattern gnuid_%6s.vtu --pipe vmtkparticletracer -sfile source.vtp -ofile traces.vtp
 
-![Figure 4]({{ site.baseurl }}/resources/img/Tutorials/particle_traces.png)
+![Figure 4]({{ site.baseurl }}/resources/img/tutorials/particle_traces.png)
 
 *Figure 4: The traces generated with vmtkparticletracer script*
 

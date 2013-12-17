@@ -11,13 +11,13 @@ title: Meshing based on centerlines (vmtk+gmsh)
 This tutorial demonstrates how to mesh tubular geometries with Gmsh using the centerlines computed with vmtk.
 [Gmsh](http://www.geuz.org/gmsh/) is an open-source 3D finite element mesh generator. Starting from an STL file (that can be of very ol quality), the NEW ''centerline field'' of Gmsh enables you to automatically create a CFD mesh or FSI mesh for cardiovascular and respiratory flow simulations. 
 
-![Figure 1]({{ site.baseurl }}/resources/img//Tutorials/stl_init.png)
+![Figure 1]({{ site.baseurl }}/resources/img//tutorials/stl_init.png)
 
 The procedure is able to generate different type of meshes, isotropic tetrahedral meshes, anisotropic tetrahedral meshes or mixed hexahedral/tetrahedral meshes. Additionally a multiply layered arterial wall can be generated with a variable thickness, function of th evessel radius. All the generated meshes rely on a mesh size field and a mesh metric that is based on centerline descriptions (distance to centerlines, local reference system based on the directions of the centerline and the normals to the centerline).
 
-![Figure 2]({{ site.baseurl }}/resources/img//Tutorials/gmsh_extrude.png)
+![Figure 2]({{ site.baseurl }}/resources/img//tutorials/gmsh_extrude.png)
 
-![Figure 3]({{ site.baseurl }}/resources/img//Tutorials/gmsh_aniso.png)
+![Figure 3]({{ site.baseurl }}/resources/img//tutorials/gmsh_aniso.png)
 
 Before proceeding, make sure you went through the [centerlines tutorial]({{ site.baseurl }}/tutorials/Centerlines.html).
 

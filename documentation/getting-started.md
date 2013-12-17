@@ -113,4 +113,4 @@ If output was required in [Tecplot](http://www.tecplot.com/) format, for example
      vmtkmarchingcubes -l 300.0 -ofile mc_surface.tec --pipe
      vmtkrenderer --pipe vmtkimageviewer --pipe vmtksurfaceviewer
 
-Note: If the PypeS syntax is unclear to you please read the [Basic PypeS tutorial]({{ site.baseurl }}/Tutorials/PypesBasic.html)
+Note: If the PypeS syntax is unclear to you please read the [Basic PypeS tutorial]({{ site.baseurl }}/tutorials/PypesBasic.html)

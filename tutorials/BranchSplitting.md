@@ -8,7 +8,7 @@ title: Branch Splitting
 
 This tutorial demonstrates how to split a vascular segment into its constituent branches.
 
-Before proceeding, make sure you went through the [centerlines tutorial](/{{ site.baseurl }}/Tutorials/Centerlines.html).
+Before proceeding, make sure you went through the [centerlines tutorial](/{{ site.baseurl }}/tutorials/Centerlines.html).
 
 The theory behind this tutorial can be found in the following publication:
 
@@ -22,7 +22,7 @@ After computing centerlines of a branching vascular segment we're left with a bu
 
 vmtk recovers the topology of the vascular network from geometric information, namely centerlines and their associated maximum inscribed sphere radius. Please recall that each centerline point is associated to the radius of the maximum inscribed sphere defined in that point: this means that we can construct a tube around each centerline made from the envelope of maximum inscribed spheres. In general, each two centerlines in a vascular tree will mutually intersect the surface of the other centerline's tube. We define this as a bifurcation. This is as usual easier to see than to read. 
 
-![Figure 1]({{ site.baseurl }}/resources/img/Tutorials/splitting_refpoints.png)
+![Figure 1]({{ site.baseurl }}/resources/img/tutorials/splitting_refpoints.png)
 
 For each bifurcation, but this is generalized to a n-furcation, we identify two points on each centerline (which we termed the *reference points*): the first is located where the centerline intersects another centerline's tube (in the vascular tree assumption, each centerline will intersect all the other centerlines' tube once); the second is located one maximum inscribed sphere upstream, as the black numbers in the figure above. The second reference point may be seen as the start of the bifurcation region, although this intuitive explanation may depend on the geometry of the vessel.
 
@@ -34,7 +34,7 @@ Splitting and grouping centerlines has a value that goes beyond centerline topol
 
 Having noted this, we can therefore compute the value of the tube function relative to one centerline on each point of the vessel surface: these will always be non-negative (since tubes are made of maximum *inscribed* spheres). We can also compute the value of a group of tube functions (relative to a group of centerlines) by taking the minimum value obtained across all tubes in the group. Thanks to these operations, we're now ready to detach the surface of a branch from the rest of the bifurcation: we can do so by taking the difference between the values of the group of tubes relative to the branch minus the values relative to the ensamble of the rest of the tracts that are not relative to the bifurcation region, at each surface point. This will generate a scalar field on the surface which is negative on he branch under examination and positive elsewhere. For people used to Voronoi diagrams, this operation identifies the region of space closer (in the tube metric) to the branch group of centerline tracts than to all the other tracts. At this point the surface is split at the zero-level of the generated scalar field and the branch is detached. In order to split a bifurcating segment into its branches, this operation has to be repeated for each branch, by considering in turn all the centerline tract groups (except the one at the bifurcation). 
 
-![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/splitting_decomposition.png)
+![Figure 2]({{ site.baseurl }}/resources/img/tutorials/splitting_decomposition.png)
 
 Note that the bifurcation tract group is never taken into account for splitting the surface. For this reason we say that the bifurcation group is a *blanked* group.
 
@@ -90,7 +90,7 @@ The same feature is handy if you want to perform the complementary operation, i.
 
      vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines --pipe vmtkbranchextractor --pipe vmtkbranchclipper -groupids 0 -insideout 1 -ofile foo_sp.vtp
 
-![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/surface_splitting.png)
+![Figure 3]({{ site.baseurl }}/resources/img/tutorials/surface_splitting.png)
 
 Last, you can achieve the maximum splitting freedom by using `vmtkcenterlinelabeler`, with which you can interactively change the group ids of a split centerline
 
@@ -100,4 +100,4 @@ The best way to learn this is to play with it and see what happens.
 
 One recommendation: when clipping the surface of a vascular network, it is strongly advised that all branches have a centerline in their interior (for weird geometries, e.g. when you're dealing with an aneurysm, you can always generate a centerline that enters the aneurysm). If this is not satisfied, spourious cuts may appear in the branches that do not contain a centerline.
 
-One last observation: `vmtkbranchextractor` is not the only script dealing with splitting and grouping sets of centerlines. Also `vmtkendpointextractor`, described in the [Prepare a surface for mesh generation](/{{ site.baseurl }}/Tutorials/SurfaceForMeshing.html) tutorial, works the same way. Try running the script and visualize the results with `vmtkcenterlineviewer` to understand what it's all about. 
+One last observation: `vmtkbranchextractor` is not the only script dealing with splitting and grouping sets of centerlines. Also `vmtkendpointextractor`, described in the [Prepare a surface for mesh generation](/{{ site.baseurl }}/tutorials/SurfaceForMeshing.html) tutorial, works the same way. Try running the script and visualize the results with `vmtkcenterlineviewer` to understand what it's all about. 

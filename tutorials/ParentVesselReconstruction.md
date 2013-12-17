@@ -38,7 +38,7 @@ Reconstruction of a new Voronoi Diagram for the portion of parent artery just re
 Given the high morphological variability of real cases, many auxiliary objects and files are created along the execution of the programs; they allow checking of the results and, in case, tuning of tolerances.
 
 ## Dataset
-The two models used to illustrate this tutorial are [id1_model.vtp]({{ site.baseurl }}/resources/img/Tutorials/id1_model.vtp) for lateral and [id2_model.vtp]({{ site.baseurl }}/resources/img/Tutorials/id2_model.vtp) for terminal. They are taken from the [Aneurisk dataset](http://ecm2.mathcs.emory.edu/aneuriskweb/index).
+The two models used to illustrate this tutorial are [id1_model.vtp]({{ site.baseurl }}/resources/img/tutorials/id1_model.vtp) for lateral and [id2_model.vtp]({{ site.baseurl }}/resources/img/tutorials/id2_model.vtp) for terminal. They are taken from the [Aneurisk dataset](http://ecm2.mathcs.emory.edu/aneuriskweb/index).
 
 ## Detailed Description and Instructions
 
@@ -62,19 +62,19 @@ Two couples of centerlines have to be provided. They are extracted from the mode
 
      vmtkcenterlines -ifile id1_model.vtp -endpoints 1 --pipe vmtkcenterlineresampling -length 0.1 -ofile id1_forwardcl.vtp
 
-![Figure 1]({{ site.baseurl }}/resources/img/Tutorials/ParentVesselReconstruction_Figure1.png)
+![Figure 1]({{ site.baseurl }}/resources/img/tutorials/ParentVesselReconstruction_Figure1.png)
 
 Figure 1
 
      vmtkcenterlines -ifile id1_model.vtp -endpoints 1 --pipe vmtkcenterlineresampling -length 0.1 -ofile id1_backwardcl.vtp
 
-![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/ParentVesselReconstruction_Figure2.png)
+![Figure 2]({{ site.baseurl }}/resources/img/tutorials/ParentVesselReconstruction_Figure2.png)
 
 Figure 2
 
 The resulting pairs of centerlines are displayed in Figure 3. Centerlines resampling at a small step is recommended. 
 
-![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/ParentVesselReconstruction_Figure3.png)
+![Figure 3]({{ site.baseurl }}/resources/img/tutorials/ParentVesselReconstruction_Figure3.png)
 
 Figure 3
 
@@ -96,13 +96,13 @@ Centerlines are computed with vmtkcenterlines and the order in placing seeds sho
 
 (see Figure 4C)
 
-![Figure 4]({{ site.baseurl }}/resources/img/Tutorials/ParentVesselReconstruction_Figure4.png)
+![Figure 4]({{ site.baseurl }}/resources/img/tutorials/ParentVesselReconstruction_Figure4.png)
 
 Figure 4
 
 The resulting couples of centerlines are displayed in Figure 5. Centerlines resampling at a small step is recommended.
 
-![Figure 5]({{ site.baseurl }}/resources/img/Tutorials/ParentVesselReconstruction_Figure5.png)
+![Figure 5]({{ site.baseurl }}/resources/img/tutorials/ParentVesselReconstruction_Figure5.png)
 
 Figure 5
 
@@ -116,7 +116,7 @@ The goal of this step is to identify on the given centerlines the locations deli
 
 Figure 6A depicts the clipping points, Figure 6B the parent vessel centerlines without the tract underneath the aneurysm and Figure 6C the interpolated centerlines for the two type of aneurysm.
 
-![Figure 6]({{ site.baseurl }}/resources/img/Tutorials/ParentVesselReconstruction_Figure6.png)
+![Figure 6]({{ site.baseurl }}/resources/img/tutorials/ParentVesselReconstruction_Figure6.png)
 
 Figure 6
 
@@ -155,7 +155,7 @@ With the smoothVoronoiDiagram = 1, the script saves the following data:
 
 Figures 7A and B depict the Voronoi Diagram after clipping with and without smoothing for the two cases.
 
-![Figure 7]({{ site.baseurl }}/resources/img/Tutorials/ParentVesselReconstruction_Figure7.png)
+![Figure 7]({{ site.baseurl }}/resources/img/tutorials/ParentVesselReconstruction_Figure7.png)
 
 Figure 7
 
@@ -181,6 +181,6 @@ Since the final reconstructed surface is the result of a marching cube operation
 
 Figure 8A and B displays the interpolated Voronoi Diagram and the reconstructed surface.
 
-![Figure 8]({{ site.baseurl }}/resources/img/Tutorials/ParentVesselReconstruction_Figure8.png)
+![Figure 8]({{ site.baseurl }}/resources/img/tutorials/ParentVesselReconstruction_Figure8.png)
 
 Figure 8

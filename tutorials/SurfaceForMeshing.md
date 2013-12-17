@@ -36,7 +36,7 @@ You'll see the original surface in red and the smoothed surface in gray.
 
 A potential side effect of the filter is that it slightly shifts the position of the surface in space. If this occurs, try increasing `iterations` 
 
-![Figure 1]({{ site.baseurl }}/resources/img/Tutorials/surface_1.png)
+![Figure 1]({{ site.baseurl }}/resources/img/tutorials/surface_1.png)
 
 *Figure 1: Compare original surface with the smoothed one*
 
@@ -53,7 +53,7 @@ The first option is to use `vmtksurfaceclipper.` If you call
 
 a rendering window will show up.
 
-![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/surface_2.png)
+![Figure 2]({{ site.baseurl }}/resources/img/tutorials/surface_2.png)
 
 *Figure 2: Surface clipper interaction*
 
@@ -97,6 +97,6 @@ The `adaptivelength` argument of the `vmtkflowextensions` script is a boolean fl
 
 In the previous line, the flag `-interactive 0` was specified. This means that vmtkflowextensions will not prompt the user about what inlet or outlet to extend, but it will perform the task on all the available open boundaries. The default behavior is `-interactive 1`, which prompts the user about which boundaries to extend through a graphical window. Once the rendering has started and you have determined what extensions to generate, press `q` and you'll be asked to list the ids of the desired boundaries. Remember that you can pipe more than one vmtkflowextensions script one after the other if you need to perform the task repeatedly.
 
-![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/surface_3.png)
+![Figure 3]({{ site.baseurl }}/resources/img/tutorials/surface_3.png)
 
 *Figure 3: Adding flow extensions*

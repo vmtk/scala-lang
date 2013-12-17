@@ -20,7 +20,7 @@ Recall that *-ifile* and *-ofile* are ways to access the built-in readers and wr
 
 First a render window appears displaying the usual image planes.
 
-![Figure 1]({{ site.baseurl }}/resources/img/Tutorials/levelset_1.png)
+![Figure 1]({{ site.baseurl }}/resources/img/tutorials/levelset_1.png)
 
 *Figure 1: Choosing initialization type*
 
@@ -61,7 +61,7 @@ Next, you'll be prompted with:
      Please place two seeds (click on the image while pressing Ctrl).
 
 
-![Figure 2]({{ site.baseurl }}/resources/img/Tutorials/levelset_2.png)
+![Figure 2]({{ site.baseurl }}/resources/img/tutorials/levelset_2.png)
 
 *Figure 2: Placing seeds on the image*
 
@@ -80,7 +80,7 @@ The following message will now appear:
      Please input parameters (type return to accept current values, 'q' to quit):
      NumberOfIterations(0) [PropagationScaling(1.0) CurvatureScaling(0.0) AdvectionScaling(0.0)]:
 
-![Figure 3]({{ site.baseurl }}/resources/img/Tutorials/levelset_3.png)
+![Figure 3]({{ site.baseurl }}/resources/img/tutorials/levelset_3.png)
 
 *Figure 3: Set parameters to control the deformation of level set.*
 
@@ -112,7 +112,7 @@ If q is entered instead of 300, the script quits, thus piping the resulting leve
 
 To quit the render window press q as usual.
 
-![Figure 4]({{ site.baseurl }}/resources/img/Tutorials/levelset_4.png)
+![Figure 4]({{ site.baseurl }}/resources/img/tutorials/levelset_4.png)
 
 *Figure 4: Displaying the final model*
 

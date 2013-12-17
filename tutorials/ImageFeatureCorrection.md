@@ -28,7 +28,7 @@ The next step is to select a volume of interest. If you look at the object using
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
-|![Figure1]({{ site.baseurl }}/resources/img//Tutorials/Jansen_location.png)| ![Figure2]({{ site.baseurl }}/resources/img//Tutorials/Jansen_voi.png) 
+|![Figure1]({{ site.baseurl }}/resources/img//tutorials/Jansen_location.png)| ![Figure2]({{ site.baseurl }}/resources/img//tutorials/Jansen_voi.png) 
 |*Figure 1: location of the aneurysm*	          | *Figure 2: Volume of Interest selection*
 
 ---
@@ -65,9 +65,9 @@ When creating the levelsets of bone and air, it is wise to choose a relatively s
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
-|![Figure3]({{ site.baseurl }}/resources/img//Tutorials/Jansen_bonelvlset.png)| ![Figure4]({{ site.baseurl }}/resources/img//Tutorials/Jansen_airlvlset.png) |
+|![Figure3]({{ site.baseurl }}/resources/img//tutorials/Jansen_bonelvlset.png)| ![Figure4]({{ site.baseurl }}/resources/img//tutorials/Jansen_airlvlset.png) |
 |*Figure 3: Bone levelset*	          | *Figure 4: Air levelset* |
-|![Figure5]({{ site.baseurl }}/resources/img/Tutorials/Jansen_comblvlset.png)| |
+|![Figure5]({{ site.baseurl }}/resources/img/tutorials/Jansen_comblvlset.png)| |
 |*Figure 5: Bone and Air levelsets combined* | 
 
 <br>
@@ -96,7 +96,7 @@ In this composed image the positions of the gradients you want to mask can be se
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
-|![Figure6]({{ site.baseurl }}/resources/img//Tutorials/Jansen_problemsituation.png)| |
+|![Figure6]({{ site.baseurl }}/resources/img//tutorials/Jansen_problemsituation.png)| |
 |*Figure 6: Problem situation* | |
 
 <br>
@@ -105,7 +105,7 @@ In this composed image the positions of the gradients you want to mask can be se
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
-|![Figure7]({{ site.baseurl }}/resources/img//Tutorials/Jansen_original.png)|![Figure8]({{ site.baseurl }}/resources/img//Tutorials/Jansen_altered.png)
+|![Figure7]({{ site.baseurl }}/resources/img//tutorials/Jansen_original.png)|![Figure8]({{ site.baseurl }}/resources/img//tutorials/Jansen_altered.png)
 |*Figure 7: Original feature image*|*Figure 8: Altered feature image*
 
 <br>

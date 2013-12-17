@@ -4,7 +4,7 @@ post-type: news
 title: "Particle tracing: new vmtk scripts and tutorial"
 ---
 
-A [new tutorial]({{ site.baseurl }}/Tutorials/ParticleTracing.html) has been published in order to illustrate how to generate particles and streaklines from a velocity vector field and how to animate them.
+A [new tutorial]({{ site.baseurl }}/tutorials/ParticleTracing.html) has been published in order to illustrate how to generate particles and streaklines from a velocity vector field and how to animate them.
 
 Three new scripts are now available in the [vmtk development version]({{site.baseurl}}/download/#development_version):
 + vmtkmeshmergetimesteps: a script used to create a mesh file which will contains all the data relative to the velocity components for each timestep we want to generate traces. 

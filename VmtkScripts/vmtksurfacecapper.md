@@ -3,7 +3,7 @@ layout: page-full-width
 ---
 <h1>vmtksurfacecapper</h1>
 <h2>Description</h2>
-add caps to the holes of a surface, assigning an id to each cap for easy specification of boundary conditions ("simple" method only).
+add caps to the holes of a surface, assigning an id to each cap for easy specification of boundary conditions.
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
@@ -25,7 +25,7 @@ add caps to the holes of a surface, assigning an id to each cap for easy specifi
 </tr>
 <tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td>CellEntityIds</td><td>name of the array where the id of the caps have to be stored</td>
 </tr>
-<tr><td>entityidoffset</td><td>CellEntityIdOffset</td><td>int</td><td>1</td><td>(0,)</td><td>1</td><td>offset for entity ids ("simple" method only")</td>
+<tr><td>entityidoffset</td><td>CellEntityIdOffset</td><td>int</td><td>1</td><td>(0,)</td><td>1</td><td>offset for entity ids</td>
 </tr>
 <tr><td>constraint</td><td>ConstraintFactor</td><td>float</td><td>1</td><td></td><td>1.0</td><td>amount of influence of the shape of the surface near the boundary on the shape of the cap ("smooth" method only)</td>
 </tr>

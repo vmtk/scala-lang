@@ -41,6 +41,8 @@ convert the elements of a mesh from linear to quadratic
 </tr>
 <tr><td>subdivisionmethod</td><td>SubdivisionMethod</td><td>str</td><td>1</td><td>["linear","butterfly"]</td><td>linear</td><td>subdivision method for surface elements</td>
 </tr>
+<tr><td>hexahedranodes</td><td>NumberOfNodesHexahedra</td><td>int</td><td>1</td><td></td><td>27</td><td>Output hexahedral element type by # of nodes: 20 or 27 (see vtkQuadraticHexahedron and vtkTriQuadraticHexahedron classes in VTK documentation)</td>
+</tr>
 <tr><td>ofile</td><td>MeshOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Mesh writer</td>
 </tr>
 </table>

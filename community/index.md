@@ -4,6 +4,11 @@ title: Community
 
 ---
 
+## Contribute 
+
+The Vascular Modeling Toolkit is an open source project where people from all over the world can contribute their work, with everyone benefitting from friendly help and advice, and kindly helping others in return.
+See the [contribute page]({{ site.baseurl }}/contribute) for details.
+
 ## Mailing Lists
 
 Mailing list is the best way to get in contact with the vmtk community. 

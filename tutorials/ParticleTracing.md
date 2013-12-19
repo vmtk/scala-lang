@@ -58,7 +58,7 @@ If you need to clip the model before applying a slice:
 	vmtkmeshclipper -ifile mesh.vtu --pipe vmtkmeshcutter -ofile source.vtp
 	
 	
-!![Figure 2]({{ site.baseurl }}/resources/img/tutorials/particle_mesh_clipper.png)
+![Figure 2]({{ site.baseurl }}/resources/img/tutorials/particle_mesh_clipper.png)
 *Figure 2: Clipping the mesh*
 
 

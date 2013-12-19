@@ -73,7 +73,7 @@ Adding a boundary layer means increasing the element density close to the wall. 
 ### Customizing the boundary layer
 *by Simone Manini, Eng, Orobix Srl, Italy*
 
-*Only available for the [Development version]({{ site.baseurl }}//download/#development_version)*
+*Only available for the [Development version]({{ site.baseurl }}/download/#development_version)*
 
 There is the possibility to fully customize number and dimension of sublayers while generating a boundary layer during mesh generation.
 use `-sublayers` parameter in order to choose how many sublayer will be created and `-sublayerratio` parameter to set the ratio between one layer and its neighbour. For example:

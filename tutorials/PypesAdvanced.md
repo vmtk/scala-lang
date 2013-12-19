@@ -19,7 +19,7 @@ The module we are about to create has no relevant utility and serves purely as a
 
 ## Creating a new module
 
-Let's start by opening a text editor and creating a new file. We can name it as **`customscript.py`** and save it anywhere in our filesystem. The first lines we need to write are:
+Let's start by opening a text editor and creating a new file. We can name it as <code>customscript.py</code> and save it anywhere in our filesystem. The first lines we need to write are:
 
 
 	#!/usr/bin/env python
@@ -29,11 +29,11 @@ Let's start by opening a text editor and creating a new file. We can name it as 
 	from vmtk import pypes
 	from vmtk import vmtkscripts
 
-The **`#!/usr/bin/env python`** instruction specifies that the system has to handle this file by using the Python interpreter. The **`import sys`** instruction tells Python to load the **`sys`** module which is a standard Python library that handles command line arguments. With the last two instructions the interpreter is asked to load the modules **PypeS** and vmtkScripts described as submodules of **`vmtk`**.
+The <code>#!/usr/bin/env python</code> instruction specifies that the system has to handle this file by using the Python interpreter. The <code>import sys</code> instruction tells Python to load the <code>sys</code> module which is a standard Python library that handles command line arguments. With the last two instructions the interpreter is asked to load the modules **PypeS** and vmtkScripts described as submodules of <code>vmtk</code>.
 
 ## Defining the core structure of our module
 
-Now we can proceed to the definition of our module **`customScript`**. First we are going to define the core structure, which is pretty much the same as for any vmtkScript:
+Now we can proceed to the definition of our module <code>customScript</code>. First we are going to define the core structure, which is pretty much the same as for any vmtkScript:
 
 
 	customscript = 'customScript'

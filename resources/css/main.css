@@ -471,7 +471,31 @@ a.brand {
 }
 
 #bunjee-text {
-   color: #fff;
+  color: #fff;
+  text-align: center;
+  font-family: "museo-slab", serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.bunjee-left {
+  text-align: left;
+}
+
+#bunjee-text a {
+  color: #d7830b;
+}
+
+#bunjee-text ul {
+  margin-left: 0;
+}
+
+#bunjee-text li {
+  list-style-type: none;
 }
 
 .splash-text{

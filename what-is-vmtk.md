@@ -9,7 +9,7 @@ title: What is vmtk?
 vmtk is composed of
 
 - C++ classes (<a href="http://www.vtk.org" target="_blank">VTK</a> and <a href="http://www.itk.org" target="_blank">ITK</a> -based algorithms)
-- <a href="http://www.python.org" target="_blank">Python</a> classes (high-level functionality - each class is a script)
+- &#x20;<a href="http://www.python.org" target="_blank">Python</a> classes (high-level functionality - each class is a script)
 - [PypeS]({{ site.baseurl }}/documentation/pypes.html) - Python pipeable scripts, a framework which enables vmtk scripts to interact with each other
 
 Before using vmtk scripts, make sure you know how to use [PypeS]({{ site.baseurl }}/documentation/pypes.html).
@@ -39,7 +39,7 @@ Scripts, I/O tools and simple algorithms to easily work with images and meshes:
 
 - Read and write a number of image, surface and volume mesh formats. Includes a DICOM series reader with auto-flipping capabilities, 
 
-<a href="http://www.hpfem.jku.at/netgen/" target="_blank">Netgen</a> mesh format reader, <a href="http://libmesh.sourceforge.net/" target="_blank">libmesh</a> xda mesh format writer, <a href="http://wias-berlin.de/software/tetgen/" target="_blank">Tetgen</a> mesh generator wrapper, Fluent mesh format writer, FIDAP FDNEUT mesh format reader and writer and a Newtetr input file generator
+&#x20;<a href="http://www.hpfem.jku.at/netgen/" target="_blank">Netgen</a> mesh format reader, <a href="http://libmesh.sourceforge.net/" target="_blank">libmesh</a> xda mesh format writer, <a href="http://wias-berlin.de/software/tetgen/" target="_blank">Tetgen</a> mesh generator wrapper, Fluent mesh format writer, FIDAP FDNEUT mesh format reader and writer and a Newtetr input file generator
 - Display images and meshes
 - Incapsulate several VTK classes and make them available as pipeable scripts (e.g. Marching Cubes, surface smoothing, clipping, normal computation, connectivity, subdivision, distance between surfaces, ICP registration)
 - Add cylindrical extensions to surface model boundaries as a preprocessing step for CFD simulations.

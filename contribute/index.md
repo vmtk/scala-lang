@@ -11,14 +11,12 @@ from friendly help and advice, and kindly helping others in return.
 
 ### Contributing to vmtk
 
-If you want to contribute to vmtk please [fork](https://help.github.com/articles/fork-a-repo#contributing-to-a-project) 
-the [source code](https://github.com/vmtk/vmtk).<br/>
-See [github collaborating guide ](https://help.github.com/categories/63/articles) to learn
-how to collaborate in a project.
+If you want to contribute to vmtk please <a href="https://help.github.com/articles/fork-a-repo#contributing-to-a-project" target="_blank">fork</a> the <a href="https://github.com/vmtk/vmtk">source code</a>.<br/>
+See <a href="https://help.github.com/categories/63/articles">github collaborating guide</a> to learn how to collaborate in a project.
 
 ### Reporting bugs and issues
 
-See vmtk [open issues](https://github.com/vmtk/vmtk/issues/) or [create new issue](https://github.com/vmtk/vmtk/issues/new).
+See vmtk <a href="https://github.com/vmtk/vmtk/issues/" target="_blank">open issues</a> or <a href="https://github.com/vmtk/vmtk/issues/new">create new issue</a>.
 
 
 ### Help with the documentation

@@ -18,7 +18,7 @@ Interactive VOI selection.
 ![]({{ site.baseurl }}/resources/img/main/avf_ls1.png)
 ![]({{ site.baseurl }}/resources/img/main/avf_ls2.png)
 
-Level sets segmentation of the cephalic (left) and a collateral vein (right). Segmentation is carried out separately. Each image shows the initialization on the left and the result of level set segmentation. Initialization is performed by interactively picking two points (red spheres), and the [itkCollidingFrontsImageFilter](http://public.kitware.com/Insight/Doxygen/html/classitk_1_1CollidingFrontsImageFilter.html) selects the vascular segment comprised between the points, without seeping into lateral branches.
+Level sets segmentation of the cephalic (left) and a collateral vein (right). Segmentation is carried out separately. Each image shows the initialization on the left and the result of level set segmentation. Initialization is performed by interactively picking two points (red spheres), and the <a href="http://public.kitware.com/Insight/Doxygen/html/classitk_1_1CollidingFrontsImageFilter.html" target="_blank">itkCollidingFrontsImageFilter</a> selects the vascular segment comprised between the points, without seeping into lateral branches.
 
 ![]({{ site.baseurl }}/resources/img/main/avf_lsmerged.png)
 ![]({{ site.baseurl }}/resources/img/main/avf_lsmergedzoom.png)

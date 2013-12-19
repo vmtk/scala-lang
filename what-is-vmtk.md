@@ -8,8 +8,8 @@ title: What is vmtk?
 
 vmtk is composed of
 
-- C++ classes ([VTK](http://www.vtk.org) and [ITK](http://www.itk.org) -based algorithms)
-- [Python](http://www.python.org) classes (high-level functionality - each class is a script)
+- C++ classes (<a href="http://www.vtk.org" target="_blank">VTK</a> and <a href="http://www.itk.org" target="_blank">ITK</a> -based algorithms)
+- <a href="http://www.python.org" target="_blank">Python</a> classes (high-level functionality - each class is a script)
 - [PypeS]({{ site.baseurl }}/documentation/pypes.html) - Python pipeable scripts, a framework which enables vmtk scripts to interact with each other
 
 Before using vmtk scripts, make sure you know how to use [PypeS]({{ site.baseurl }}/documentation/pypes.html).
@@ -25,7 +25,7 @@ Segmentation of vascular segments (or other anatomical structures) from medical 
 
 ###Geometric analysis 
 
-Geometric analysis and surface data processing of 3D models of blood vessels (and tubular objects in general)((The key algorithms have been published on medical imaging journals. You can find a complete reference to publications at [David Steinman](http://www.mie.utoronto.ca/labs/bsl/)'s and [Luca Antiga](http://lantiga.github.com)'s homepages)):
+Geometric analysis and surface data processing of 3D models of blood vessels (and tubular objects in general)((The key algorithms have been published on medical imaging journals. You can find a complete reference to publications at <a href="http://www.mie.utoronto.ca/labs/bsl/" target="_blank">David Steinman</a>'s and <a href="http://lantiga.github.io/about/" target="_blank">Luca Antiga</a>'s homepages):
 
 - Compute centerlines and maximal inscribed sphere radius of branching tubular structures given their polygonal surface representation
 - Split surface models into their constitutive branches based on centerline geometry

@@ -37,7 +37,9 @@ Geometric analysis and surface data processing of 3D models of blood vessels (an
 
 Scripts, I/O tools and simple algorithms to easily work with images and meshes:
 
-- Read and write a number of image, surface and volume mesh formats. Includes a DICOM series reader with auto-flipping capabilities, [Netgen](http://www.hpfem.jku.at/netgen/) mesh format reader, [libMesh](http://libmesh.sourceforge.net/) xda mesh format writer, [Tetgen](http://wias-berlin.de/software/tetgen/) mesh generator wrapper, Fluent mesh format writer, FIDAP FDNEUT mesh format reader and writer and a Newtetr input file generator
+- Read and write a number of image, surface and volume mesh formats. Includes a DICOM series reader with auto-flipping capabilities, 
+
+<a href="http://www.hpfem.jku.at/netgen/" target="_blank">Netgen</a> mesh format reader, <a href="http://libmesh.sourceforge.net/" target="_blank">libmesh</a> xda mesh format writer, <a href="http://wias-berlin.de/software/tetgen/" target="_blank">Tetgen</a> mesh generator wrapper, Fluent mesh format writer, FIDAP FDNEUT mesh format reader and writer and a Newtetr input file generator
 - Display images and meshes
 - Incapsulate several VTK classes and make them available as pipeable scripts (e.g. Marching Cubes, surface smoothing, clipping, normal computation, connectivity, subdivision, distance between surfaces, ICP registration)
 - Add cylindrical extensions to surface model boundaries as a preprocessing step for CFD simulations.

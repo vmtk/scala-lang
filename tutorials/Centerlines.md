@@ -12,7 +12,7 @@ This tutorial demonstrates how to compute centerlines from a surface model of a 
 
 Centerlines are powerful descriptors of the shape of vessels. Although the concept of what a centerline is is more or less intuitive, their mathematical definition is not unique. A lot of methods have been proposed in the literature for the computation of centerlines both from angiographic images and 3D models. The algorithm implemented in vmtk deals with the computation of centerlines starting from surface models, and has the advantage that it is well characterized mathematically and quite stable to perturbations on the surface.
 
-For further details please refer to publications and Luca's PhD thesis [here](http://lantiga.github.com/media/AntigaPhDThesis.pdf). 
+For further details please refer to publications and <a href="http://lantiga.github.com/media/AntigaPhDThesis.pdf" target="_blank">Luca's PhD thesis</a>. 
 
 Briefly, centerlines are determined as weighted shortest paths traced between two extremal points. In order to ensure that the final lines are in fact central, the paths cannot lie anywhere in space, but are bound to run on the Voronoi diagram of the vessel model. There's a huge literature on Voronoi diagrams, however, as a first approximation, you can consider it as the place where the centers of maximal inscribed spheres are defined. A sphere inscribed in an object is said to be maximal when there's no other inscribed sphere that contains it. So, for every point belonging to the Voronoi diagram, there's a sphere centered in that point that is a maximal inscribed sphere (the information relative to the radius is therefore defined everywhere on the Voronoi diagram).
 
@@ -64,7 +64,7 @@ If you want to take a look at the Voronoi diagram with centerlines defined on it
 
 *Figure 4: Voronoi diagram*
 
-If you inspect the centerlines closely, you'll notice that they don't exactly reach seed and target points, but they just go close to them. The reason is that centerlines lie on the Voronoi diagram, and the Voronoi diagram does not touch the surface (for the ones interested, centerlines stop at the poles associated with seed and target points; look [here](http://www.cs.ucdavis.edu/~amenta/pubs/pubs.html) to find out what poles are). If you want centerlines to end precisely at source and target points, specify the option -endpoints 1: this way the segments from sources and targets to their respective poles are appended to the centerlines.
+If you inspect the centerlines closely, you'll notice that they don't exactly reach seed and target points, but they just go close to them. The reason is that centerlines lie on the Voronoi diagram, and the Voronoi diagram does not touch the surface (for the ones interested, centerlines stop at the poles associated with seed and target points; look <a href="http://www.cs.ucdavis.edu/~amenta/pubs/pubs.html" target="_blank">here</a>) to find out what poles are). If you want centerlines to end precisely at source and target points, specify the option -endpoints 1: this way the segments from sources and targets to their respective poles are appended to the centerlines.
 
 In the case your model is open-ended, you can also specify seeds and targets as the barycenters of the open profiles of your model. You do this by issuing 
 

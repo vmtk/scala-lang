@@ -7,8 +7,8 @@ title: Installation
 ## Installing binary packages
 
 
-Binary packages are supported by [Orobix](http://www.orobix.com). 
-Special thanks to Johannes Ring, the maintainer of vmtk Debian packages, [Simula Research Laboratory](http://www.simula.no) and to Sara Zanchi and Valentina Rossi, University of Bergamo.
+Binary packages are supported by <a href="http://www.orobix.com" target="_blank">Orobix</a>). 
+Special thanks to Johannes Ring, the maintainer of vmtk Debian packages, <a href="http://www.simula.no" target="_blank">Simula Research Laboratory</a> and to Sara Zanchi and Valentina Rossi, University of Bergamo.
 
 ### Ubuntu packages
 
@@ -17,7 +17,7 @@ Starting with vmtk 0.9, vmtk has become an official Debian package. This means t
 
     sudo apt-get install vmtk
 
-Visit the [PPA on Launchpad](https://launchpad.net/~vmtk-packaging/+archive/ppa) for details on the published packages.
+Visit the <a href="https://launchpad.net/~vmtk-packaging/+archive/ppa" target="_blank">PPA on Launchpad</a> for details on the published packages.
 
 ### Mac OSX packages
 
@@ -55,9 +55,9 @@ vmtk is cross-platform and will compile and work on Linux, Mac OSX and Windows. 
 
 In order to successfully compile and use vmtk, the following software has to be installed in your system:
 
-- [Git](http://www.git-scm.org) (>= 1.6)
-- [Python](http://www.python.org) (>= 2.6, < 3.0)
-- [CMake](http://www.cmake.org) (>= 2.8)
+- <a href="http://www.git-scm.org" target="_blank">Git</a> (>= 1.6)
+- <a href="http://www.python.org" target="_blank">Python</a> (>= 2.6, < 3.0)
+- <a href="http://www.cmake.org" target="_blank">CMake</a> (>= 2.8)
 - A C++ compiler
 
 For Ubuntu users, you'll have to install the following packages prior to compiling:
@@ -80,7 +80,7 @@ Run CMake with the directory where the vmtk source tree is located as an argumen
     ccmake ../vmtk
     
 or if you use the CMake GUI, point the source path to the vmtk source directory.
-Set CMake variables as appropriate (they have sensible defaults), *configure* and *generate* (for more details look at the [CMake help pages](http://www.cmake.org/cmake/help/runningcmake.html)). Once you're done, you'll find either Makefiles or a Visual Studio solution or an XCode project in the build directory, depending on your platform and compiler.
+Set CMake variables as appropriate (they have sensible defaults), *configure* and *generate* (for more details look at the <a href="http://www.cmake.org/cmake/help/runningcmake.html" target="_blank">CMake help pages</a>). Once you're done, you'll find either Makefiles or a Visual Studio solution or an XCode project in the build directory, depending on your platform and compiler.
 
 - Start your compiler in your build directory, as your platform requires. Note that this will download and compile both VTK and ITK in the background, so it will typically take a long time. The build process will automatically install all build products in the vmtk-build/Install directory.
 
@@ -110,8 +110,10 @@ Enjoy
 <sub>thanks to Hugo Gratama van Andel</sub>
 
 Apparently the FindPythonLibs CMake script is not working correctly on Windows 7 64 bit, see:
-- [FindPythonLibs no longer finding Python libs in Windows 7 64 bit](http://www.cmake.org/pipermail/cmake/2011-July/045471.html)
-- [FindPythonLibs fails inexplicably](http://www.cmake.org/pipermail/cmake/2011-November/047820.html)
+
+- <a href="http://www.cmake.org/pipermail/cmake/2011-July/045471.html" target="_blank">FindPythonLibs no longer finding Python libs in Windows 7 64 bit</a>
+- <a href="http://www.cmake.org/pipermail/cmake/2011-November/047820.html" target="_blank">FindPythonLibs fails inexplicably</a>
+
 
 If your build is throwing errors you can resolve this by editing the CMakeCache.txt file in the .\ VTK-Build\ directory:
 

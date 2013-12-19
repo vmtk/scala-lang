@@ -30,7 +30,7 @@ The window shown in *Figure 1* will appear, layout may vary depending on your pl
 
 ## The Pypepad environment
 
-Pypepad is organized in three main frames. The first on the top, referred as the **`Input frame`**, is where you write and edit your pype; the second in the middle, referred as the **`Output frame`**, is where the output text is displayed and the third on the bottom, as the **`Entry frame`**, is where you enter values whenever prompted by a script.
+Pypepad is organized in three main frames. The first on the top, referred as the <code>Input frame</code>, is where you write and edit your pype; the second in the middle, referred as the <code>Output frame</code>, is where the output text is displayed and the third on the bottom, as the <code>Entry frame</code>, is where you enter values whenever prompted by a script.
 
 ##Pypepad Settings
 
@@ -38,11 +38,11 @@ Pypepad can work in a verbose or a non verbose mode. Also, it can save or update
 
 |    		 			  |     					      |
 |:----------------------------------------|---------------------------------------------------|
-Toggle Verbose Output:		          | **`Edit -> Log`** 
-Disable Output Writing :	          | **`Edit -> No output to file`**
-Save the Output to a file:	          | **`Edit -> Write output to file`**  
-Append the Output to an existing file:	  | **`Edit -> Append output to file`** 
-Select an output file:	                  | **`Edit -> Output file...`**        
+Toggle Verbose Output:		          | <code>Edit -> Log<code> 
+Disable Output Writing :	          | <code>Edit -> No output to file<code>
+Save the Output to a file:	          | <code>Edit -> Write output to file<code>  
+Append the Output to an existing file:	  | <code>Edit -> Append output to file<code> 
+Select an output file:	                  | <code>Edit -> Output file...<code>        
 
 
 ## Editing your pype
@@ -51,15 +51,15 @@ To edit your pype simply write it in the Input frame. The syntax is the same use
 
 |    		 			  |     					      |
 |:----------------------------------------|---------------------------------------------------|
-|Help:	 				  | **`F1`** 					      
-|Save current input:			  | **`Ctrl+S`** Your pypes are saved as a text file    
-|Open your saved pypes:			  | **`Ctrl+O`** Open a text file containing your pypes  
-|Autocomplete:			     	  | **`TAB`** 					      
-|Insert file name:		   	  | **`Ctrl+F`** 					      
-|Insert a script:			  | **`Edit -> insert script`** 			       
-|Clear the Input frame:			  | **`Edit -> clear input`** 			      
+|Help:	 				  | <code>F1</code> 					      
+|Save current input:			  | <code>Ctrl+S</code> Your pypes are saved as a text file    
+|Open your saved pypes:			  | <code>Ctrl+O</code> Open a text file containing your pypes  
+|Autocomplete:			     	  | <code>TAB</code> 					      
+|Insert file name:		   	  | <code>Ctrl+F</code> 					      
+|Insert a script:			  | <code>Edit -> insert script</code> 			       
+|Clear the Input frame:			  | <code>Edit -> clear input</code> 			      
 |Add comments:			  	  | Write # at the beginning of a line 		      
-|Open context menu:			  | **`Right-Click`** 				      
+|Open context menu:			  | <code>Right-Click</code> 				      
 
 ## Running your pype
 
@@ -67,6 +67,6 @@ The Input frame is designed to edit multiple pypes. To run your pypes you have t
 
 |    		 			  |     					      |
 |:----------------------------------------|---------------------------------------------------|
-|Run the entire input:			  | **`Run->Run all`** - Lines preceded by # will be ignored
-|Run just the line under cursor:	  | **`Run->Run current line`**
-|Run the selected lines:		  | **`Run->Run selection`**
+|Run the entire input:			  | <code>Run->Run all</code> - Lines preceded by # will be ignored
+|Run just the line under cursor:	  | <code>Run->Run current line</code>
+|Run the selected lines:		  | <code>Run->Run selection</code>

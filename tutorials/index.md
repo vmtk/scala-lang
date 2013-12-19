@@ -40,4 +40,4 @@ These are a bunch of tutorials on the use of vmtk. The first group is about the 
 ## Tutorial data
 
 - [Aorta_voi.zip]({{ site.baseurl }}/data/Aorta_voi.zip)
-- [OsiriX DICOM sample image sets](http://www.osirix-viewer.com/datasets/)
+- <a href="http://www.osirix-viewer.com/datasets/" target="_blank">OsiriX DICOM sample image sets</a>

@@ -34,6 +34,6 @@ Clicking with the right mouse button on the first pane makes a menu appear. From
 
 From the File menu you can also save the contents of the command pane or load them from a text file. Note that saved text files can be also run from outside the GUI with
 
-    vmtk --file my_file.txt.
+    vmtk --file my_file.txt
 
 Now you're ready to learn more about how vmtk scripts can interact with each other in the [basic PypeS tutorial]({{ site.baseurl }}/tutorials/PypesBasic.html). 

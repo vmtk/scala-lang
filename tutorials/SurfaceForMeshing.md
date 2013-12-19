@@ -20,7 +20,7 @@ By typing:
 
 	vmtksurfacesmoothing --help
 
-we see that there are two main parameters controlling the amount of smoothing: passband, which is the cut-off spatial frequency of the low pass filter, and iterations, which is the number of smoothing passes. For more details, visit the [vtkWindowedSincPolyDataFilter](http://www.vtk.org/doc/nightly/html/classvtkWindowedSincPolyDataFilter.html) doxygen page. 
+we see that there are two main parameters controlling the amount of smoothing: passband, which is the cut-off spatial frequency of the low pass filter, and iterations, which is the number of smoothing passes. For more details, visit the <a href="http://www.vtk.org/doc/nightly/html/classvtkWindowedSincPolyDataFilter.html" target="_blank">vtkWindowedSincPolyDataFilter</a> doxygen page. 
 
 For typical vessels, the following should be ok 
 
@@ -62,8 +62,6 @@ Press `i` to start the interaction. A cube will appear (like in `vmtkimagevoisel
 Press the `space bar` to proceed with clipping.
 
 Press `i` again if you want to clip another piece, or `q` if you want to quit. 
-
-The second option is to use [Paraview](http://www.paraview.org/). The procedure is not dramatically different from what you do with vmtksurfaceclipper, but the interface is surely friendlier.
 
 The third option is to clip endcaps automatically. No 3D interaction involved. Endcap clipping can be performed using `vmtkendpointextractor`, which needs centerlines to be computed beforehand with `vmtkcenterlines`. Let's set up the corresponding pype 
 

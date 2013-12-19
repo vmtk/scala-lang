@@ -16,7 +16,7 @@ The algorithm relies on the definition of Voronoi Diagram and on its properties,
 
 ## Requirements
 
-This tutorial is based on three Python scripts located in the vmtkApps directory in the source code (vmtk/vmtkApps/CerebralAneurysms/ParentVesselReconstructions). You can get the source code for vmtk [here](https://github.com/vmtk/vmtk) or by downloading a [zip archive](https://github.com/vmtk/vmtk/archive/master.zip).
+This tutorial is based on three Python scripts located in the vmtkApps directory in the source code (vmtk/vmtkApps/CerebralAneurysms/ParentVesselReconstructions). You can get the source code for vmtk [here]({{ site.baseurl }}/download/#development_version).
 
 The programs are written make use of VTK and vmtk, which have to be installed for the scripts to run properly. Only the first script requires input data from the user, while the second and third steps read datasets and files created and saved along the various steps.
 
@@ -38,7 +38,7 @@ Reconstruction of a new Voronoi Diagram for the portion of parent artery just re
 Given the high morphological variability of real cases, many auxiliary objects and files are created along the execution of the programs; they allow checking of the results and, in case, tuning of tolerances.
 
 ## Dataset
-The two models used to illustrate this tutorial are [id1_model.vtp]({{ site.baseurl }}/resources/img/tutorials/id1_model.vtp) for lateral and [id2_model.vtp]({{ site.baseurl }}/resources/img/tutorials/id2_model.vtp) for terminal. They are taken from the [Aneurisk dataset](http://ecm2.mathcs.emory.edu/aneuriskweb/index).
+The two models used to illustrate this tutorial are [id1_model.vtp]({{ site.baseurl }}/resources/img/tutorials/id1_model.vtp) for lateral and [id2_model.vtp]({{ site.baseurl }}/resources/img/tutorials/id2_model.vtp) for terminal. They are taken from the <a href="http://ecm2.mathcs.emory.edu/aneuriskweb/index" target="_blank">Aneurisk dataset</a>.
 
 ## Detailed Description and Instructions
 

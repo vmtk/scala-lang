@@ -12,7 +12,7 @@ Binary packages are available for Debian, Ubuntu, Mac OSX 10.6 (Snow Leopard) an
 
 <p class="center">
   Download vmtk 1.0.1 for your system
-  (<a href="http://www.sourceforge.net/projects/vmtk/files/vmtk/1.0/">All downloads</a>).
+  (<a href="http://www.sourceforge.net/projects/vmtk/files/vmtk/1.0/" target="_blank">All downloads</a>).
 </p>
 
 
@@ -32,7 +32,7 @@ For further details, follow the instructions on the [installation]({{ site.baseu
 
 ##Development version
 
-You can grab the latest development version from the [official vmtk git repository on Github] (https://github.com/vmtk/vmtk). To clone this repository, make sure [git](http://git-scm.com) is installed on your system and issue the following:
+You can grab the latest development version from the <a href="https://github.com/vmtk/vmtk" target="_blank">official vmtk git repository on Github</a>. To clone this repository, make sure <a href="http://git-scm.com" target="_blank">git</a> is installed on your system and issue the following:
 
      git clone https://github.com/vmtk/vmtk.git
      

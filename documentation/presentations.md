@@ -5,7 +5,7 @@ title: Presentations
 
 We are releasing presentations material for free.
 
-Take at look at the date of the presentation since vmtk might evolved in a few aspects.
+Take at look at the date of the presentation since vmtk might have evolved in a few aspects.
 
 </br>
 

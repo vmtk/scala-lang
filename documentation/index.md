@@ -57,5 +57,5 @@ title: Learn vmtk
 
 The VTK source distribution includes a sizeable number of examples. The goal of the VTK examples is to illustrate specific VTK concepts in a consistent and simple format. Some have been there since the inception of the toolkit. These examples have been subject to peer review and revision over the years. However, these examples only cover a small part of the capabilities of VTK.
 
-* [VTK Examples in Python] (http://www.vtk.org/Wiki/VTK/Examples/Python)
-* [VTK Examples in C++] (http://www.vtk.org/Wiki/VTK/Examples/Cxx)
+* <a href="http://www.vtk.org/Wiki/VTK/Examples/Python" target="_blank">VTK Examples in Python</a>
+* <a href="http://www.vtk.org/Wiki/VTK/Examples/Cxx" target="_blank">VTK Examples in C++</a>

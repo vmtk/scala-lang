@@ -8,7 +8,7 @@ title: Using PypeS programmatically
 
 <sub>by Carlos Remuzzi, BEng Biomedical Engineering, Freelance Developer, London UK</sub>
 
-The first and most immediate use of the Vmtk framework consists in entering your piped scripts on a command line. The [vmtk scripts]({{ site.baseurl }}/tutorials/ScriptsBasic) tutorial and the [basic PypeS tutorial]({{ site.baseurl }}/tutorials/PypesBasic.html) offer an extensive insight on this matter.
+The first and most immediate use of the Vmtk framework consists in entering your piped scripts on a command line. The [vmtk scripts]({{ site.baseurl }}/tutorials/ScriptsBasic.html) tutorial and the [basic PypeS tutorial]({{ site.baseurl }}/tutorials/PypesBasic.html) offer an extensive insight on this matter.
 
 A more radical approach involves the creation of new Python scripts and modules based on the Vmtk libraries. The [advanced PypeS tutorial]({{ site.baseurl }}/tutorials/PypesAdvanced.html) gives you the basic knowledge to start developing with vmtk.
 
@@ -43,13 +43,13 @@ We can get our surface by simply entering the following instruction:
 
     >>> mySurface = myPype.GetScriptObject('vmtkmarchingcubes','0').Surface
 
-We have used the **GetScriptObject()** method to get a pypeScript object named **`vmtkmarchingcubes`** and with id equal to **0** from the list of pypeScript objects created and used by our pype.
+We have used the **GetScriptObject()** method to get a pypeScript object named <code>vmtkmarchingcubes</code> and with id equal to **0** from the list of pypeScript objects created and used by our pype.
 
-So we have named our surface as **`mySurface`** and defined it as the **`Surface`** attribute of the pypeScript object returned by GetScriptObject().
+So we have named our surface as <code>mySurface</code> and defined it as the <code>Surface</code> attribute of the pypeScript object returned by GetScriptObject().
 
 Now we can easily handle our new Surface object and use it for as many scripts as we need.
 
-We might want to smooth our surface by calling the **`vmtkSurfaceSmoothing`** script. We can do it by typing:
+We might want to smooth our surface by calling the <code>vmtkSurfaceSmoothing</code> script. We can do it by typing:
 
     >>> from vmtk import vmtkscripts
     >>> mySmoother = vmtkscripts.vmtkSurfaceSmoothing()
@@ -58,16 +58,16 @@ We might want to smooth our surface by calling the **`vmtkSurfaceSmoothing`** sc
     >>> mySmoother.NumberOfIterations = 30
     >>> mySmoother.Execute()
 
-We have imported the **`vmtk.vmtkScripts`** modules and next we have created a new instance of **`vmtkSurfaceSmoothing`** naming it as `mySmoother` . Then we have set a few attributes of **`mySmoother`** and finally we have invoked the **Execute()** method. Notice how we have easily passed **mySurface** as an attribute to **`mySmoother`** .
+We have imported the <code>vmtk.vmtkScripts</code> modules and next we have created a new instance of <code>vmtkSurfaceSmoothing</code> naming it as `mySmoother` . Then we have set a few attributes of <code>mySmoother</code> and finally we have invoked the **Execute()** method. Notice how we have easily passed **mySurface** as an attribute to <code>mySmoother</code> .
 
-Finally if we want to save the smoothed surface as **`mysurface.vtp`** we can do it by typing:
+Finally if we want to save the smoothed surface as <code>mysurface.vtp</code> we can do it by typing:
 
     >>> myWriter = vmtkscripts.vmtkSurfaceWriter()
     >>> myWriter.Surface = mySmoother.Surface
     >>> myWriter.OutputFileName = 'mysurface.vtp'
     >>> myWriter.Execute()
 
-We have created a new instance of **`vmtkSurfaceWriter`** as **`myWriter`**, then we have defined the **Surface** attribute as the output Surface from **`mySmoother`** . We have finally defined the filename we want for our surface and executed **`myWriter`**
+We have created a new instance of <code>vmtkSurfaceWriter</code> as <code>myWriter</code>, then we have defined the **Surface** attribute as the output Surface from <code>mySmoother</code> . We have finally defined the filename we want for our surface and executed <code>myWriter</code>
 
 This chain of operations can continue for as long as you need. If you find that your work session is getting long and perhaps you want to reproduce it in different times you can create a Python file and save all of the instructions you have used into a script.
 
@@ -93,7 +93,7 @@ The Python script for this example would look as follows:
     myWriter.OutputFileName = 'mysurface.vtp'
     myWriter.Execute()
 
-You can save it as **`myscript.py`** and you will be able to run it either from the Python shell or from the command line. To run this code from the command line you simply have to make it executable then invoke it with the ./ prefix as follows:
+You can save it as <code>myscript.py</code> and you will be able to run it either from the Python shell or from the command line. To run this code from the command line you simply have to make it executable then invoke it with the ./ prefix as follows:
 
     $ chmod u+x myscript.py
     $ ./myscript.py

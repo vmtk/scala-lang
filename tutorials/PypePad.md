@@ -38,11 +38,11 @@ Pypepad can work in a verbose or a non verbose mode. Also, it can save or update
 
 |    		 			  |     					      |
 |:----------------------------------------|---------------------------------------------------|
-Toggle Verbose Output:		          | <code>Edit -> Log<code> 
-Disable Output Writing :	          | <code>Edit -> No output to file<code>
-Save the Output to a file:	          | <code>Edit -> Write output to file<code>  
-Append the Output to an existing file:	  | <code>Edit -> Append output to file<code> 
-Select an output file:	                  | <code>Edit -> Output file...<code>        
+Toggle Verbose Output:		          | <code>Edit -> Log</code> 
+Disable Output Writing :	          | <code>Edit -> No output to file</code>
+Save the Output to a file:	          | <code>Edit -> Write output to file</code>  
+Append the Output to an existing file:	  | <code>Edit -> Append output to file</code> 
+Select an output file:	                  | <code>Edit -> Output file...</code>        
 
 
 ## Editing your pype

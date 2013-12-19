@@ -9,7 +9,7 @@ title: Meshing based on centerlines (vmtk+gmsh)
 *by Emilie Marchandise, Universite ́ catholique de Louvain, Institute of Mechanics, Materials and Civil Engineering (iMMC) *
 
 This tutorial demonstrates how to mesh tubular geometries with Gmsh using the centerlines computed with vmtk.
-[Gmsh](http://www.geuz.org/gmsh/) is an open-source 3D finite element mesh generator. Starting from an STL file (that can be of very ol quality), the NEW ''centerline field'' of Gmsh enables you to automatically create a CFD mesh or FSI mesh for cardiovascular and respiratory flow simulations. 
+<a href="http://www.geuz.org/gmsh/" target="_blank">Gmsh</a> is an open-source 3D finite element mesh generator. Starting from an STL file (that can be of very ol quality), the NEW ''centerline field'' of Gmsh enables you to automatically create a CFD mesh or FSI mesh for cardiovascular and respiratory flow simulations. 
 
 ![Figure 1]({{ site.baseurl }}/resources/img//tutorials/stl_init.png)
 
@@ -64,5 +64,5 @@ As can be seen, three centerline-based operators can be defined: (1)  a close-vo
 Use the command line ''gmsh file.geo -3'' to create the CFD or FSI mesh. 
 The final mesh contains different physical tags: inlet, outlet, wall, lumenVolume (and also for FSI: outerWall, wallVolume, inletRing, outletRings).
  
-Different examples on how to use this Gmsh's Centerline Field can be found on the [Gmsh wiki](https://geuz.org/trac/gmsh) - use 'gmsh' as username and passwd.
-Questions or suggestions  can be send by email  to : emilie.marchandise@uclouvain.be
+Different examples on how to use this Gmsh's Centerline Field can be found on the <a href="https://geuz.org/trac/gmsh" target="_blank">Gmsh wiki</a> - use 'gmsh' as username and passwd.
+Questions or suggestions  can be send by email  to : <a href="mailto:emilie.marchandise@uclouvain.be">emilie.marchandise@uclouvain.be</a>
